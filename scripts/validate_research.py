@@ -16,6 +16,8 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 RESEARCH_ROOT = ROOT / "research"
 REQUIRED_THEME_FILES = ("README.md", "briefing.md", "source-index.md", "research-log.md")
+MIN_GUIDE_CHAPTERS = 8
+MIN_GUIDE_WORDS = 18_000
 
 def fail(message: str) -> None:
     print(f"ERROR: {message}", file=sys.stderr)
@@ -38,6 +40,28 @@ def validate_agents() -> None:
             fail(f"AGENTS.md is missing required instruction: {needle}")
 
 
+def word_count(text: str) -> int:
+    return len(re.findall(r"\b\w+(?:[-']\w+)?\b", text))
+
+
+def validate_theme_guide(theme_dir: Path) -> None:
+    guide_dir = theme_dir / "guide"
+    if not guide_dir.exists():
+        fail(f"{theme_dir}: missing guide/ directory for ELI5 deep-dive chapters")
+    index = guide_dir / "00-README.md"
+    if not index.exists():
+        fail(f"{theme_dir}: missing guide/00-README.md")
+    chapters = sorted(path for path in guide_dir.glob("*.md") if path.is_file())
+    if len(chapters) < MIN_GUIDE_CHAPTERS:
+        fail(f"{theme_dir}: expected at least {MIN_GUIDE_CHAPTERS} guide chapters, found {len(chapters)}")
+    total_words = sum(word_count(path.read_text(encoding="utf-8")) for path in chapters)
+    if total_words < MIN_GUIDE_WORDS:
+        fail(f"{theme_dir}: guide is too thin ({total_words} words < {MIN_GUIDE_WORDS})")
+    guide_text = "\n".join(path.read_text(encoding="utf-8") for path in chapters)
+    if "https://" not in guide_text:
+        fail(f"{theme_dir}: guide must include inline external source links")
+
+
 def validate_theme(theme_dir: Path) -> None:
     for name in REQUIRED_THEME_FILES:
         path = theme_dir / name
@@ -45,6 +69,8 @@ def validate_theme(theme_dir: Path) -> None:
             fail(f"{theme_dir}: missing {name}")
         if not path.read_text(encoding="utf-8").strip():
             fail(f"{path}: file is empty")
+
+    validate_theme_guide(theme_dir)
 
     sources_json = theme_dir / "sources.json"
     if not sources_json.exists():

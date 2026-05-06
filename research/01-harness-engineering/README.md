@@ -2,9 +2,14 @@
 
 Harness engineering is the practice of designing the outer system around coding agents: instructions, tools, state, sandboxes, feedback loops, tests, evaluators, and human escalation paths. This theme starts from Birgitta Böckeler's Martin Fowler article and triangulates it against Anthropic, OpenAI, Stripe, LangChain, Simon Willison, OWASP, HN, and local social signals.
 
-## Files
+## Start with the book-length guide
 
-- [briefing.md](briefing.md) — evidence-weighted synthesis and skeptical verdict.
+- [guide/00-README.md](guide/00-README.md) — ELI5 deep-dive reading path, currently ~20k words across 15 chapter files.
+- [assets/README.md](assets/README.md) — local image credits for source diagrams used in the guide.
+
+## Support files
+
+- [briefing.md](briefing.md) — evidence-weighted executive synthesis and skeptical verdict.
 - [source-index.md](source-index.md) — human-readable source catalog.
 - [research-log.md](research-log.md) — query batches, extraction notes, and limitations.
 - [sources.json](sources.json) — machine-readable source metadata validated by `scripts/validate_research.py`.
@@ -12,7 +17,7 @@ Harness engineering is the practice of designing the outer system around coding 
 
 ## One-sentence takeaway
 
-Harness engineering is not a fancy synonym for prompt files: the strongest evidence points to a control-system discipline combining feedforward guidance, deterministic and inferential sensors, durable state, least-privilege execution, and human attention focused "on the loop" rather than micromanaging every generated line.
+Harness engineering is not a fancy synonym for prompt files: the strongest evidence points to a control-system discipline combining feedforward guidance, deterministic and inferential sensors, durable state, least-privilege execution, and human attention focused "on the loop" rather than micromanaging every generated line. The main durable artifact for this theme is the source-linked guide, not the short briefing.
 
 ## Current confidence
 

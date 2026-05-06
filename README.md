@@ -2,7 +2,7 @@
 
 A private, source-backed research repository on **agentic engineering**: using LLM-powered coding agents to do software engineering.
 
-The repository is organized as themed research packets. Each packet combines browser-grounded web research, official docs, practitioner reports, HN/social signals, and skeptical synthesis.
+The repository is organized as themed research packets. Each packet combines browser-grounded web research, official docs, practitioner reports, HN/social signals, skeptical synthesis, and a source-linked ELI5 deep-dive guide that should read like a small private book rather than a terse memo.
 
 ## Start here
 
@@ -14,7 +14,7 @@ The repository is organized as themed research packets. Each packet combines bro
 
 ## Themes
 
-1. [Harness Engineering for Coding Agent Users](research/01-harness-engineering/) — feedforward guides, feedback sensors, context engineering, long-running agents, security boundaries, and human-on-the-loop control.
+1. [Harness Engineering for Coding Agent Users](research/01-harness-engineering/) — feedforward guides, feedback sensors, context engineering, long-running agents, security boundaries, and human-on-the-loop control. Start with the [book-length guide](research/01-harness-engineering/guide/00-README.md).
 
 ## Commands
 
@@ -32,14 +32,16 @@ make validate
 
 ## Research artifact policy
 
-- Commit durable synthesis, source indices, query logs, and machine-readable metadata.
-- Keep raw rendered pages, SERP dumps, screenshots, and CDP artifacts in `tmp/`.
-- `tmp/` is gitignored and intentionally repo-root relative so CDP workflows can write there safely.
+- Commit durable synthesis, source indices, guide chapters, credited guide assets, query logs, and machine-readable metadata.
+- Keep raw rendered pages, clean article snapshots, SERP dumps, screenshots, and CDP artifacts in `tmp/`.
+- `tmp/` is gitignored and intentionally repo-root relative so CDP workflows and article-extraction post-processing can write there safely.
 
-## Repo-local skills
+## Repo-local skills and scripts
 
 - `.agents/skills/theme-deep-research/SKILL.md` — create or refresh a research theme.
 - `.agents/skills/source-audit/SKILL.md` — audit a theme before commit.
+- `scripts/extract_theme_articles.py` — turn captured CDP `html.json` into clean article Markdown under `tmp/`.
+- `scripts/build_theme_book.py` — concatenate a theme guide and optionally build a private EPUB/PDF with pandoc.
 
 ## CDP daemon rule
 

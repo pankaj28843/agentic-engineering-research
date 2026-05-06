@@ -28,8 +28,10 @@ This repository organizes thematic research on agentic engineering: using LLM-po
 
 - Ground claims in extracted source content, not search snippets. Google SERP snippets are leads only.
 - Prefer primary/official sources, then practitioner reports, then community/social signals. Label vendor claims and skeptical counter-evidence separately.
-- Keep `AGENTS.md` short. Put durable knowledge in `docs/` and theme folders; put bulky raw artifacts in `tmp/`.
-- When adding a theme, include `README.md`, `briefing.md`, `source-index.md`, `research-log.md`, and `sources.json`.
+- Keep `AGENTS.md` short. Put durable knowledge in `docs/` and theme folders; put bulky raw artifacts and article snapshots in `tmp/`.
+- Each theme must be useful as personalized learning material: include a chapter-wise, source-linked, ELI5 deep-dive guide under `guide/`, not only a short briefing.
+- When adding a theme, include `README.md`, `briefing.md`, `source-index.md`, `research-log.md`, `sources.json`, and `guide/00-README.md` plus chapter files.
+- Use `scripts/extract_theme_articles.py` to post-process captured CDP `html.json` files into clean article Markdown under `tmp/` before writing long-form guide chapters.
 
 ## CDP daemon lifecycle guard
 

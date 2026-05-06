@@ -2,9 +2,10 @@
 name: theme-deep-research
 description: >
   Build or refresh a thematic research packet under research/<NN-theme-slug>/
-  using browser-grounded web research, HN/social signals, docsearch, and a
-  skeptical synthesis. Use when adding a new agentic-engineering theme or doing
-  a major refresh of an existing theme. Produces README.md, briefing.md,
+  using browser-grounded web research, HN/social signals, docsearch, article
+  extraction post-processing, skeptical synthesis, and a book-like ELI5 guide.
+  Use when adding a new agentic-engineering theme or doing a major refresh of an
+  existing theme. Produces README.md, guide/ chapters, briefing.md,
   source-index.md, research-log.md, and sources.json, then validates with uv.
 argument-hint: "<theme name> [--depth medium|deep|exhaustive]"
 ---
@@ -102,22 +103,58 @@ Use this for durable repo research, not one-off chat answers.
      --json > "$ROOT/extract-summary.json"
    ```
 
-9. Create or update `research/<NN-theme-slug>/` with:
-   - `README.md` — short entry point and navigation.
-   - `briefing.md` — verdict, confidence, evidence for/against, failure modes,
-     hidden assumptions, implications.
+9. Post-process captured HTML into clean article snapshots before synthesis:
+
+   ```bash
+   uv run python scripts/extract_theme_articles.py \
+     "research/$THEME_SLUG" \
+     --scratch-root "$ROOT"
+   ```
+
+   Keep the generated `articles/` directory under `tmp/`; it is reading
+   substrate, not committed output.
+
+10. Create or update `research/<NN-theme-slug>/` with:
+   - `README.md` — short entry point and navigation, pointing first to `guide/`.
+   - `guide/00-README.md` plus numbered chapters — the main reader-facing
+     artifact. Write this as source-linked, ELI5, book-like learning material,
+     not bullet soup. Target enough depth for a serious 1.5-3 hour read on a
+     major theme.
+   - `assets/README.md` and local image files when diagrams/screenshots are used
+     in the guide; credit original sources.
+   - `briefing.md` — executive verdict, confidence, evidence for/against,
+     failure modes, hidden assumptions, implications.
    - `source-index.md` — source list with quality labels.
    - `research-log.md` — query batches, source-selection notes, tool artifacts,
-     HN/social signal summary, limitations.
+     article-extraction notes, HN/social signal summary, limitations.
    - `sources.json` — URL, title/label, quality, role, and date when known.
 
-10. Validate:
+11. Optionally verify private reading output:
+
+    ```bash
+    uv run python scripts/build_theme_book.py "research/$THEME_SLUG" --formats markdown,epub
+    ```
+
+12. Validate:
 
     ```bash
     uv run python scripts/validate_research.py
     ```
 
 ## Synthesis rubric
+
+Every theme guide should:
+
+- Teach from first principles in plain language while respecting technical detail.
+- Inline links to external sources at the point of use so the reader can jump to
+  evidence immediately.
+- Preserve meaty details from primary sources, not collapse them into vague
+  claims.
+- Separate primary evidence, vendor claims, practitioner patterns, community
+  skepticism, and open questions.
+- Include diagrams or source images where they materially improve learning, with
+  local copies and credits.
+- End with a compressed summary and next-reading path.
 
 Every briefing should answer:
 

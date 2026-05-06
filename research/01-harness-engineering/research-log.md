@@ -163,14 +163,46 @@ Pages 2-3 surfaced important sources that would have been missed by a shallow pa
 - Open-source harness lists and AGENTS.md examples.
 - Critical/implementation reports on context rot, long-running agents, and code degradation.
 
+## Article-extraction post-processing
+
+The initial packet was too shallow relative to the crawl cost. The theme was upgraded to use clean article snapshots as the writing substrate. Captured CDP `html.json` files remain under `tmp/`, and `article-extractor` post-processing writes source-focused Markdown under `tmp/.../articles/`:
+
+```bash
+uv run python scripts/extract_theme_articles.py \
+  research/01-harness-engineering \
+  --scratch-root tmp/research-web-critical/agentic-engineering-harness-engineering
+```
+
+A full post-processing run successfully extracted 86/86 article snapshots to:
+
+```text
+tmp/research-web-critical/agentic-engineering-harness-engineering/articles/
+```
+
+The durable reader-facing output is now the ~20k-word guide under [guide/00-README.md](guide/00-README.md). Source diagrams used in the guide were copied locally under [assets/](assets/) with credits in [assets/README.md](assets/README.md).
+
+Private book output was verified with:
+
+```bash
+uv run python scripts/build_theme_book.py research/01-harness-engineering --formats markdown,epub
+```
+
+Outputs:
+
+```text
+tmp/books/01-harness-engineering/01-harness-engineering.md
+tmp/books/01-harness-engineering/01-harness-engineering.epub
+```
+
 ## Limitations
 
 - Many source pages are vendor-authored and have incentives to present agentic coding positively.
 - Social signals were sparse in local `socli` for this exact phrase; broader related searches should be run in later passes.
-- Some pages had heavy JavaScript in the extracted Markdown, but the relevant body text was present for cited claims.
+- Some pages had heavy JavaScript in the extracted Markdown, but the relevant body text was present for cited claims; article-extraction post-processing is now used to reduce this noise.
 - This pass did not deep-read every HN comment thread; HN was used for signal and dissent discovery.
 - Google search region/personalization may affect ranking; sources are cited from extracted pages, not snippets.
+- The guide is a substantial first book-grade pass, but behaviour harnessing and evaluator calibration deserve deeper future expansion.
 
 ## Audit note
 
-The durable packet commits synthesis and source metadata only. Raw rendered pages remain in gitignored `tmp/`.
+The durable packet commits synthesis, source metadata, guide chapters, and credited guide assets. Raw rendered pages and clean article snapshots remain in gitignored `tmp/`.

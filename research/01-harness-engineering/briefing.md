@@ -1,5 +1,7 @@
 # Briefing: Harness Engineering for Coding Agent Users
 
+> This is the executive synthesis. For the full source-linked reader, start with [guide/00-README.md](guide/00-README.md).
+
 ## Verdict
 
 Harness engineering is emerging as the practical discipline for making coding agents useful beyond toy tasks. The most robust pattern across sources is a control loop:
