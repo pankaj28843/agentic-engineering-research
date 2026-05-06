@@ -1,0 +1,52 @@
+# Agentic Engineering Research
+
+A private, source-backed research repository on **agentic engineering**: using LLM-powered coding agents to do software engineering.
+
+The repository is organized as themed research packets. Each packet combines browser-grounded web research, official docs, practitioner reports, HN/social signals, and skeptical synthesis.
+
+## Start here
+
+- [AGENTS.md](AGENTS.md) — compact operating instructions for coding agents.
+- [docs/repo-map.md](docs/repo-map.md) — repository structure.
+- [docs/research-method.md](docs/research-method.md) — repeatable research workflow.
+- [docs/glossary.md](docs/glossary.md) — working terminology.
+- [research/01-harness-engineering/](research/01-harness-engineering/) — first theme.
+
+## Themes
+
+1. [Harness Engineering for Coding Agent Users](research/01-harness-engineering/) — feedforward guides, feedback sensors, context engineering, long-running agents, security boundaries, and human-on-the-loop control.
+
+## Commands
+
+Validate the repository:
+
+```bash
+uv run python scripts/validate_research.py
+```
+
+or:
+
+```bash
+make validate
+```
+
+## Research artifact policy
+
+- Commit durable synthesis, source indices, query logs, and machine-readable metadata.
+- Keep raw rendered pages, SERP dumps, screenshots, and CDP artifacts in `tmp/`.
+- `tmp/` is gitignored and intentionally repo-root relative so CDP workflows can write there safely.
+
+## Repo-local skills
+
+- `.agents/skills/theme-deep-research/SKILL.md` — create or refresh a research theme.
+- `.agents/skills/source-audit/SKILL.md` — audit a theme before commit.
+
+## CDP daemon rule
+
+Only this daemon lifecycle command is allowed unattended:
+
+```bash
+cdp daemon status --json
+```
+
+Starting, restarting, stopping, keeping alive, or active-probing the CDP daemon requires explicit human approval because Chrome remote-debugging permission prompts need a human in the loop.

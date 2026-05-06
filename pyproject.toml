@@ -1,0 +1,16 @@
+[project]
+name = "agentic-engineering-research"
+version = "0.1.0"
+description = "A thematic research repository on agentic engineering and LLM-powered coding agents."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = []
+
+[tool.uv]
+package = false
+
+[tool.agentic-engineering-research]
+research_root = "research"

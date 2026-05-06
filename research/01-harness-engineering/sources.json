@@ -1,0 +1,690 @@
+[
+  {
+    "url": "https://addyosmani.com/blog/agent-harness-engineering/",
+    "title": "Agent Harness Engineering",
+    "quality": "practitioner",
+    "role": "Practitioner/vendor secondary",
+    "extracted_markdown_words": 4528,
+    "notes": ""
+  },
+  {
+    "url": "https://addyosmani.com/blog/long-running-agents/",
+    "title": "Long Running Agents",
+    "quality": "practitioner",
+    "role": "Practitioner/vendor secondary",
+    "extracted_markdown_words": 5397,
+    "notes": ""
+  },
+  {
+    "url": "https://arize.com/blog/closing-the-loop-coding-agents-telemetry-and-the-path-to-self-improving-software/",
+    "title": "Closing The Loop Coding Agents Telemetry And The Path To Self Improving Software",
+    "quality": "vendor",
+    "role": "Observability vendor/practitioner",
+    "extracted_markdown_words": 5234,
+    "notes": ""
+  },
+  {
+    "url": "https://arize.com/blog/common-ai-agent-failures/",
+    "title": "Common Ai Agent Failures",
+    "quality": "vendor",
+    "role": "Observability vendor/practitioner",
+    "extracted_markdown_words": 5504,
+    "notes": ""
+  },
+  {
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html",
+    "title": "Ai Agent Security Cheat Sheet",
+    "quality": "official",
+    "role": "OWASP security guidance",
+    "extracted_markdown_words": 2866,
+    "notes": ""
+  },
+  {
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+    "title": "Llm Prompt Injection Prevention Cheat Sheet",
+    "quality": "official",
+    "role": "OWASP security guidance",
+    "extracted_markdown_words": 3338,
+    "notes": ""
+  },
+  {
+    "url": "https://chromedevtools.github.io/devtools-protocol/",
+    "title": "Devtools Protocol",
+    "quality": "official",
+    "role": "Chrome/CDP official docs",
+    "extracted_markdown_words": 1165,
+    "notes": ""
+  },
+  {
+    "url": "https://chromedevtools.github.io/devtools-protocol/tot/Network/",
+    "title": "Network",
+    "quality": "official",
+    "role": "Chrome/CDP official docs",
+    "extracted_markdown_words": 9074,
+    "notes": ""
+  },
+  {
+    "url": "https://chromedevtools.github.io/devtools-protocol/tot/Page/",
+    "title": "Page",
+    "quality": "official",
+    "role": "Chrome/CDP official docs",
+    "extracted_markdown_words": 5985,
+    "notes": ""
+  },
+  {
+    "url": "https://cursor.com/blog/long-running-agents",
+    "title": "Long Running Agents",
+    "quality": "vendor",
+    "role": "Web source",
+    "extracted_markdown_words": 3194,
+    "notes": ""
+  },
+  {
+    "url": "https://developer.chrome.com/docs/devtools/network",
+    "title": "Network",
+    "quality": "official",
+    "role": "Chrome/CDP official docs",
+    "extracted_markdown_words": 2566,
+    "notes": ""
+  },
+  {
+    "url": "https://developer.chrome.com/docs/devtools/protocol-monitor",
+    "title": "Protocol Monitor",
+    "quality": "official",
+    "role": "Chrome/CDP official docs",
+    "extracted_markdown_words": 1773,
+    "notes": ""
+  },
+  {
+    "url": "https://developers.openai.com/blog/run-long-horizon-tasks-with-codex",
+    "title": "Run Long Horizon Tasks With Codex",
+    "quality": "official",
+    "role": "OpenAI official/primary",
+    "extracted_markdown_words": 3919,
+    "notes": ""
+  },
+  {
+    "url": "https://developers.openai.com/codex/guides/agents-md",
+    "title": "Agents Md",
+    "quality": "official",
+    "role": "OpenAI official/primary",
+    "extracted_markdown_words": 3578,
+    "notes": ""
+  },
+  {
+    "url": "https://developers.openai.com/codex/guides/build-ai-native-engineering-team",
+    "title": "Build Ai Native Engineering Team",
+    "quality": "official",
+    "role": "OpenAI official/primary",
+    "extracted_markdown_words": 6504,
+    "notes": ""
+  },
+  {
+    "url": "https://developers.openai.com/codex/learn/best-practices",
+    "title": "Best Practices",
+    "quality": "official",
+    "role": "OpenAI official/primary",
+    "extracted_markdown_words": 4967,
+    "notes": ""
+  },
+  {
+    "url": "https://developers.openai.com/codex/security",
+    "title": "Security",
+    "quality": "official",
+    "role": "OpenAI official/primary",
+    "extracted_markdown_words": 2866,
+    "notes": ""
+  },
+  {
+    "url": "https://developers.openai.com/codex/skills",
+    "title": "Skills",
+    "quality": "official",
+    "role": "OpenAI official/primary",
+    "extracted_markdown_words": 3685,
+    "notes": ""
+  },
+  {
+    "url": "https://developers.openai.com/cookbook/articles/codex_exec_plans",
+    "title": "Codex Exec Plans",
+    "quality": "official",
+    "role": "OpenAI official/primary",
+    "extracted_markdown_words": 5040,
+    "notes": ""
+  },
+  {
+    "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching",
+    "title": "Prompt Caching",
+    "quality": "official",
+    "role": "Anthropic official docs",
+    "extracted_markdown_words": 61225,
+    "notes": ""
+  },
+  {
+    "url": "https://docs.anthropic.com/en/docs/build-with-claude/tool-use",
+    "title": "Tool Use",
+    "quality": "official",
+    "role": "Anthropic official docs",
+    "extracted_markdown_words": 26381,
+    "notes": ""
+  },
+  {
+    "url": "https://docs.anthropic.com/en/docs/claude-code/mcp",
+    "title": "Mcp",
+    "quality": "official",
+    "role": "Anthropic official docs",
+    "extracted_markdown_words": 95157,
+    "notes": ""
+  },
+  {
+    "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "title": "Overview",
+    "quality": "official",
+    "role": "Anthropic official docs",
+    "extracted_markdown_words": 47758,
+    "notes": ""
+  },
+  {
+    "url": "https://docs.anthropic.com/en/docs/claude-code/skills",
+    "title": "Skills",
+    "quality": "official",
+    "role": "Anthropic official docs",
+    "extracted_markdown_words": 85178,
+    "notes": ""
+  },
+  {
+    "url": "https://docs.anthropic.com/en/docs/claude-code/sub-agents",
+    "title": "Sub Agents",
+    "quality": "official",
+    "role": "Anthropic official docs",
+    "extracted_markdown_words": 89415,
+    "notes": ""
+  },
+  {
+    "url": "https://docs.astral.sh/uv/concepts/projects/config/",
+    "title": "Config",
+    "quality": "official",
+    "role": "uv official docs",
+    "extracted_markdown_words": 3439,
+    "notes": ""
+  },
+  {
+    "url": "https://docs.astral.sh/uv/concepts/projects/layout/",
+    "title": "Layout",
+    "quality": "official",
+    "role": "uv official docs",
+    "extracted_markdown_words": 963,
+    "notes": ""
+  },
+  {
+    "url": "https://docs.astral.sh/uv/concepts/projects/sync/",
+    "title": "Sync",
+    "quality": "official",
+    "role": "uv official docs",
+    "extracted_markdown_words": 1413,
+    "notes": ""
+  },
+  {
+    "url": "https://docs.astral.sh/uv/guides/projects/",
+    "title": "Projects",
+    "quality": "official",
+    "role": "uv official docs",
+    "extracted_markdown_words": 1321,
+    "notes": ""
+  },
+  {
+    "url": "https://docs.langchain.com/oss/python/deepagents/harness",
+    "title": "Harness",
+    "quality": "vendor",
+    "role": "LangChain vendor/practitioner",
+    "extracted_markdown_words": 23472,
+    "notes": ""
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Cybernetics",
+    "title": "Cybernetics",
+    "quality": "reference",
+    "role": "Reference background",
+    "extracted_markdown_words": 6265,
+    "notes": ""
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Variety_(cybernetics)#Law_of_requisite_variety",
+    "title": "Variety (Cybernetics)",
+    "quality": "reference",
+    "role": "Reference background",
+    "extracted_markdown_words": 3536,
+    "notes": ""
+  },
+  {
+    "url": "https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/",
+    "title": "Spec Driven Development Using Markdown As A Programming Language When Building With Ai",
+    "quality": "primary",
+    "role": "GitHub primary/practitioner",
+    "extracted_markdown_words": 3287,
+    "notes": ""
+  },
+  {
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/",
+    "title": "How To Write A Great Agents Md Lessons From Over 2500 Repositories",
+    "quality": "primary",
+    "role": "GitHub primary/practitioner",
+    "extracted_markdown_words": 3449,
+    "notes": ""
+  },
+  {
+    "url": "https://github.blog/ai-and-ml/github-copilot/onboarding-your-ai-peer-programmer-setting-up-github-copilot-coding-agent-for-success/",
+    "title": "Onboarding Your Ai Peer Programmer Setting Up Github Copilot Coding Agent For Success",
+    "quality": "primary",
+    "role": "GitHub primary/practitioner",
+    "extracted_markdown_words": 5025,
+    "notes": ""
+  },
+  {
+    "url": "https://github.blog/changelog/2025-07-30-copilot-coding-agent-custom-setup-steps-are-more-reliable-and-easier-to-debug/",
+    "title": "2025 07 30 Copilot Coding Agent Custom Setup Steps Are More Reliable And Easier To Debug",
+    "quality": "primary",
+    "role": "GitHub primary/practitioner",
+    "extracted_markdown_words": 713,
+    "notes": ""
+  },
+  {
+    "url": "https://github.blog/changelog/2025-08-28-copilot-coding-agent-now-supports-agents-md-custom-instructions/",
+    "title": "2025 08 28 Copilot Coding Agent Now Supports Agents Md Custom Instructions",
+    "quality": "primary",
+    "role": "GitHub primary/practitioner",
+    "extracted_markdown_words": 591,
+    "notes": ""
+  },
+  {
+    "url": "https://github.com/AnandChowdhary/continuous-claude",
+    "title": "Continuous Claude",
+    "quality": "open-source",
+    "role": "Open-source implementation/list",
+    "extracted_markdown_words": 7763,
+    "notes": ""
+  },
+  {
+    "url": "https://github.com/Compresr-ai/Context-Gateway",
+    "title": "Context Gateway",
+    "quality": "open-source",
+    "role": "Open-source implementation/list",
+    "extracted_markdown_words": 1784,
+    "notes": ""
+  },
+  {
+    "url": "https://github.com/HKUDS/OpenHarness",
+    "title": "Openharness",
+    "quality": "open-source",
+    "role": "Open-source implementation/list",
+    "extracted_markdown_words": 13759,
+    "notes": ""
+  },
+  {
+    "url": "https://github.com/ai-boost/awesome-harness-engineering",
+    "title": "Awesome Harness Engineering",
+    "quality": "open-source",
+    "role": "Open-source implementation/list",
+    "extracted_markdown_words": 37745,
+    "notes": ""
+  },
+  {
+    "url": "https://github.com/humanlayer/12-factor-agents",
+    "title": "12 Factor Agents",
+    "quality": "open-source",
+    "role": "Open-source implementation/list",
+    "extracted_markdown_words": 6408,
+    "notes": ""
+  },
+  {
+    "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/ace-fca.md",
+    "title": "Ace Fca.Md",
+    "quality": "open-source",
+    "role": "Open-source implementation/list",
+    "extracted_markdown_words": 15727,
+    "notes": ""
+  },
+  {
+    "url": "https://github.com/openai/codex",
+    "title": "Codex",
+    "quality": "open-source",
+    "role": "Open-source implementation/list",
+    "extracted_markdown_words": 2116,
+    "notes": ""
+  },
+  {
+    "url": "https://github.com/walkinglabs/awesome-harness-engineering",
+    "title": "Awesome Harness Engineering",
+    "quality": "open-source",
+    "role": "Open-source implementation/list",
+    "extracted_markdown_words": 7560,
+    "notes": ""
+  },
+  {
+    "url": "https://github.com/walkinglabs/learn-harness-engineering",
+    "title": "Learn Harness Engineering",
+    "quality": "open-source",
+    "role": "Open-source implementation/list",
+    "extracted_markdown_words": 11604,
+    "notes": ""
+  },
+  {
+    "url": "https://lexler.github.io/augmented-coding-patterns/patterns/approved-fixtures/",
+    "title": "Approved Fixtures",
+    "quality": "practitioner",
+    "role": "Practitioner/vendor secondary",
+    "extracted_markdown_words": 1047,
+    "notes": ""
+  },
+  {
+    "url": "https://martinfowler.com/articles/continuousIntegration.html",
+    "title": "Continuousintegration",
+    "quality": "primary",
+    "role": "Fowler/Thoughtworks article",
+    "extracted_markdown_words": 14667,
+    "notes": ""
+  },
+  {
+    "url": "https://martinfowler.com/articles/exploring-gen-ai.html",
+    "title": "Exploring Gen Ai",
+    "quality": "primary",
+    "role": "Fowler/Thoughtworks article",
+    "extracted_markdown_words": 487,
+    "notes": ""
+  },
+  {
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html",
+    "title": "Context Engineering Coding Agents",
+    "quality": "primary",
+    "role": "Fowler/Thoughtworks article",
+    "extracted_markdown_words": 2150,
+    "notes": ""
+  },
+  {
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/harness-engineering-memo.html",
+    "title": "Harness Engineering Memo",
+    "quality": "primary",
+    "role": "Fowler/Thoughtworks article",
+    "extracted_markdown_words": 1350,
+    "notes": ""
+  },
+  {
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html",
+    "title": "Humans And Agents",
+    "quality": "primary",
+    "role": "Fowler/Thoughtworks article",
+    "extracted_markdown_words": 1797,
+    "notes": ""
+  },
+  {
+    "url": "https://martinfowler.com/articles/harness-engineering.html",
+    "title": "Harness Engineering",
+    "quality": "primary",
+    "role": "Fowler/Thoughtworks article",
+    "extracted_markdown_words": 2929,
+    "notes": ""
+  },
+  {
+    "url": "https://martinfowler.com/bliki/ContinuousDelivery.html",
+    "title": "Continuousdelivery",
+    "quality": "primary",
+    "role": "Fowler/Thoughtworks article",
+    "extracted_markdown_words": 752,
+    "notes": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=43480964",
+    "title": "Item?Id=43480964",
+    "quality": "community",
+    "role": "Community discussion",
+    "extracted_markdown_words": 15967,
+    "notes": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=45347532",
+    "title": "Item?Id=45347532",
+    "quality": "community",
+    "role": "Community discussion",
+    "extracted_markdown_words": 32229,
+    "notes": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=46081704",
+    "title": "Item?Id=46081704",
+    "quality": "community",
+    "role": "Community discussion",
+    "extracted_markdown_words": 3444,
+    "notes": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=46699324",
+    "title": "Item?Id=46699324",
+    "quality": "community",
+    "role": "Community discussion",
+    "extracted_markdown_words": 1426,
+    "notes": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47243272",
+    "title": "Item?Id=47243272",
+    "quality": "community",
+    "role": "Community discussion",
+    "extracted_markdown_words": 24584,
+    "notes": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47393908",
+    "title": "Item?Id=47393908",
+    "quality": "community",
+    "role": "Community discussion",
+    "extracted_markdown_words": 6239,
+    "notes": ""
+  },
+  {
+    "url": "https://openai.com/index/harness-engineering/",
+    "title": "Harness Engineering",
+    "quality": "primary",
+    "role": "OpenAI official/primary",
+    "extracted_markdown_words": 8090,
+    "notes": ""
+  },
+  {
+    "url": "https://owasp.org/www-community/attacks/PromptInjection",
+    "title": "Promptinjection",
+    "quality": "official",
+    "role": "OWASP security guidance",
+    "extracted_markdown_words": 2514,
+    "notes": ""
+  },
+  {
+    "url": "https://owasp.org/www-project-agentic-skills-top-10/",
+    "title": "Www Project Agentic Skills Top 10",
+    "quality": "official",
+    "role": "OWASP security guidance",
+    "extracted_markdown_words": 4912,
+    "notes": ""
+  },
+  {
+    "url": "https://parallel.ai/articles/what-is-an-agent-harness",
+    "title": "What Is An Agent Harness",
+    "quality": "vendor",
+    "role": "Practitioner/vendor secondary",
+    "extracted_markdown_words": 14319,
+    "notes": ""
+  },
+  {
+    "url": "https://patrickmccanna.net/a-better-way-to-limit-claude-code-and-other-coding-agents-access-to-secrets/",
+    "title": "A Better Way To Limit Claude Code And Other Coding Agents Access To Secrets",
+    "quality": "practitioner",
+    "role": "Practitioner/vendor secondary",
+    "extracted_markdown_words": 2530,
+    "notes": ""
+  },
+  {
+    "url": "https://pu.dev/",
+    "title": "pu.dev",
+    "quality": "secondary",
+    "role": "Web source",
+    "extracted_markdown_words": 273,
+    "notes": ""
+  },
+  {
+    "url": "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/",
+    "title": "Agentic Engineering Patterns",
+    "quality": "practitioner",
+    "role": "Practitioner guide",
+    "extracted_markdown_words": 1191,
+    "notes": ""
+  },
+  {
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/",
+    "title": "Agentic Engineering Patterns",
+    "quality": "practitioner",
+    "role": "Practitioner guide",
+    "extracted_markdown_words": 747,
+    "notes": ""
+  },
+  {
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/",
+    "title": "Anti Patterns",
+    "quality": "practitioner",
+    "role": "Practitioner guide",
+    "extracted_markdown_words": 984,
+    "notes": ""
+  },
+  {
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/better-code/",
+    "title": "Better Code",
+    "quality": "practitioner",
+    "role": "Practitioner guide",
+    "extracted_markdown_words": 1490,
+    "notes": ""
+  },
+  {
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/",
+    "title": "Code Is Cheap",
+    "quality": "practitioner",
+    "role": "Practitioner guide",
+    "extracted_markdown_words": 1308,
+    "notes": ""
+  },
+  {
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/",
+    "title": "Hoard Things You Know How To Do",
+    "quality": "practitioner",
+    "role": "Practitioner guide",
+    "extracted_markdown_words": 1510,
+    "notes": ""
+  },
+  {
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/",
+    "title": "How Coding Agents Work",
+    "quality": "practitioner",
+    "role": "Practitioner guide",
+    "extracted_markdown_words": 1834,
+    "notes": ""
+  },
+  {
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/",
+    "title": "Interactive Explanations",
+    "quality": "practitioner",
+    "role": "Practitioner guide",
+    "extracted_markdown_words": 1154,
+    "notes": ""
+  },
+  {
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/",
+    "title": "Linear Walkthroughs",
+    "quality": "practitioner",
+    "role": "Practitioner guide",
+    "extracted_markdown_words": 1095,
+    "notes": ""
+  },
+  {
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/",
+    "title": "Red Green Tdd",
+    "quality": "practitioner",
+    "role": "Practitioner guide",
+    "extracted_markdown_words": 901,
+    "notes": ""
+  },
+  {
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/subagents/",
+    "title": "Subagents",
+    "quality": "practitioner",
+    "role": "Practitioner guide",
+    "extracted_markdown_words": 1534,
+    "notes": ""
+  },
+  {
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/",
+    "title": "What Is Agentic Engineering",
+    "quality": "practitioner",
+    "role": "Practitioner guide",
+    "extracted_markdown_words": 1256,
+    "notes": ""
+  },
+  {
+    "url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents",
+    "title": "Minions Stripes One Shot End To End Coding Agents",
+    "quality": "primary",
+    "role": "Stripe engineering primary",
+    "extracted_markdown_words": 3432,
+    "notes": ""
+  },
+  {
+    "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+    "title": "Effective Context Engineering For Ai Agents",
+    "quality": "primary",
+    "role": "Anthropic engineering primary",
+    "extracted_markdown_words": 6744,
+    "notes": ""
+  },
+  {
+    "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+    "title": "Effective Harnesses For Long Running Agents",
+    "quality": "primary",
+    "role": "Anthropic engineering primary",
+    "extracted_markdown_words": 4756,
+    "notes": ""
+  },
+  {
+    "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+    "title": "Harness Design Long Running Apps",
+    "quality": "primary",
+    "role": "Anthropic engineering primary",
+    "extracted_markdown_words": 10872,
+    "notes": ""
+  },
+  {
+    "url": "https://www.infoq.com/news/2026/04/anthropic-three-agent-harness-ai/",
+    "title": "Anthropic Three Agent Harness Ai",
+    "quality": "secondary",
+    "role": "Practitioner/vendor secondary",
+    "extracted_markdown_words": 5080,
+    "notes": ""
+  },
+  {
+    "url": "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+    "title": "The Anatomy Of An Agent Harness",
+    "quality": "vendor",
+    "role": "LangChain vendor/practitioner",
+    "extracted_markdown_words": 6358,
+    "notes": ""
+  },
+  {
+    "url": "https://www.langchain.com/deep-agents",
+    "title": "Deep Agents",
+    "quality": "vendor",
+    "role": "LangChain vendor/practitioner",
+    "extracted_markdown_words": 2657,
+    "notes": ""
+  },
+  {
+    "url": "https://www.thoughtworks.com/en-de/radar/techniques/architectural-fitness-function",
+    "title": "Architectural Fitness Function",
+    "quality": "primary",
+    "role": "Thoughtworks primary/reference",
+    "extracted_markdown_words": 1341,
+    "notes": ""
+  }
+]
