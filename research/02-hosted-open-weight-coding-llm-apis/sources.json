@@ -1,0 +1,650 @@
+[
+  {
+    "url": "https://qwenlm.github.io/blog/qwen3-coder/",
+    "title": "Qwen3-Coder: Agentic Coding in the World",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 1118,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://github.com/QwenLM/Qwen3-Coder",
+    "title": "QwenLM/Qwen3-Coder official repository",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 7655,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://moonshotai.github.io/Kimi-K2/",
+    "title": "Kimi K2: Open Agentic Intelligence",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 4538,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.kimi.com/blog/kimi-k2-6",
+    "title": "Long-Horizon Coding ​",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 2972,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-coder",
+    "title": "Alibaba Cloud Model Studio Qwen-Coder model capabilities",
+    "quality": "vendor",
+    "role": "Official hosted Qwen API provider documentation/pricing",
+    "extracted_markdown_words": 6937,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.kimi.com/blog/kimi-k2-5",
+    "title": "Kimi K2.5: Visual Agentic Intelligence ​",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 3960,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://github.com/MoonshotAI/Kimi-K2",
+    "title": "MoonshotAI/Kimi-K2 official repository",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 7124,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+    "title": "Alibaba Cloud Model Studio model pricing",
+    "quality": "vendor",
+    "role": "Official hosted Qwen API provider documentation/pricing",
+    "extracted_markdown_words": 18954,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://api-docs.deepseek.com/quick_start/pricing",
+    "title": "DeepSeek API Docs: Models & Pricing",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 348,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://api-docs.deepseek.com/quick_start/token_usage",
+    "title": "DeepSeek API Docs: Token & Token Usage",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 246,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
+    "title": "DeepSeek Privacy Policy",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 4263,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://github.com/deepseek-ai/DeepSeek-V3",
+    "title": "deepseek-ai/DeepSeek-V3 official repository",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 8352,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
+    "title": "DeepSeek-V3.1 Hugging Face model card",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 1363,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.llama.com/products/llama-api/",
+    "title": "Meta Llama API product page",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 2294,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+    "title": "Meta AI blog: Llama 4 multimodal intelligence",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 5295,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.llama.com/models/llama-4/",
+    "title": "Meta Llama 4 model page",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 2620,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/moonshotai/kimi-k2.6",
+    "title": "OpenRouter model page: Kimi K2.6",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 4853,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/qwen/qwen3-coder",
+    "title": "OpenRouter model page: Qwen3 Coder",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 8582,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/deepseek/deepseek-chat-v3.1",
+    "title": "OpenRouter model page: DeepSeek V3.1",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 5948,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/deepseek/deepseek-v3.1-terminus",
+    "title": "OpenRouter model page: DeepSeek V3.1 Terminus",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 5107,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/meta-llama/llama-4-maverick",
+    "title": "OpenRouter model page: Llama 4 Maverick",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 5587,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/meta-llama/llama-4-scout",
+    "title": "OpenRouter model page: Llama 4 Scout",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 5169,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/openai/gpt-5.5",
+    "title": "OpenRouter model page: OpenAI GPT-5.5",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 7877,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/anthropic/claude-opus-4.7",
+    "title": "OpenRouter model page: Claude Opus 4.7",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 5323,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/docs/guides/privacy/data-collection",
+    "title": "OpenRouter docs: Data Collection and Privacy",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 29896,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/docs/guides/privacy/provider-logging",
+    "title": "OpenRouter docs: Provider Logging and Zero Data Retention",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 40663,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/docs/guides/features/zdr",
+    "title": "OpenRouter docs: Zero Data Retention",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 43138,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/privacy",
+    "title": "OpenRouter Privacy Policy",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 9570,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/docs/guides/overview/auth/byok",
+    "title": "OpenRouter docs: Bring Your Own Key",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 47323,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/docs/guides/routing/provider-selection",
+    "title": "OpenRouter docs: Provider Routing",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 79500,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://docs.deepinfra.com/account/data-privacy",
+    "title": "DeepInfra docs: Data Privacy",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 3687,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://deepinfra.com/privacy",
+    "title": "DeepInfra Privacy Policy",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 9570,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://deepinfra.com/pricing",
+    "title": "DeepInfra Pricing",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 7932,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://deepinfra.com/blog/qwen3-coder-480b-a35b-api-benchmarks",
+    "title": "DeepInfra blog: Qwen3-Coder API benchmarks",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 8346,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://deepinfra.com/deepseek-ai/DeepSeek-V3.1",
+    "title": "DeepInfra model page: DeepSeek-V3.1",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 17144,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://deepinfra.com/moonshotai/Kimi-K2-Instruct",
+    "title": "DeepInfra model page: Kimi-K2-Instruct",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 5663,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.together.ai/models/qwen3-coder-480b-a35b-instruct",
+    "title": "Together AI model page: Qwen3-Coder 480B A35B Instruct",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 6657,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.together.ai/models/deepseek-v3-1",
+    "title": "Together AI model page: DeepSeek-V3.1",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 6771,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.together.ai/models/kimi-k2-instruct",
+    "title": "Together AI model page: Kimi K2 Instruct",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 6618,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.together.ai/models/llama-4-maverick",
+    "title": "Together AI model page: Llama 4 Maverick",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 7291,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.together.ai/pricing",
+    "title": "Together AI pricing",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 8225,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://fireworks.ai/pricing",
+    "title": "Fireworks AI pricing",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 3579,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://fireworks.ai/models/fireworks/deepseek-v3p1",
+    "title": "Fireworks AI model page: DeepSeek V3.1",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 2579,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://fireworks.ai/models/fireworks/kimi-k2-instruct",
+    "title": "Fireworks AI model page: Kimi K2 Instruct",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 1836,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.cerebras.ai/pricing",
+    "title": "Cerebras Cloud pricing",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 3044,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://groq.com/pricing",
+    "title": "Groq Cloud pricing",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 33700,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://groq.com/newsroom/llama-4-live-day-zero-on-groq-at-lowest-cost",
+    "title": "Groq announcement: Llama 4 day-zero hosting",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 33300,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://aider.chat/docs/leaderboards/",
+    "title": "Aider LLM Leaderboards",
+    "quality": "benchmark",
+    "role": "Benchmark or independent model/provider measurement",
+    "extracted_markdown_words": 11762,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://aider.chat/docs/llms/openrouter.html",
+    "title": "Aider docs: OpenRouter configuration",
+    "quality": "benchmark",
+    "role": "Benchmark or independent model/provider measurement",
+    "extracted_markdown_words": 540,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://inference-docs.cerebras.ai/models/overview",
+    "title": "Cerebras Inference model overview",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 9392,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.vals.ai/benchmarks/lcb",
+    "title": "Vals AI LiveCodeBench leaderboard",
+    "quality": "benchmark",
+    "role": "Benchmark or independent model/provider measurement",
+    "extracted_markdown_words": 2430,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.swebench.com/",
+    "title": "SWE-bench Leaderboards",
+    "quality": "benchmark",
+    "role": "Benchmark or independent model/provider measurement",
+    "extracted_markdown_words": 331602,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://livebench.ai/",
+    "title": "LiveBench leaderboard",
+    "quality": "benchmark",
+    "role": "Benchmark or independent model/provider measurement",
+    "extracted_markdown_words": 563,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://artificialanalysis.ai/models/qwen3-coder-480b-a35b-instruct/providers",
+    "title": "Artificial Analysis provider benchmark: Qwen3 Coder 480B",
+    "quality": "benchmark",
+    "role": "Benchmark or independent model/provider measurement",
+    "extracted_markdown_words": 10529,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://artificialanalysis.ai/models/llama-4-maverick/providers",
+    "title": "Artificial Analysis provider benchmark: Llama 4 Maverick",
+    "quality": "benchmark",
+    "role": "Benchmark or independent model/provider measurement",
+    "extracted_markdown_words": 9626,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://artificialanalysis.ai/models/kimi-k2-6",
+    "title": "Artificial Analysis model page: Kimi K2.6",
+    "quality": "benchmark",
+    "role": "Benchmark or independent model/provider measurement",
+    "extracted_markdown_words": 25716,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://artificialanalysis.ai/leaderboards/providers",
+    "title": "Artificial Analysis API providers leaderboard",
+    "quality": "benchmark",
+    "role": "Benchmark or independent model/provider measurement",
+    "extracted_markdown_words": 54701,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openai.com/index/introducing-gpt-5-5/",
+    "title": "OpenAI announcement: Introducing GPT-5.5",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 12251,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://developers.openai.com/api/docs/models/gpt-5.5",
+    "title": "OpenAI API docs: GPT-5.5 model",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 3041,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openai.com/api/pricing/",
+    "title": "OpenAI API pricing",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 2905,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openai.com/enterprise-privacy/",
+    "title": "OpenAI enterprise privacy",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 4980,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.anthropic.com/claude/opus",
+    "title": "Anthropic Claude Opus product page",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 15792,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.anthropic.com/news/claude-opus-4-7",
+    "title": "Anthropic announcement: Claude Opus 4.7",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 6848,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+    "title": "Claude API pricing docs",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 31038,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.deeplearning.ai/the-batch/issue-351/",
+    "title": "DeepLearning.AI The Batch: GPT-5.5 and Kimi K2.6 coding news",
+    "quality": "practitioner",
+    "role": "Practitioner/media analysis and field report",
+    "extracted_markdown_words": 7625,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7",
+    "title": "Claude docs: What is new in Opus 4.7",
+    "quality": "official",
+    "role": "Official model/API/source documentation",
+    "extracted_markdown_words": 28529,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://eval.16x.engineer/blog/deepseek-v3-1-coding-performance-evaluation",
+    "title": "16x Eval: DeepSeek-V3.1 coding performance evaluation",
+    "quality": "practitioner",
+    "role": "Practitioner/media analysis and field report",
+    "extracted_markdown_words": 2977,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://www.interconnects.ai/p/kimi-k2-and-when-deepseek-moments",
+    "title": "Interconnects: Kimi K2 and DeepSeek moments",
+    "quality": "practitioner",
+    "role": "Practitioner/media analysis and field report",
+    "extracted_markdown_words": 3536,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://braw.dev/blog/2026-04-06-reallocating-100-month-claude-spend/",
+    "title": "Field report: reallocating Claude Code spend to Zed and OpenRouter",
+    "quality": "practitioner",
+    "role": "Practitioner/media analysis and field report",
+    "extracted_markdown_words": 1663,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=44653072",
+    "title": "HN discussion: Qwen3-Coder announcement",
+    "quality": "community",
+    "role": "Practitioner discussion signal",
+    "extracted_markdown_words": 22309,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/state-of-ai",
+    "title": "OpenRouter State of AI report",
+    "quality": "vendor",
+    "role": "Hosted API provider documentation/pricing/privacy",
+    "extracted_markdown_words": 27275,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47993235",
+    "title": "HN discussion: open weight coding model challenge claim",
+    "quality": "community",
+    "role": "Practitioner discussion signal",
+    "extracted_markdown_words": 14819,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47835735",
+    "title": "HN discussion: Kimi K2.6 coding challenge claim",
+    "quality": "community",
+    "role": "Practitioner discussion signal",
+    "extracted_markdown_words": 18719,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47700972",
+    "title": "HN discussion: reallocating Claude spend to OpenRouter",
+    "quality": "community",
+    "role": "Practitioner discussion signal",
+    "extracted_markdown_words": 15443,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47317132",
+    "title": "HN discussion: Claude Code economics claim",
+    "quality": "community",
+    "role": "Practitioner discussion signal",
+    "extracted_markdown_words": 25682,
+    "notes": "CDP extracted Markdown snapshot under tmp/; prices/context are time-sensitive and should be refreshed before purchase."
+  },
+  {
+    "url": "https://openrouter.ai/api/v1/models",
+    "title": "OpenRouter models API snapshot",
+    "quality": "official",
+    "role": "Machine-readable model price/context metadata for OpenRouter-hosted and aggregator-routed models",
+    "extracted_markdown_words": 0,
+    "notes": "Fetched with curl on 2026-05-07 into tmp/.../openrouter-model-snapshot.json; pricing values are dollars per token and were normalized to dollars per million tokens."
+  },
+  {
+    "url": "https://hn.algolia.com/api/v1/search",
+    "title": "HN Algolia search API results for model/provider practitioner signals",
+    "quality": "community",
+    "role": "HN story/comment discovery for Qwen3 Coder, Kimi K2, OpenRouter, DeepSeek, hosted coding-model topics",
+    "extracted_markdown_words": 0,
+    "notes": "Saved query JSON and summarized tsv under tmp/.../hn-*.json and hn-stories.tsv."
+  },
+  {
+    "url": "https://www.reddit.com/r/ClaudeCode/comments/1r500rh/glm5_is_officially_on_nvidia_nim_and_you_can_now/",
+    "title": "Local socli Reddit signal: free/proxy routing with OpenRouter and open models",
+    "quality": "community",
+    "role": "Local social archive signal on routing, free tiers, and coding-agent provider hacks",
+    "extracted_markdown_words": 0,
+    "notes": "Found via socli; treat as anecdotal community signal, not provider proof."
+  },
+  {
+    "url": "https://qwen.ai/blog?id=qwen3-coder-next",
+    "title": "Qwen blog: Qwen3-Coder-Next",
+    "quality": "official",
+    "role": "Official model announcement and benchmark summary",
+    "extracted_markdown_words": 864,
+    "notes": "Added after fixing qwen3-coder-next URL; CDP extracted Markdown under tmp/pages-qwen-fix."
+  },
+  {
+    "url": "https://arxiv.org/html/2603.00729v1",
+    "title": "Qwen3-Coder-Next Technical Report",
+    "quality": "paper",
+    "role": "Primary technical report for Qwen3-Coder-Next",
+    "extracted_markdown_words": 11455,
+    "notes": "Added after fixing qwen3-coder-next URL; CDP extracted Markdown under tmp/pages-qwen-fix."
+  },
+  {
+    "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+    "title": "Qwen3-Coder-Next Hugging Face model card",
+    "quality": "official",
+    "role": "Official model card with context/license/deployment notes",
+    "extracted_markdown_words": 1468,
+    "notes": "Added after fixing qwen3-coder-next URL; CDP extracted Markdown under tmp/pages-qwen-fix."
+  }
+]
