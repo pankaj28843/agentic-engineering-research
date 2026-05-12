@@ -11,10 +11,14 @@ The repository is organized as themed research packets. Each packet combines bro
 - [docs/research-method.md](docs/research-method.md) — repeatable research workflow.
 - [docs/glossary.md](docs/glossary.md) — working terminology.
 - [research/01-harness-engineering/](research/01-harness-engineering/) — first theme.
+- [research/02-hosted-open-weight-coding-llm-apis/](research/02-hosted-open-weight-coding-llm-apis/) — hosted open-weight coding LLM API evaluation.
+- [research/03-litellm-claude-desktop-computer-use/](research/03-litellm-claude-desktop-computer-use/) — LiteLLM, Claude Desktop, Anthropic computer use, Codex Desktop, and open-source computer-use experiments.
 
 ## Themes
 
 1. [Harness Engineering for Coding Agent Users](research/01-harness-engineering/) — feedforward guides, feedback sensors, context engineering, long-running agents, security boundaries, and human-on-the-loop control. Start with the [book-length guide](research/01-harness-engineering/guide/00-README.md).
+2. [Hosted Open-Weight Coding LLM APIs](research/02-hosted-open-weight-coding-llm-apis/) — buyer's and evaluator's guide for cheaper hosted open-weight coding models versus Opus/GPT baselines.
+3. [LiteLLM, Claude Desktop, and Computer Use](research/03-litellm-claude-desktop-computer-use/) — experiment plan for Claude Desktop/Cowork through LiteLLM, Anthropic computer-use loops, Codex Desktop, and open-source computer-use stacks.
 
 ## Commands
 

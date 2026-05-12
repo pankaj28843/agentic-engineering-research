@@ -1,0 +1,210 @@
+[
+  {
+    "url": "https://docs.litellm.ai/docs/tutorials/claude_desktop_cowork",
+    "title": "LiteLLM Claude Desktop (Cowork) Integration",
+    "quality": "official",
+    "role": "Primary source for routing Claude Desktop requests through LiteLLM Proxy with a Gateway URL and virtual key.",
+    "extracted_markdown_words": 112,
+    "notes": "CDP extracted page under tmp/research-web-critical/litellm-claude-computer-use/pages/009-docs-litellm-ai-docs-tutorials-claude-desktop-cowork/page.md."
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/configure-claude-desktop",
+    "title": "Microsoft Foundry: Configure Claude Desktop",
+    "quality": "official",
+    "role": "Independent official confirmation of Claude Desktop third-party inference configuration and managed deployment concepts.",
+    "extracted_markdown_words": 0,
+    "notes": "Used as corroborating official evidence in the initial CDP extraction set."
+  },
+  {
+    "url": "https://docs.litellm.ai/docs/tutorials/claude_responses_api",
+    "title": "LiteLLM Claude Code Quickstart",
+    "quality": "official",
+    "role": "Primary source for Claude Code through LiteLLM using ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN.",
+    "extracted_markdown_words": 180,
+    "notes": "CDP extracted page under tmp/.../pages/005-docs-litellm-ai-docs-tutorials-claude-responses-api/page.md."
+  },
+  {
+    "url": "https://docs.litellm.ai/docs/tutorials/claude_non_anthropic_models",
+    "title": "LiteLLM: Use Claude Code with Non-Anthropic Models",
+    "quality": "official",
+    "role": "Primary source for LiteLLM translating non-Anthropic providers into the Anthropic Messages shape for Claude Code.",
+    "extracted_markdown_words": 180,
+    "notes": "CDP extracted page under tmp/.../pages/008-docs-litellm-ai-docs-tutorials-claude-non-anthropic-models/page.md."
+  },
+  {
+    "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
+    "title": "Anthropic Computer Use Tool",
+    "quality": "official",
+    "role": "Primary API contract for Anthropic computer use: beta headers, tool versions, agent loop, sandbox requirements, and security guidance.",
+    "extracted_markdown_words": 220,
+    "notes": "CDP extracted page under tmp/.../pages/011-platform-claude-com-docs-en-agents-and-tools-tool-use-computer-use/page.md."
+  },
+  {
+    "url": "https://github.com/anthropics/anthropic-quickstarts/tree/main/computer-use-demo",
+    "title": "Anthropic Computer Use Demo",
+    "quality": "official",
+    "role": "Reference implementation source for Docker/VNC/Streamlit computer-use demo and supported providers.",
+    "extracted_markdown_words": 0,
+    "notes": "Captured through CDP page and GitHub README artifacts; the top-level quickstarts README confirms the demo supports computer_use_20251124 with zoom actions."
+  },
+  {
+    "url": "https://github.com/anthropics/anthropic-quickstarts",
+    "title": "Anthropic Claude Quickstarts",
+    "quality": "official",
+    "role": "Official repository index confirming the Computer Use Demo as an environment and tools Claude can use to control a desktop computer.",
+    "extracted_markdown_words": 70,
+    "notes": "GitHub README captured under tmp/.../github/readmes/anthropics__anthropic-quickstarts-README.md."
+  },
+  {
+    "url": "https://embracethered.com/blog/posts/2024/claude-computer-use-c2-the-zombais/",
+    "title": "ZombAIs: From Prompt Injection to C2 with Claude Computer Use",
+    "quality": "practitioner",
+    "role": "Security practitioner report showing prompt injection risk when a computer-use host can browse, download, chmod, and run files.",
+    "extracted_markdown_words": 150,
+    "notes": "CDP extracted page under tmp/.../deep2-pages/005-embracethered-com-blog-posts-2024-claude-computer-use-c2-the-zombais/page.md."
+  },
+  {
+    "url": "https://simonwillison.net/2024/Oct/22/computer-use/",
+    "title": "Simon Willison: Computer Use",
+    "quality": "practitioner",
+    "role": "Practitioner commentary on the launch and implications of Claude computer use.",
+    "extracted_markdown_words": 0,
+    "notes": "Extracted in the second CDP batch under tmp/.../deep2-pages/008-simonwillison-net-2024-oct-22-computer-use/page.md."
+  },
+  {
+    "url": "https://developers.openai.com/codex/app/computer-use",
+    "title": "OpenAI Codex App: Computer Use",
+    "quality": "official",
+    "role": "Official Codex app documentation surface for computer use.",
+    "extracted_markdown_words": 0,
+    "notes": "CDP extracted page under tmp/.../openai-pages/002-developers-openai-com-codex-app-computer-use/page.md; extraction included heavy site chrome."
+  },
+  {
+    "url": "https://developers.openai.com/codex/app/features",
+    "title": "OpenAI Codex App Features",
+    "quality": "official",
+    "role": "Official Codex app features surface, including in-app browser and app workflow context.",
+    "extracted_markdown_words": 0,
+    "notes": "CDP extracted page under tmp/.../openai-pages/004-developers-openai-com-codex-app-features/page.md."
+  },
+  {
+    "url": "https://openai.com/index/codex-for-almost-everything/",
+    "title": "OpenAI: Codex for almost everything",
+    "quality": "official",
+    "role": "Official announcement source for Codex product capabilities, used to frame Codex Desktop as a product-mediated path rather than an Anthropic API-compatible loop.",
+    "extracted_markdown_words": 0,
+    "notes": "Extracted in OpenAI source batch."
+  },
+  {
+    "url": "https://github.com/openai/codex/issues/18258",
+    "title": "Codex app on macOS shows 'Computer Use plugin unavailable'",
+    "quality": "community",
+    "role": "High-signal GitHub issue documenting plugin availability, region gating, cache/helper registration, and partial-functionality failure modes.",
+    "extracted_markdown_words": 0,
+    "notes": "Fetched through gh API into tmp/.../github/openai-codex-18258.json."
+  },
+  {
+    "url": "https://github.com/openai/codex/issues/18507",
+    "title": "Codex Computer Use macOS permission / Apple event error",
+    "quality": "community",
+    "role": "GitHub issue signal around macOS permission and Apple event failures in Codex computer use.",
+    "extracted_markdown_words": 0,
+    "notes": "Fetched through gh API into tmp/.../github/openai-codex-18507.json."
+  },
+  {
+    "url": "https://github.com/openai/codex/issues/18896",
+    "title": "Computer Use approval denied via MCP elicitation",
+    "quality": "community",
+    "role": "GitHub issue signal around approval/elicitation paths for Codex computer use.",
+    "extracted_markdown_words": 0,
+    "notes": "Fetched through gh API into tmp/.../github/openai-codex-18896.json."
+  },
+  {
+    "url": "https://github.com/openai/codex/issues/19305",
+    "title": "Full Computer Use support for Codex Desktop on Windows",
+    "quality": "community",
+    "role": "GitHub issue signal showing platform coverage expectations and gaps for Codex Desktop computer use.",
+    "extracted_markdown_words": 0,
+    "notes": "Fetched through gh API into tmp/.../github/openai-codex-19305.json."
+  },
+  {
+    "url": "https://github.com/trycua/cua",
+    "title": "trycua/cua",
+    "quality": "official",
+    "role": "Open-source computer-use stack for background macOS control, sandboxes, benchmarks, and multi-agent computer-use tooling.",
+    "extracted_markdown_words": 220,
+    "notes": "GitHub README captured under tmp/.../github/readmes/trycua__cua-README.md and CDP extraction under deep2-pages."
+  },
+  {
+    "url": "https://github.com/e2b-dev/open-computer-use",
+    "title": "e2b-dev/open-computer-use",
+    "quality": "official",
+    "role": "Open-source Linux desktop sandbox controlled by multiple LLM providers, useful as a safer isolated comparison path.",
+    "extracted_markdown_words": 130,
+    "notes": "GitHub README captured under tmp/.../github/readmes/e2b-dev__open-computer-use-README.md."
+  },
+  {
+    "url": "https://github.com/iFurySt/open-codex-computer-use",
+    "title": "iFurySt/open-codex-computer-use",
+    "quality": "community",
+    "role": "Open-source MCP-wrapped computer-use service inspired by Codex Computer Use, with Codex/Claude/Gemini install commands and macOS permission notes.",
+    "extracted_markdown_words": 130,
+    "notes": "GitHub README captured under tmp/.../github/readmes/iFurySt__open-codex-computer-use-README.md."
+  },
+  {
+    "url": "https://github.com/openclaw/openclaw/issues/67776",
+    "title": "OpenClaw feature request: Codex Computer Use integration for Mac desktop control",
+    "quality": "community",
+    "role": "Architecture discussion contrasting coordinate screenshot/click loops with Accessibility-style semantic control and permission-aware bridge design.",
+    "extracted_markdown_words": 0,
+    "notes": "Fetched through gh API into tmp/.../github/openclaw-67776.json."
+  },
+  {
+    "url": "https://github.com/lahfir/agent-desktop",
+    "title": "lahfir/agent-desktop",
+    "quality": "community",
+    "role": "Open-source native desktop automation CLI for AI agents found through CDP/HN/GitHub research.",
+    "extracted_markdown_words": 0,
+    "notes": "CDP extracted under tmp/.../deep2-pages/014-github-com-lahfir-agent-desktop/page.md."
+  },
+  {
+    "url": "https://github.com/alekseyrozh/openclawdex",
+    "title": "alekseyrozh/openclawdex",
+    "quality": "community",
+    "role": "Open-source orchestrator UI for Claude Code and Codex discovered as adjacent orchestration signal.",
+    "extracted_markdown_words": 0,
+    "notes": "CDP extracted under tmp/.../deep2-pages/015-github-com-alekseyrozh-openclawdex/page.md."
+  },
+  {
+    "url": "https://hn.algolia.com/api/v1/items/41914989",
+    "title": "HN: Computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku",
+    "quality": "community",
+    "role": "High-engagement HN thread used for practitioner/social signal around Claude computer use launch.",
+    "extracted_markdown_words": 0,
+    "notes": "Fetched to tmp/.../hn-item-41914989.json; 1454 points and 735 comments at capture."
+  },
+  {
+    "url": "https://hn.algolia.com/api/v1/items/41958550",
+    "title": "HN: ZombAIs: From Prompt Injection to C2 with Claude Computer Use",
+    "quality": "community",
+    "role": "HN thread around the prompt-injection-to-C2 security report.",
+    "extracted_markdown_words": 0,
+    "notes": "Fetched to tmp/.../hn-item-41958550.json; 166 points at capture."
+  },
+  {
+    "url": "https://hn.algolia.com/api/v1/items/47936312",
+    "title": "HN: Drive any macOS app in the background without stealing the cursor",
+    "quality": "community",
+    "role": "HN practitioner signal around trycua/cua and background macOS computer use.",
+    "extracted_markdown_words": 0,
+    "notes": "Fetched to tmp/.../hn-item-47936312.json; 192 points at capture."
+  },
+  {
+    "url": "https://hn.algolia.com/api/v1/items/47895892",
+    "title": "HN: I Reverse Engineered Codex Background Computer Use",
+    "quality": "community",
+    "role": "HN practitioner signal around Codex background computer-use reverse engineering.",
+    "extracted_markdown_words": 0,
+    "notes": "Fetched to tmp/.../hn-item-47895892.json; 10 points at capture."
+  }
+]
