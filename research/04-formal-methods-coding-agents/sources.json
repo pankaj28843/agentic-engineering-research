@@ -1,0 +1,290 @@
+[
+  {
+    "url": "https://shemesh.larc.nasa.gov/fm/fm-what.html",
+    "title": "What is Formal Methods?",
+    "quality": "official",
+    "role": "NASA definition and baseline limits of formal methods",
+    "extracted_markdown_words": 704,
+    "notes": "Defines formal methods as mathematically rigorous specification, design, and verification; notes state-space limits."
+  },
+  {
+    "url": "https://dafny.org/",
+    "title": "The Dafny Programming and Verification Language",
+    "quality": "official",
+    "role": "Official Dafny language description",
+    "extracted_markdown_words": 289,
+    "notes": "Dafny is a verification-aware programming language with native specs and static verifier."
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/research/project/dafny-a-language-and-program-verifier-for-functional-correctness/",
+    "title": "Dafny: A Language and Program Verifier for Functional Correctness",
+    "quality": "primary",
+    "role": "Microsoft Research project background for Dafny",
+    "extracted_markdown_words": 4861,
+    "notes": "Project context and publications for Dafny as a program verifier."
+  },
+  {
+    "url": "https://lamport.azurewebsites.net/tla/tla.html",
+    "title": "Leslie Lamport's TLA+ Home Page",
+    "quality": "official",
+    "role": "Official creator-maintained TLA+ overview",
+    "extracted_markdown_words": 300,
+    "notes": "TLA+ is a high-level language for modeling systems, especially concurrent/distributed ones."
+  },
+  {
+    "url": "https://lamport.azurewebsites.net/tla/tools.html",
+    "title": "TLA+ Tools",
+    "quality": "official",
+    "role": "Official tool overview for SANY, TLC, Apalache, TLAPS",
+    "extracted_markdown_words": 727,
+    "notes": "Explains TLC explicit-state model checking and Apalache symbolic model checking."
+  },
+  {
+    "url": "https://lean-lang.org/",
+    "title": "Lean Programming Language and Proof Assistant",
+    "quality": "official",
+    "role": "Official Lean overview",
+    "extracted_markdown_words": 1265,
+    "notes": "Lean is an open-source programming language and proof assistant."
+  },
+  {
+    "url": "https://arxiv.org/html/2406.08467v1",
+    "title": "DafnyBench: A Benchmark for Formal Software Verification",
+    "quality": "paper",
+    "role": "Benchmark for LLM-assisted Dafny verification",
+    "extracted_markdown_words": 10060,
+    "notes": "750+ programs and about 53k LOC; best prompting/model baseline reported 68% success."
+  },
+  {
+    "url": "https://github.com/sun-wendy/DafnyBench",
+    "title": "sun-wendy/DafnyBench",
+    "quality": "open-source",
+    "role": "Benchmark repository",
+    "extracted_markdown_words": 2179,
+    "notes": "Open-source benchmark repository, 64 stars as captured by gh on 2026-05-17."
+  },
+  {
+    "url": "https://arxiv.org/html/2411.15143v1",
+    "title": "dafny-annotator: AI-Assisted Verification of Dafny Programs",
+    "quality": "paper",
+    "role": "LLM plus search for adding Dafny annotations",
+    "extracted_markdown_words": 5586,
+    "notes": "Greedy LLM-guided annotation search; fine-tuning with DafnySynth improved success to about 50.6%."
+  },
+  {
+    "url": "https://dafny.org/blog/2025/06/21/dafny-annotator/",
+    "title": "dafny-annotator blog post",
+    "quality": "primary",
+    "role": "Dafny ecosystem blog explanation of dafny-annotator",
+    "extracted_markdown_words": 2181,
+    "notes": "Accessible project write-up in the Dafny ecosystem."
+  },
+  {
+    "url": "https://github.com/metareflection/dafny-annotator",
+    "title": "metareflection/dafny-annotator",
+    "quality": "open-source",
+    "role": "Tool repository for AI-assisted Dafny verification",
+    "extracted_markdown_words": 4165,
+    "notes": "Repository for the dafny-annotator tool, 20 stars as captured by gh on 2026-05-17."
+  },
+  {
+    "url": "https://arxiv.org/html/2601.05385v1",
+    "title": "DafnyPro: LLM-Assisted Automated Verification for Dafny Programs",
+    "quality": "paper",
+    "role": "2026 inference-time framework for Dafny annotations",
+    "extracted_markdown_words": 6584,
+    "notes": "Adds diff-checker, pruning, and proof-strategy hint augmentation; reports 86% correct proofs on DafnyBench with Claude 3.5 Sonnet."
+  },
+  {
+    "url": "https://popl26.sigplan.org/details/dafny-2026-papers/12/DafnyPro-LLM-Assisted-Automated-Verification-for-Dafny-Programs",
+    "title": "DafnyPro at Dafny 2026",
+    "quality": "primary",
+    "role": "Conference listing for DafnyPro",
+    "extracted_markdown_words": 1923,
+    "notes": "Dafny 2026 workshop metadata and abstract."
+  },
+  {
+    "url": "https://arxiv.org/html/2604.22601v1",
+    "title": "From Natural Language to Verified Code",
+    "quality": "paper",
+    "role": "2026 natural-language-to-Dafny verified code study",
+    "extracted_markdown_words": 12781,
+    "notes": "NL2VC-60 dataset, open-weight LLMs, signature prompts and self-healing with Dafny verifier feedback; includes uDebug functional validation."
+  },
+  {
+    "url": "https://arxiv.org/html/2603.17150v1",
+    "title": "Intent Formalization: A Grand Challenge for Reliable Coding in the Age of AI Agents",
+    "quality": "paper",
+    "role": "2026 position/research agenda for formalizing user intent",
+    "extracted_markdown_words": 5621,
+    "notes": "Frames the intent gap and argues specifications are the central bottleneck for reliable coding agents."
+  },
+  {
+    "url": "https://risemsr.github.io/blog/2026-03-05-shuvendu-intent-formalization/",
+    "title": "Intent Formalization blog post",
+    "quality": "primary",
+    "role": "RiSE/MSR accessible version of the intent formalization argument",
+    "extracted_markdown_words": 5218,
+    "notes": "Practitioner-friendly version of the paper with examples and research agenda."
+  },
+  {
+    "url": "https://www.sigops.org/2026/can-llms-model-real-world-systems-in-tla/",
+    "title": "Can LLMs model real-world systems in TLA+?",
+    "quality": "practitioner",
+    "role": "2026 SIGOPS article on LLM-generated TLA+ models and SysMoBench",
+    "extracted_markdown_words": 2501,
+    "notes": "Shows syntax/runtime scores are easy while conformance/invariant matching is hard; coding agents may improve the workflow."
+  },
+  {
+    "url": "https://unalarming.com/llms-and-formal-methods",
+    "title": "LLMs and Formal Methods",
+    "quality": "practitioner",
+    "role": "Practitioner synthesis and provocation",
+    "extracted_markdown_words": 2568,
+    "notes": "Argues LLMs and formal validators pair well in generate-check loops."
+  },
+  {
+    "url": "https://arxiv.org/abs/2512.02080",
+    "title": "Designing Predictable LLM-Verifier Systems for Formal Method Guarantee",
+    "quality": "paper",
+    "role": "Theoretical LLM-verifier convergence paper, with HN skepticism",
+    "extracted_markdown_words": 781,
+    "notes": "Included because HN surfaced it; use cautiously due to practitioner criticism."
+  },
+  {
+    "url": "https://arxiv.org/html/2310.04353v4",
+    "title": "An In-Context Learning Agent for Formal Theorem-Proving",
+    "quality": "paper",
+    "role": "COPRA foundational theorem-proving agent",
+    "extracted_markdown_words": 13243,
+    "notes": "Stateful backtracking search with proof-assistant feedback for Lean and Coq."
+  },
+  {
+    "url": "https://github.com/trishullab/copra",
+    "title": "trishullab/copra",
+    "quality": "open-source",
+    "role": "COPRA repository",
+    "extracted_markdown_words": 6230,
+    "notes": "Repository for in-context proof agent, 72 stars as captured by gh on 2026-05-17."
+  },
+  {
+    "url": "https://arxiv.org/abs/2506.19923",
+    "title": "Prover Agent: An Agent-Based Framework for Formal Mathematical Proofs",
+    "quality": "paper",
+    "role": "Agent framework for Lean formal mathematical proofs",
+    "extracted_markdown_words": 711,
+    "notes": "Revised through 2026; combines informal reasoning model, formal prover model, Lean feedback, and auxiliary lemmas."
+  },
+  {
+    "url": "https://github.com/kAIto47802/Prover-Agent",
+    "title": "kAIto47802/Prover-Agent",
+    "quality": "open-source",
+    "role": "Prover Agent repository",
+    "extracted_markdown_words": 3515,
+    "notes": "Repository for Prover Agent, 24 stars as captured by gh on 2026-05-17."
+  },
+  {
+    "url": "https://arxiv.org/html/2602.24273v1",
+    "title": "A Minimal Agent for Automated Theorem Proving",
+    "quality": "paper",
+    "role": "2026 minimal theorem-proving agent baseline",
+    "extracted_markdown_words": 11207,
+    "notes": "AxProverBase identifies iterative proof refinement, memory, and search as core useful scaffolding."
+  },
+  {
+    "url": "https://arxiv.org/html/2509.23864v1",
+    "title": "AgentGuard: Runtime Verification of AI Agents",
+    "quality": "paper",
+    "role": "Runtime verification framework for agent behavior",
+    "extracted_markdown_words": 4354,
+    "notes": "Treats agent behavior as observed events, learns MDPs online, and uses probabilistic model checking."
+  },
+  {
+    "url": "https://github.com/GoPlusSecurity/agentguard",
+    "title": "GoPlusSecurity/agentguard",
+    "quality": "open-source",
+    "role": "Runtime security guard implementation for coding agents",
+    "extracted_markdown_words": 9299,
+    "notes": "Hooks for Claude Code, Codex, OpenClaw and others; evaluates tool actions and scans agent skills; 403 stars as captured by gh."
+  },
+  {
+    "url": "https://arxiv.org/html/2603.07557v1",
+    "title": "AgentRaft: Automated Detection of Data Over-Exposure in LLM Agents",
+    "quality": "paper",
+    "role": "Program-analysis and runtime taint approach to agent privacy/data-flow risk",
+    "extracted_markdown_words": 12813,
+    "notes": "Cross-tool function call graph, prompt synthesis, taint tracking, multi-LLM privacy judging; evaluated on 6,675 tools."
+  },
+  {
+    "url": "https://arxiv.org/html/2603.25111v2",
+    "title": "SEVerA: Verified Self-Evolving Agents",
+    "quality": "paper",
+    "role": "2026 formally guarded generative model approach for self-evolving agents",
+    "extracted_markdown_words": 18966,
+    "notes": "Uses formal output contracts and verified fallbacks; reports zero constraint violations across tasks including tool use and Dafny."
+  },
+  {
+    "url": "https://preprints.org/manuscript/202604.1029",
+    "title": "AgentVerify: Compositional Formal Verification of AI Agent Safety Properties via LTL Model Checking",
+    "quality": "preprint",
+    "role": "Non-peer-reviewed 2026 preprint on LTL model checking for agent safety",
+    "extracted_markdown_words": 23054,
+    "notes": "Compositional temporal-logic specs for memory, tool calls, MCP/skills, and human boundaries; treat cautiously."
+  },
+  {
+    "url": "https://conf.researchr.org/details/ase-2025/agenticse-2025-papers/12/Bridging-LLM-Planning-Agents-and-Formal-Methods-A-Case-Study-in-Plan-Verification",
+    "title": "Bridging LLM Planning Agents and Formal Methods",
+    "quality": "primary",
+    "role": "ASE 2025 AgenticSE workshop case study listing",
+    "extracted_markdown_words": 1708,
+    "notes": "A plan-verification case study connecting LLM planners and formal methods."
+  },
+  {
+    "url": "https://simonwillison.net/2025/Dec/9/formal-verification/",
+    "title": "Prediction: AI will make formal verification go mainstream",
+    "quality": "practitioner",
+    "role": "Practitioner signal about mainstreaming formal verification",
+    "extracted_markdown_words": 684,
+    "notes": "Useful as community/practitioner sentiment, not primary evidence."
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=48065254",
+    "title": "HN: Can LLMs model real-world systems in TLA+?",
+    "quality": "community",
+    "role": "Practitioner discussion of TLA+ modeling with LLMs",
+    "extracted_markdown_words": 2028,
+    "notes": "Comments highlight optimism, difficulty of validating generated specs, and Verus-style alternatives."
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=46411539",
+    "title": "HN: Designing Predictable LLM-Verifier Systems for Formal Method Guarantee",
+    "quality": "community",
+    "role": "Skeptical practitioner discussion of theoretical LLM-verifier guarantee claims",
+    "extracted_markdown_words": 877,
+    "notes": "High-signal criticism that model assumptions matter and convergence claims can be thin."
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47047027",
+    "title": "HN: Lean 4 and AI theorem proving",
+    "quality": "community",
+    "role": "Practitioner discussion of Lean as proof assistant for AI",
+    "extracted_markdown_words": 5912,
+    "notes": "Useful explanations that theorem provers are closer to compile-time proof checking than ordinary tests."
+  },
+  {
+    "url": "https://github.com/Beneficial-AI-Foundation/dafny-autopilot",
+    "title": "Beneficial-AI-Foundation/dafny-autopilot",
+    "quality": "open-source",
+    "role": "VS Code extension showing practical AI-assisted Dafny verification workflow",
+    "extracted_markdown_words": 3677,
+    "notes": "Fills annotations, retries with Dafny verifier feedback, verifies highlighted functions, explains annotations."
+  },
+  {
+    "url": "https://github.com/RaghavRoy145/autocomplete-and-verify",
+    "title": "RaghavRoy145/autocomplete-and-verify",
+    "quality": "open-source",
+    "role": "Small Emacs package for formally verified LLM code generation and correction",
+    "extracted_markdown_words": 2425,
+    "notes": "Low-star example of hobbyist tooling around autocomplete plus verification."
+  }
+]

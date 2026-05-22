@@ -1,0 +1,258 @@
+[
+  {
+    "url": "https://docs.openclaw.ai/start/showcase",
+    "title": "OpenClaw Showcase",
+    "quality": "official",
+    "role": "Official curated community examples and usage taxonomy",
+    "extracted_markdown_words": 224551,
+    "notes": "CDP rendered extraction succeeded; visible text gave 1311 words and source links."
+  },
+  {
+    "url": "https://docs.openclaw.ai/tools/browser",
+    "title": "Browser (OpenClaw-managed)",
+    "quality": "official",
+    "role": "Browser automation architecture, security controls, config, and CLI reference",
+    "extracted_markdown_words": 3434,
+    "notes": "Documents isolated browser profile, existing-session profile, CDP, Chrome DevTools MCP, SSRF policy, Playwright dependency, refs, and troubleshooting."
+  },
+  {
+    "url": "https://docs.openclaw.ai/cli/browser",
+    "title": "openclaw browser CLI",
+    "quality": "official",
+    "role": "Concrete browser CLI commands for profiles, tabs, snapshots, screenshots, navigation, click, and type",
+    "extracted_markdown_words": 1366,
+    "notes": "Useful for reproducibility patterns and browser-control lessons."
+  },
+  {
+    "url": "https://docs.openclaw.ai/start/wizard-cli-automation",
+    "title": "OpenClaw CLI Automation",
+    "quality": "official",
+    "role": "Non-interactive onboarding and agent setup commands",
+    "extracted_markdown_words": 348,
+    "notes": "Shows --non-interactive, provider flags, gateway port/bind, daemon install, and agent add automation."
+  },
+  {
+    "url": "https://github.com/openclaw/openclaw",
+    "title": "openclaw/openclaw",
+    "quality": "open-source",
+    "role": "Main OpenClaw repository and project self-description",
+    "extracted_markdown_words": 1771,
+    "notes": "GitHub search captured the repo as the central project; used for project identity and ecosystem anchor."
+  },
+  {
+    "url": "https://github.com/openclaw/clawhub",
+    "title": "openclaw/clawhub",
+    "quality": "open-source",
+    "role": "Skill directory substrate for OpenClaw skills",
+    "extracted_markdown_words": 1132,
+    "notes": "Used as evidence of a skill marketplace/directory pattern."
+  },
+  {
+    "url": "https://github.com/VoltAgent/awesome-openclaw-skills",
+    "title": "VoltAgent/awesome-openclaw-skills",
+    "quality": "community-catalog",
+    "role": "Large categorized skill list from the OpenClaw skill ecosystem",
+    "extracted_markdown_words": 2109,
+    "notes": "Strong breadth signal, weaker per-skill usage proof."
+  },
+  {
+    "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases",
+    "title": "hesamsheikh/awesome-openclaw-usecases",
+    "quality": "community-catalog",
+    "role": "Community collection of OpenClaw use cases",
+    "extracted_markdown_words": 1275,
+    "notes": "Useful for use-case taxonomy; treated as curation not independent proof for every item."
+  },
+  {
+    "url": "https://github.com/AlexAnys/awesome-openclaw-usecases-zh",
+    "title": "AlexAnys/awesome-openclaw-usecases-zh",
+    "quality": "community-catalog",
+    "role": "Chinese-language use-case catalog with office, content, DevOps, knowledge, and personal assistant scenarios",
+    "extracted_markdown_words": 901,
+    "notes": "Useful for non-English practitioner breadth; treated as medium-confidence curation."
+  },
+  {
+    "url": "https://github.com/aws-samples/sample-host-openclaw-on-amazon-bedrock-agentcore",
+    "title": "AWS sample: host OpenClaw on Amazon Bedrock AgentCore",
+    "quality": "open-source-sample",
+    "role": "Deployment-heavy sample with microVM isolation, Telegram/Slack routing, browser, guardrails, and CDK",
+    "extracted_markdown_words": 6610,
+    "notes": "One of the strongest infrastructure and production-shape artifacts."
+  },
+  {
+    "url": "https://github.com/DingTalk-Real-AI/dingtalk-openclaw-connector",
+    "title": "DingTalk OpenClaw Connector",
+    "quality": "open-source-integration",
+    "role": "Official DingTalk channel plugin for enterprise chat workflows",
+    "extracted_markdown_words": 515,
+    "notes": "Concrete channel connector with messaging, approvals-style work, attachments, and multi-agent routing signals."
+  },
+  {
+    "url": "https://github.com/larksuite/openclaw-lark",
+    "title": "Lark OpenClaw Connector",
+    "quality": "open-source-integration",
+    "role": "Lark/Feishu channel plugin",
+    "extracted_markdown_words": 650,
+    "notes": "Shows OpenClaw being adapted into workplace chat channels."
+  },
+  {
+    "url": "https://github.com/freestylefly/openclaw-wechat",
+    "title": "openclaw-wechat",
+    "quality": "open-source-integration",
+    "role": "Personal WeChat connection for OpenClaw",
+    "extracted_markdown_words": 483,
+    "notes": "Shows consumer messaging integration interest, especially in Chinese ecosystem."
+  },
+  {
+    "url": "https://github.com/joshp123/padel-cli",
+    "title": "padel-cli",
+    "quality": "open-source-practitioner",
+    "role": "Availability checking and booking CLI showcased for OpenClaw automation",
+    "extracted_markdown_words": 508,
+    "notes": "Concrete booking workflow adjacent to browser/API automation."
+  },
+  {
+    "url": "https://github.com/joshp123/xuezh",
+    "title": "xuezh Chinese learning",
+    "quality": "open-source-practitioner",
+    "role": "Education and language-learning skill example",
+    "extracted_markdown_words": 1386,
+    "notes": "Good education example with voice/pronunciation learning framing."
+  },
+  {
+    "url": "https://github.com/joshp123/gohome",
+    "title": "GoHome automation",
+    "quality": "open-source-practitioner",
+    "role": "Home automation system with OpenClaw as natural-language interface",
+    "extracted_markdown_words": 2017,
+    "notes": "Concrete home/hardware automation evidence."
+  },
+  {
+    "url": "https://github.com/jamesbrooksco/karakeep-semantic-search",
+    "title": "Karakeep semantic search",
+    "quality": "open-source-practitioner",
+    "role": "Knowledge and bookmark semantic search with Qdrant and embeddings",
+    "extracted_markdown_words": 659,
+    "notes": "Useful for memory/knowledge workflow pattern."
+  },
+  {
+    "url": "https://github.com/alejandroOPI/clawdia-bridge",
+    "title": "Clawdia bridge",
+    "quality": "open-source-practitioner",
+    "role": "Phone/voice bridge between Vapi and OpenClaw",
+    "extracted_markdown_words": 566,
+    "notes": "Voice interface example."
+  },
+  {
+    "url": "https://github.com/ngutman/openclaw-ha-addon",
+    "title": "OpenClaw Home Assistant add-on",
+    "quality": "open-source-practitioner",
+    "role": "Home Assistant OS deployment add-on",
+    "extracted_markdown_words": 331,
+    "notes": "Deployment and home automation example."
+  },
+  {
+    "url": "https://github.com/Finesssee/linear-cli",
+    "title": "Linear CLI",
+    "quality": "open-source-practitioner",
+    "role": "Developer productivity CLI integrated with agentic workflows including OpenClaw",
+    "extracted_markdown_words": 3196,
+    "notes": "Concrete devtools workflow artifact."
+  },
+  {
+    "url": "https://github.com/blqke/beepcli",
+    "title": "Beeper CLI",
+    "quality": "open-source-practitioner",
+    "role": "Messaging automation via Beeper Desktop local MCP API",
+    "extracted_markdown_words": 1501,
+    "notes": "Comparable all-chat automation pattern; useful for OpenClaw lesson."
+  },
+  {
+    "url": "https://github.com/am-will/snag",
+    "title": "SNAG screenshot-to-Markdown",
+    "quality": "open-source-practitioner",
+    "role": "Screenshot region to Markdown workflow for dev/productivity tasks",
+    "extracted_markdown_words": 619,
+    "notes": "Concrete data-extraction pattern from pixels to text."
+  },
+  {
+    "url": "https://github.com/openclaw/nix-openclaw",
+    "title": "nix-openclaw",
+    "quality": "open-source-deployment",
+    "role": "Reproducible OpenClaw packaging and configuration through Nix",
+    "extracted_markdown_words": 3051,
+    "notes": "Good evidence of reproducibility concerns."
+  },
+  {
+    "url": "https://github.com/openclaw/openclaw-ansible",
+    "title": "openclaw-ansible",
+    "quality": "open-source-deployment",
+    "role": "Automated hardened installation with Tailscale, UFW, and Docker isolation",
+    "extracted_markdown_words": 1346,
+    "notes": "Good deployment and security hardening artifact."
+  },
+  {
+    "url": "https://github.com/Gen-Verse/OpenClaw-RL",
+    "title": "OpenClaw-RL",
+    "quality": "open-source-research",
+    "role": "Research-style project for training agents by talking",
+    "extracted_markdown_words": 1264,
+    "notes": "Research/agent-training usage signal."
+  },
+  {
+    "url": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills",
+    "title": "OpenClaw Medical Skills",
+    "quality": "open-source-domain-skills",
+    "role": "Medical skill library for OpenClaw",
+    "extracted_markdown_words": 1866,
+    "notes": "Domain-specific skill library; high safety caveat."
+  },
+  {
+    "url": "https://github.com/apify/apify-openclaw-plugin",
+    "title": "Apify OpenClaw plugin",
+    "quality": "open-source-integration",
+    "role": "Data extraction and actor-platform integration signal",
+    "extracted_markdown_words": 1045,
+    "notes": "Comparable browser/data-extraction pattern where it sharpens OpenClaw lessons."
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47963204",
+    "title": "HN discussion mentioning OpenClaw and Claude Code policy controversy",
+    "quality": "community",
+    "role": "Community sentiment and controversy signal",
+    "extracted_markdown_words": 40332,
+    "notes": "Useful as sentiment and ecosystem risk signal, not as positive usage proof."
+  },
+  {
+    "url": "https://www.reddit.com/r/openclaw/comments/1svmq20/psa_anthropic_clarified_the_openclaw_ban_you_can/",
+    "title": "Reddit OpenClaw policy/workaround discussion",
+    "quality": "community",
+    "role": "OpenClaw community support and workaround discussion",
+    "extracted_markdown_words": 41,
+    "notes": "Low extraction depth; used only as weak signal."
+  },
+  {
+    "url": "https://stackoverflow.com/questions/79918804/is-it-possible-to-integrate-openclaw-with-wordpress-to-automate-parts-of-the-dev",
+    "title": "Stack Overflow: OpenClaw with WordPress workflow automation",
+    "quality": "community-question",
+    "role": "Exploratory practitioner question about workflow automation",
+    "extracted_markdown_words": 0,
+    "notes": "API result only; shows curiosity, not deployment proof."
+  },
+  {
+    "url": "https://stackoverflow.com/questions/79928220/boss-wants-us-to-add-more-ai-to-our-workflow",
+    "title": "Stack Overflow: Boss wants us to add more AI to workflow",
+    "quality": "community-question",
+    "role": "Adjacent agent workflow adoption concern in a Django/Docker/Celery stack",
+    "extracted_markdown_words": 0,
+    "notes": "Not OpenClaw-specific enough for strong evidence, but useful adjacent context."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=SaWSPZoPX34",
+    "title": "OpenClaw setup walkthrough by VelvetShark",
+    "quality": "video",
+    "role": "Official-showcase-linked setup walkthrough",
+    "extracted_markdown_words": 246,
+    "notes": "CDP extraction hit consent/bot-check warning; used through official showcase summary, not as independently extracted transcript."
+  }
+]
