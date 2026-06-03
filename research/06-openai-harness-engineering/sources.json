@@ -1,0 +1,171 @@
+[
+  {
+    "url": "https://openai.com/index/harness-engineering/",
+    "title": "Harness engineering: leveraging Codex in an agent-first world",
+    "quality": "primary-official",
+    "role": "OpenAI's primary narrative and diagrams for the internal Codex harness experiment",
+    "date": "2026-02-11",
+    "notes": "Headed CDP extraction saved under tmp/research-web-critical/openai-harness-engineering/openai-blog/."
+  },
+  {
+    "url": "https://github.com/openai/symphony",
+    "title": "openai/symphony",
+    "quality": "primary-open-source",
+    "role": "OpenAI public scheduler/runner preview for isolated autonomous implementation runs",
+    "date": "2026-06-02",
+    "notes": "Local source snapshot inspected under tmp/research-web-critical/openai-harness-engineering/symphony-source/."
+  },
+  {
+    "url": "https://github.com/openai/symphony/blob/main/SPEC.md",
+    "title": "Symphony Service Specification",
+    "quality": "primary-open-source-spec",
+    "role": "Language-agnostic specification for polling issues, creating isolated workspaces, running agents, retrying, and observing runs",
+    "date": "2026-06-02",
+    "notes": "Used for scheduler/runner claims; implementation relation to private OpenAI harness is labeled inference."
+  },
+  {
+    "url": "https://github.com/openai/symphony/tree/main/elixir",
+    "title": "Symphony Elixir implementation",
+    "quality": "primary-open-source-code",
+    "role": "Reference implementation using Linear, WORKFLOW.md, Codex app-server, workspaces, logs, dashboard, retries, and cleanup",
+    "date": "2026-06-02",
+    "notes": "Key inspected files: README.md, WORKFLOW.md, agent_runner.ex, config/schema.ex, workspace.ex, orchestrator.ex, docs/logging.md, docs/token_accounting.md."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=CeOXx-XTYek",
+    "title": "Extreme Harness Engineering: 1M LOC, 1B toks/day, 0% human code or review",
+    "quality": "video-transcript",
+    "role": "Long-form Ryan Lopopolo interview evidence about harness framing, review loops, observability, and autonomy",
+    "date": "2026-04-07",
+    "notes": "Capsule CeOXx-XTYek has 15372 transcript words and 53 comments; comments are weak signal."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=am_oeAoUhew",
+    "title": "Harness Engineering: How to Build Software When Humans Steer, Agents Execute",
+    "quality": "video-transcript",
+    "role": "Ryan Lopopolo talk evidence about human steering, agent execution, and harness design",
+    "date": "2026-04-17",
+    "notes": "Capsule am_oeAoUhew has 7986 transcript words and 118 comments; comments are weak signal."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=rhsSqr0jdFw",
+    "title": "Build Hour: API & Codex",
+    "quality": "video-transcript",
+    "role": "OpenAI video evidence for Codex/API practitioner workflows",
+    "date": "2026-03-10",
+    "notes": "Capsule rhsSqr0jdFw has 11784 transcript words and 74 comments; comments are weak signal."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=OfsWo6zyt-4",
+    "title": "What OpenAI, Stripe & ElevenLabs Devs Do Differently Now",
+    "quality": "video-transcript",
+    "role": "Panel transcript evidence about agent-native workflows, review, and harness concepts",
+    "date": "2026-04-28",
+    "notes": "Capsule OfsWo6zyt-4 has 13927 transcript words and no comments captured."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Vau831dxNZ0",
+    "title": "Harness Engineering: A Disciplina Que Vai Substituir Engenharia de Software",
+    "quality": "video-limited",
+    "role": "Requested video captured with metadata and comments but no usable transcript",
+    "date": "2026-04-25",
+    "notes": "Capsule Vau831dxNZ0 has 0 transcript words and 38 comments; subtitle capture hit HTTP 429 limitation."
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=U2O14Jd3MBU",
+    "title": "Paul McMillan & Ryan Lopopolo - Code Is Free: Securing Software",
+    "quality": "video-transcript",
+    "role": "Security-focused transcript evidence about agentic code, trust, and review boundaries",
+    "date": "2026-03-25",
+    "notes": "Capsule U2O14Jd3MBU has 4294 transcript words and no comments captured."
+  },
+  {
+    "url": "https://x.com/_lopopolo?lang=en",
+    "title": "Ryan Lopopolo X profile extraction",
+    "quality": "social-signal",
+    "role": "Accessible public social posts about harness practices, Codex, Multipass, and Rust OSS AGENTS.md use",
+    "date": "2026-06-03",
+    "notes": "Headed CDP extraction saved under tmp/research-web-critical/openai-harness-engineering/x-check/; treat as social signal only."
+  },
+  {
+    "url": "https://developers.openai.com/codex/pricing/",
+    "title": "Codex Pricing",
+    "quality": "official-docs",
+    "role": "OpenAI Codex plan and usage-limit evidence for roughly USD 200/month practitioner capabilities",
+    "date": "2026-06-01",
+    "notes": "Official docs extract says Pro $200 includes 20x Plus ongoing and temporary 25x five-hour Codex limits through May 31, 2026."
+  },
+  {
+    "url": "https://developers.openai.com/codex/app/features/",
+    "title": "Codex app features",
+    "quality": "official-docs",
+    "role": "OpenAI Codex app modes, worktrees, Git tools, browser, computer use, skills, automations, and terminal evidence",
+    "date": "2026-06-01",
+    "notes": "Official docs extract used for current Codex surface map."
+  },
+  {
+    "url": "https://developers.openai.com/codex/app/worktrees/",
+    "title": "Worktrees",
+    "quality": "official-docs",
+    "role": "Codex worktree lifecycle, handoff, cleanup, and local/background task isolation",
+    "date": "2026-06-01",
+    "notes": "Used for replication guidance around worktree-per-task isolation."
+  },
+  {
+    "url": "https://developers.openai.com/codex/app/browser/",
+    "title": "In-app browser",
+    "quality": "official-docs",
+    "role": "Codex browser use, visual comments, local dev server preview, and browser trust boundaries",
+    "date": "2026-06-01",
+    "notes": "Used for browser validation and autonomy-boundary guidance."
+  },
+  {
+    "url": "https://developers.openai.com/codex/guides/agents-md/",
+    "title": "Custom instructions with AGENTS.md",
+    "quality": "official-docs",
+    "role": "AGENTS.md discovery, layering, byte limits, and verification",
+    "date": "2026-06-01",
+    "notes": "Used for repository knowledge-store and progressive-disclosure guidance."
+  },
+  {
+    "url": "https://developers.openai.com/codex/skills/",
+    "title": "Agent Skills",
+    "quality": "official-docs",
+    "role": "Skills, progressive disclosure, reusable workflows, and skill location evidence",
+    "date": "2026-06-01",
+    "notes": "Used for skill and progressive-disclosure claims."
+  },
+  {
+    "url": "https://developers.openai.com/codex/agent-approvals-security/",
+    "title": "Agent approvals & security",
+    "quality": "official-docs",
+    "role": "Sandbox, approvals, network access, and auto-review boundary evidence",
+    "date": "2026-06-01",
+    "notes": "Used for autonomy-boundary and replication safety guidance."
+  },
+  {
+    "url": "https://developers.openai.com/api/docs/guides/tools-computer-use",
+    "title": "Computer use",
+    "quality": "official-docs",
+    "role": "OpenAI API computer-use harness patterns, isolated browser/VM safeguards, and confirmation policy",
+    "date": "2026-06-01",
+    "notes": "Local extract saved as openai-computer-use.md."
+  },
+  {
+    "url": "https://claude.com/product/claude-code",
+    "title": "Claude Code by Anthropic",
+    "quality": "official-docs",
+    "role": "Anthropic Claude Code surfaces and plan inclusion evidence",
+    "date": "2026-06-03",
+    "notes": "Official web search and extracted page show desktop, terminal, IDE, web/iOS, Slack, Pro, Max 5x, and Max 20x surfaces."
+  },
+  {
+    "url": "https://claude.com/pricing/max",
+    "title": "Claude Max plan",
+    "quality": "official-docs",
+    "role": "Anthropic Max 5x and Max 20x price and capability evidence",
+    "date": "2026-06-03",
+    "notes": "Official web search result from claude.com/pricing/max showed Max 20x at USD 200/month and Claude Code included in Max."
+  }
+]
+
