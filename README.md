@@ -44,8 +44,9 @@ make validate
 
 - `.agents/skills/theme-deep-research/SKILL.md` — create or refresh a research theme.
 - `.agents/skills/source-audit/SKILL.md` — audit a theme before commit.
+- `.agents/skills/guide-book-publish/SKILL.md` — publish individual or combined guide books with embedded images and optional MOBI handoff staging.
 - `scripts/extract_theme_articles.py` — turn captured CDP `html.json` into clean article Markdown under `tmp/`.
-- `scripts/build_theme_book.py` — concatenate a theme guide and optionally build a private EPUB/PDF with pandoc.
+- `scripts/build_theme_book.py` — publish one theme, all themes, or one combined guide book as Markdown/EPUB/PDF/MOBI with copied local images.
 
 ## CDP daemon rule
 

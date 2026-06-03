@@ -1,6 +1,6 @@
 # Source Index
 
-This index ranks evidence by how directly it supports claims in the guide. Search snippets are not used as evidence. Raw rendered pages, transcripts, comments, and source snapshots remain in `tmp/` or `/home/pankaj/video-research-capsules/`.
+This index ranks evidence by how directly it supports claims in the guide. Search snippets are not used as evidence. Raw rendered pages, transcripts, comments, and source snapshots remain in `tmp/` or a local video-capsule directory outside this repository.
 
 ## Primary OpenAI Evidence
 
@@ -41,4 +41,3 @@ Transcript evidence is stronger than comment evidence. All video capsules were c
 - [OpenAI approvals and security](https://developers.openai.com/codex/agent-approvals-security/) - official docs extract fetched 2026-06-01. Used for sandbox, approval, and network-access guidance.
 - [OpenAI computer use API guide](https://developers.openai.com/api/docs/guides/tools-computer-use) - official docs extract fetched 2026-06-01. Used for custom UI harness and isolated browser/VM safety guidance.
 - [Claude Code](https://claude.com/product/claude-code) and [Claude Max](https://claude.com/pricing/max) - official Anthropic pages. Used only for high-level comparison around Claude Code surfaces and the USD 200/month Max 20x practitioner tier.
-

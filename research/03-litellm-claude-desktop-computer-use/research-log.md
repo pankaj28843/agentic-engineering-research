@@ -22,10 +22,9 @@ This theme followed a browser-grounded and skeptical workflow:
 1. Inspected local setup in redacted form:
    - `~/.claude/settings.json`
    - `~/.pi/agent/settings.json`
-   - `~/Personal/Code/litellm-proxy/README.md`
-   - `~/Personal/Code/litellm-proxy/AGENTS.md`
-   - `~/Personal/Code/litellm-proxy/litellm_config.yaml`
-   - `~/Personal/Code/litellm-proxy/patch_chatgpt_claude.py`
+   - local LiteLLM proxy README and agent instructions
+   - local LiteLLM proxy configuration
+   - local proxy patch script
 2. Confirmed the local proxy had been live during research with a liveness check returning success.
 3. Created scratch workspace:
 

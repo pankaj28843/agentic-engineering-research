@@ -115,7 +115,7 @@ These metrics tell you whether the harness is improving. If human attention per 
 Before making spend or autonomy decisions, refresh:
 
 ```bash
-cd /home/pankaj/Personal/Code/agentic-engineering-research
+cd /path/to/agentic-engineering-research
 cdp daemon status --json
 ```
 

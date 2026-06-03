@@ -44,13 +44,29 @@ The resulting `tmp/.../articles/<source>/article.md` files are scratch reading s
 
 ## Private reading builds
 
-Build a private Markdown/EPUB bundle from a theme guide with:
+Build a private Markdown/EPUB/MOBI bundle from a theme guide with:
 
 ```bash
-uv run python scripts/build_theme_book.py research/01-harness-engineering --formats markdown,epub
+uv run python scripts/build_theme_book.py research/01-harness-engineering --formats markdown,epub,mobi
 ```
 
-Outputs go under `tmp/books/` by default.
+Build every theme individually plus one combined guide book with:
+
+```bash
+uv run python scripts/build_theme_book.py --all --combined --formats markdown,epub,mobi
+```
+
+Outputs go under `tmp/books/` by default. The generated Markdown rewrites local
+guide image links to copied files under each book folder so EPUB/PDF builds can
+embed local images. For a Kindle handoff folder, explicitly provide a private
+handoff directory:
+
+```bash
+uv run python scripts/build_theme_book.py --all --combined --formats markdown,epub,mobi --copy-mobi-to "$BOOK_EXPORT_DIR"
+```
+
+Equivalent make targets are `make build-guide-books` and
+`make stage-book-exports BOOK_EXPORT_DIR="$BOOK_EXPORT_DIR"`.
 
 ## Validation
 

@@ -100,7 +100,7 @@ tmp/computer-use-sandbox/output/
 Bad mounts:
 
 ```text
-/home/pankaj/
+/home/user/
 ~/.ssh/
 ~/.config/google-chrome/
 ~/Downloads/

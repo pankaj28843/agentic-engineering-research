@@ -4,7 +4,9 @@
 
 This packet creates a new OpenAI-centered theme at `research/06-openai-harness-engineering/`. It deliberately does not edit `research/01-harness-engineering/`.
 
-The user source prompt is `/home/pankaj/prompts/agentic-engineering-research/2026-06-02T21-26-46+02-00-openai-harness-engineering-new-packet.md`. The durable PRP plan is `/home/pankaj/plan-prps/agentic-engineering-research/2026-06-02T212750-openai-harness-engineering-new-packet.md`. The grill handoff is `/home/pankaj/plan-prps/agentic-engineering-research/2026-06-02T212735-openai-harness-engineering-new-packet-grill.md`.
+The user source prompt, durable PRP plan, and grill handoff were local private
+files outside this repository. Their exact machine paths are intentionally not
+recorded in the public research packet.
 
 ## CDP And Scratch Policy
 
@@ -68,7 +70,7 @@ Durable notes:
 The `/video-research-capsule` workflow was used with `uvx yt-dlp@latest`. Capsule root:
 
 ```text
-/home/pankaj/video-research-capsules/
+local video-research-capsules directory outside this repository
 ```
 
 Captured videos:
@@ -185,4 +187,3 @@ Expected:
 
 - No output from the `research/01-harness-engineering` diff check.
 - `validate_research.py` exits 0 after the guide has at least 8 chapter files and at least 18000 guide words.
-
