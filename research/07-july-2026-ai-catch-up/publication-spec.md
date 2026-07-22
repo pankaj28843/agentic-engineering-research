@@ -164,6 +164,26 @@ filter. Local social archives are gap aids only when they contain the reporting
 window. External agents can challenge the method or propose leads but cannot
 satisfy a source requirement.
 
+## Podcast evidence handoff
+
+After publication acceptance, the dated issue may feed downstream audio only
+through the versioned `publish-ai-news-podcast-handoff/v1` evidence handoff.
+Materialization must bind `stories.json`, `sources.json`, and all 21 dated guide
+chapters by SHA-256; preserve guide order, daily briefs, caveats, discussion
+notes, and typed zero-story gaps; join every canonical source record exactly;
+and emit complete seven-day unions anchored to July 1. Missing or unused source
+records, missing dates, unplaceable stories, and inferred timestamps fail the
+handoff rather than being repaired downstream.
+
+The current handoff was frozen at `2026-07-22T15:16:59Z` with SHA-256
+`2ade3b81aaf3f2387101bd03bf0fdf3de285a7468cbcf0cf77f6f44bd07e4d6d`.
+It contains 21 days, 56 stories, 101 canonical sources, 102 story-source
+references, 43 HN references, three complete weekly unions, and the explicit
+July 10 zero-story gap. The run-requested time was not observed and remains
+typed as unobserved. This post-publication transfer does not revise the frozen
+editorial rubric and does not define script, cast, TTS, audio, RSS, filename, or
+human-review policy.
+
 ## A4 design brief
 
 The design is a quiet, high-density broadsheet for practitioners. Date, delta,

@@ -21,7 +21,16 @@ the original evidence and substantive practitioner discussion.
 - [Research log](research-log.md) - headed-CDP discovery and extraction audit.
 - [Machine-readable sources](sources.json) - canonical source metadata.
 - [Story ledger](stories.json) - scored placements, confidence, dates, and
-  source relationships for all 55 published items.
+  source relationships for all 56 published items.
+
+## Podcast evidence handoff
+
+The validated packet was materialized at `2026-07-22T15:16:59Z` to
+`tmp/podcast-handoffs/july-2026-ai-catch-up/podcast-handoff.json`. Its SHA-256 is
+`2ade3b81aaf3f2387101bd03bf0fdf3de285a7468cbcf0cf77f6f44bd07e4d6d`.
+The generated scratch JSON binds all 21 dated chapters, 56 stories, 101
+canonical source records, and 102 story-source references; the exact command
+and validation counts are preserved in [the research log](research-log.md).
 
 ## Scope
 

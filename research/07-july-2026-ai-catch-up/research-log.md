@@ -231,3 +231,33 @@ descriptive inline source links, labels vendor claims and counter-evidence,
 documents query batches, two-page SERP depth, headed extraction, HN use, and
 limitations, and keeps generated article snapshots under `tmp/`. No unattended
 daemon lifecycle command appears in the packet.
+
+## Podcast evidence handoff
+
+After the packet was final, the deterministic podcast evidence materializer ran
+with an observed freeze marker and no inferred request timestamp:
+
+```bash
+python3 .agents/skills/publish-ai-news/scripts/materialize_podcast_handoff.py \
+  research/07-july-2026-ai-catch-up \
+  --from 2026-07-01 \
+  --to 2026-07-21 \
+  --packet-frozen-at 2026-07-22T15:16:59Z \
+  --output tmp/podcast-handoffs/july-2026-ai-catch-up/podcast-handoff.json
+```
+
+The command wrote 241,620 bytes with SHA-256
+`2ade3b81aaf3f2387101bd03bf0fdf3de285a7468cbcf0cf77f6f44bd07e4d6d`.
+The payload binds 21 dated chapters, 56 guide-ordered stories, 101 canonical
+source records, 102 story-source references, and 43 canonical HN references.
+The joins have no missing or unused source URL. It emits three complete weekly
+unions (20, 14, and 22 stories) and preserves July 10 as the sole typed
+zero-story date. The July 14 guide binding is
+`a88b0fa543ad17c1a544ea5db0cc00413efd86747b4b22c92f76689294c0f229`;
+the story and source ledger bindings are
+`1fa983b6c9bb078b6ff66690f502bf525ebf0b678dd10d285a14e10000326696`
+and `cf16a1b5ea6cae0bb9d99b0146d824d639a2220f7c859155835aed0ae7f6981b`.
+
+The handoff remains generated scratch state under `tmp/`. Downstream audio
+production must retain its hash and owns synthesis, cast, TTS, audio processing,
+RSS publication, naming, and human listening approval.
