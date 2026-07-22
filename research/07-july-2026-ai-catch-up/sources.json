@@ -806,5 +806,117 @@
     "role": "Practitioner discussion of evaluation isolation, egress, reward hacking, marketing incentives, and comparable agent escape behavior",
     "date": "2026-07-21",
     "notes": "Discussion evidence only; DI 3; inspected during the completed-day refresh after 365 points and 221 comments were visible."
+  },
+  {
+    "url": "https://blog.postman.com/apiflow-bench/",
+    "title": "APIFlow-Bench",
+    "quality": "primary-vendor-benchmark",
+    "role": "Primary benchmark report for task construction, long-chain results, failure analysis, and stated limitations",
+    "date": "2026-07-22",
+    "notes": "Confidence B for the released measurements and C for generalization; REST-only, 13 worlds, eleven full 20-step chains, and generated tasks screened with Opus 4.8 as solvability oracle."
+  },
+  {
+    "url": "https://github.com/postmanlabs/apiflow-bench-transcripts",
+    "title": "APIFlow-Bench transcripts",
+    "quality": "primary-benchmark-data",
+    "role": "Inspectable repository containing the trial transcripts behind the APIFlow-Bench report",
+    "date": "2026-07-22",
+    "notes": "The repository exposes 44,362 transcripts; 3 cells in the intended model-task-repeat grid were not scored."
+  },
+  {
+    "url": "https://openai.com/index/introducing-openai-presence/",
+    "title": "Introducing OpenAI Presence",
+    "quality": "primary-vendor-release",
+    "role": "Primary product evidence for Presence availability, system components, operating model, and OpenAI's internal support results",
+    "date": "2026-07-22",
+    "notes": "Confidence C; limited general availability and performance claims are first-party and not independently verified."
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=49008089",
+    "title": "HN discussion: OpenAI Presence",
+    "quality": "community-discussion",
+    "role": "Practitioner concerns about domain depth, consulting-led deployment, ownership, and vendor lock-in",
+    "date": "2026-07-22",
+    "notes": "Discussion evidence only; DI 2; exact thread timestamp 2026-07-22T15:12:26Z."
+  },
+  {
+    "url": "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+    "title": "The Microsoft Agent Framework Harness is now released",
+    "quality": "primary-framework-release",
+    "role": "Primary release evidence for the stable Python and .NET harness and its default runtime features",
+    "date": "2026-07-22",
+    "notes": "Confidence B for the released interface; production-readiness language remains Microsoft's characterization."
+  },
+  {
+    "url": "https://learn.microsoft.com/agent-framework/agents/harness",
+    "title": "Microsoft Agent Framework harness documentation",
+    "quality": "primary-technical-documentation",
+    "role": "Detailed feature and configuration contract for persistence, configurable compaction, planning, approvals, file memory, skills, background agents, and shell access",
+    "date": "2026-07-22",
+    "notes": "Mutable documentation captured through headed CDP; opt-in or unreleased providers and alpha-stage shell tooling require separate policy decisions, and the shell deny-list is not a security boundary."
+  },
+  {
+    "url": "https://cruciblebench.ai/",
+    "title": "CrucibleBench",
+    "quality": "primary-practitioner-benchmark",
+    "role": "Primary proof-of-concept report for the persistent-world evaluation, judge ablation, and ranking-instability result",
+    "date": "2026-07-22",
+    "notes": "Confidence B for reported measurements; model rankings are exploratory, confidence intervals overlap, and there is no human-rater baseline."
+  },
+  {
+    "url": "https://doi.org/10.5281/zenodo.21386663",
+    "title": "Can a MUD Evaluate LLMs?",
+    "quality": "primary-benchmark-data",
+    "role": "Public paper, transcripts, source code, scoring logic, analysis scripts, and billing export for CrucibleBench",
+    "date": "2026-07-22",
+    "notes": "Zenodo metadata lists a July 15 publication date but a July 22 record creation and modification; the July 22 public launch is anchored by HN."
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=49008538",
+    "title": "HN discussion: CrucibleBench",
+    "quality": "community-technical-discussion",
+    "role": "Author framing of judge instability and limitations plus commenter questions about prompts, turn limits, and token cost",
+    "date": "2026-07-22",
+    "notes": "Discussion evidence only; DI 2; exact thread timestamp 2026-07-22T15:39:01Z."
+  },
+  {
+    "url": "https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus",
+    "title": "AMD and Anthropic announce strategic partnership",
+    "quality": "primary-vendor-announcement",
+    "role": "Primary terms for the planned accelerator capacity, engineering collaboration, and future equity investment",
+    "date": "2026-07-22",
+    "notes": "Confidence C; the gigawatt deployments and up-to-$5-billion equity investment are future commitments rather than delivered capacity."
+  },
+  {
+    "url": "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56",
+    "title": "Terence Tao's ChatGPT conversation about the Jacobian conjecture counterexample",
+    "quality": "primary-conversation-artifact",
+    "role": "Inspectable shared session showing expert-directed representation changes, decomposition, calculations, and verification",
+    "date": "2026-07-22",
+    "notes": "Confidence C for interpretation; the artifact demonstrates a human-guided workflow and does not establish autonomous proof discovery."
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=49010345",
+    "title": "HN discussion: Terence Tao's ChatGPT conversation",
+    "quality": "community-technical-discussion",
+    "role": "Practitioner interpretation of expert steering, verification, mathematical tooling, and the limits of autonomous-discovery framing",
+    "date": "2026-07-22",
+    "notes": "Discussion evidence only; DI 2; inspected after 260 points and 125 comments were visible."
+  },
+  {
+    "url": "https://github.com/marcelroed/gigatoken",
+    "title": "GigaToken",
+    "quality": "primary-open-source-code",
+    "role": "Open-source implementation, benchmarks, optimization notes, compatibility modes, and documented limitations for CPU tokenization",
+    "date": "2026-07-22",
+    "notes": "Confidence C for broad speed claims because benchmarks are project-authored; repository validation compares outputs on the stated data and hardware."
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=49010167",
+    "title": "HN discussion: GigaToken",
+    "quality": "community-technical-discussion",
+    "role": "Practitioner discussion of SIMD and cache techniques, inference-time limits, and training, routing, and rate-limiting uses",
+    "date": "2026-07-22",
+    "notes": "Discussion evidence only; DI 2; inspected after 151 points and 27 comments were visible."
   }
 ]

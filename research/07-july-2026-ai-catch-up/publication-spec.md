@@ -1,11 +1,13 @@
 # Publication Specification
 
-Status: frozen before phase-two reporting on 21 July 2026.
+Status: rubric frozen before phase-two reporting on 21 July 2026 and reused
+unchanged for the partial 22 July delta.
 
 ## Reader contract
 
-The reader is an AI-engineering practitioner returning after missing 1-21 July
-2026. The edition supports a 10-15 minute scan of the period map, date headings,
+The reader is an AI-engineering practitioner returning after missing 1-22 July
+2026, with July 22 explicitly partial at its evidence cutoff. The edition
+supports a 10-15 minute scan of the period map, date headings,
 daily briefs, and builder-impact lines, followed by a 45-75 minute evidence-led
 catch-up through item prose and deep links.
 
@@ -168,19 +170,19 @@ satisfy a source requirement.
 
 After publication acceptance, the dated issue may feed downstream audio only
 through the versioned `publish-ai-news-podcast-handoff/v1` evidence handoff.
-Materialization must bind `stories.json`, `sources.json`, and all 21 dated guide
+Materialization must bind `stories.json`, `sources.json`, and all 22 dated guide
 chapters by SHA-256; preserve guide order, daily briefs, caveats, discussion
 notes, and typed zero-story gaps; join every canonical source record exactly;
 and emit complete seven-day unions anchored to July 1. Missing or unused source
 records, missing dates, unplaceable stories, and inferred timestamps fail the
 handoff rather than being repaired downstream.
 
-The current handoff was frozen at `2026-07-22T15:16:59Z` with SHA-256
-`2ade3b81aaf3f2387101bd03bf0fdf3de285a7468cbcf0cf77f6f44bd07e4d6d`.
-It contains 21 days, 56 stories, 101 canonical sources, 102 story-source
-references, 43 HN references, three complete weekly unions, and the explicit
-July 10 zero-story gap. The run-requested time was not observed and remains
-typed as unobserved. This post-publication transfer does not revise the frozen
+The current handoff was frozen at `2026-07-22T20:02:57Z` with SHA-256
+`e12ae7410174ec9177da9d69a8d350cb20d2e0b6948b5bad11ed614d222ac616`.
+It contains 22 days, 63 stories, 115 canonical sources, 116 story-source
+references, 47 HN references, three complete weekly unions, and the explicit
+July 10 zero-story gap. The observed run-requested time is
+`2026-07-22T19:11:22Z`. This post-publication transfer does not revise the frozen
 editorial rubric and does not define script, cast, TTS, audio, RSS, filename, or
 human-review policy.
 

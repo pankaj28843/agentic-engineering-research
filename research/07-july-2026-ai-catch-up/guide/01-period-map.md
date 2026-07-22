@@ -7,14 +7,17 @@ ways. Use these arcs to choose where to enter the chronology.
 
 OpenAI found roughly 30% of SWE-Bench Pro public broken; Databricks showed that
 private tasks, harness choice, and cost per solved task can reverse a buying
-decision. Follow [2 July](03-2026-07-02.md) to [8 July](09-2026-07-08.md).
+decision. APIFlow-Bench later showed agents completing the workspace work but
+losing the correct final answer, while CrucibleBench showed one judge component
+moving rankings by six places. Follow [2 July](03-2026-07-02.md),
+[8 July](09-2026-07-08.md), and [22 July](23-2026-07-22.md).
 
 ### The harness became part of the model
 
 Token anomalies, schema failures, hidden context overhead, question timeouts,
 and context-allocation metadata changed outcomes without new model weights. By
-[18 July](19-2026-07-18.md), the useful unit was model plus harness, policy,
-and telemetry.
+[22 July](23-2026-07-22.md), Microsoft's released harness made the useful unit
+explicit: model plus persistence, policy, context control, and telemetry.
 
 ### Agent scale exposed coordination costs
 
@@ -44,6 +47,6 @@ security models, and mixed-model swarms pointed toward cost per accepted result,
 including review and recovery. Read [12 July](13-2026-07-12.md) and
 [21 July](22-2026-07-21.md).
 
-**Fastest reading route:** read 8, 14, 16, 17, 20, and 21 July, then use
+**Fastest reading route:** read 8, 14, 16, 17, 20, and 22 July, then use
 [What to Carry Forward](24-what-to-carry-forward.md) to turn the reporting into
 an operating checklist.

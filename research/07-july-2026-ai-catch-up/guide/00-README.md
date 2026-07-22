@@ -1,4 +1,4 @@
-# The First Three Weeks of July 2026
+# The First 22 Days of July 2026
 
 ## An evidence-led AI engineering catch-up
 
@@ -54,6 +54,7 @@ material delta is documented.
 - [19 July](20-2026-07-19.md)
 - [20 July](21-2026-07-20.md)
 - [21 July](22-2026-07-21.md)
+- [22 July](23-2026-07-22.md)
 - [How This Edition Was Built](23-methodology.md)
 - [What to Carry Forward](24-what-to-carry-forward.md)
 

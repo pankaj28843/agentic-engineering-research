@@ -24,10 +24,35 @@ and visual review without weakening their individual contracts.
 | Direct trigger: "Publish last week's agentic engineering news" | Resolve the last completed ISO week, research it, and publish a dated issue. |
 | Direct trigger: "Make a July 1-21 AI catch-up newspaper" | Use the explicit inclusive range and create one chapter per date. |
 | Direct trigger: "Produce yesterday's LLM engineering daily" | Resolve the previous completed local day and publish one dated chapter. |
+| Direct trigger: "Produce the next daily news podcast" | Use the routine daily podcast delta below, then hand the frozen evidence to the audio Forge. |
 | Non-trigger: "Research whether GraphRAG works" | Use `/research-web-critical`; no periodical or PDF is implied. |
 | Non-trigger: "Turn this finished Markdown into PDF" | Use `/book-publish`; do not repeat research. |
 | Misuse: "Use snippets so it is faster" | Refuse snippet-only evidence; snippets remain discovery leads. |
 | Forbidden: "Start or repair Chrome automatically" | Stop and ask the human; do not run restricted daemon lifecycle commands. |
+
+## Routine Daily Podcast Delta
+
+A terse request for the next daily news podcast is sufficient when an existing
+dated packet, frozen publication rubric, predecessor handoff, and Forge feed
+exist. Treat it as a one-day evidence refresh and downstream handoff, not a new
+format-design project:
+
+1. Start after the predecessor episode's bound evidence cutoff, never its RSS
+   `pubDate`, filename date, or a reconstructed timezone boundary. Extend the
+   current packet through one new day, or through the current partial day when
+   explicitly requested, and record the observed cutoff in research metadata.
+2. Reuse the frozen rubric and publication contract. Run only the research
+   methods the user authorizes. When restricted to `/research-web-critical` and
+   `/search-hn`, do not invoke `/ask-agents`, social, video, PDF, book, or other
+   discovery workflows; local agents may still perform mechanical review.
+3. Validate the extended packet, materialize a fresh deterministic handoff with
+   its exact hash, then pass that artifact to the audio Forge for script, TTS,
+   audio, RSS publication, and headed live-feed verification.
+4. Listener prose must tell the supported story. Omit timezone or date-boundary
+   reconciliation, retrieval/parsing/access/visibility failures, and
+   evidence/packet/source-processing narration. If an original source is
+   unavailable but an HN discussion supports a useful point, attribute and tell
+   that point without narrating the missing source or production process.
 
 ## Required Inputs
 

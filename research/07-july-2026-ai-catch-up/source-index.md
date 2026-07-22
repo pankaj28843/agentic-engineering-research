@@ -1,8 +1,8 @@
 # Source Index
 
-This catalog lists all 101 canonical URLs used by the edition. The
+This catalog lists all 115 canonical URLs used by the edition. The
 date is the source artifact date retained in the evidence ledger; contextual
-sources may therefore precede the 1-21 July reporting window. Quality labels
+sources may therefore precede the 1-22 July reporting window. Quality labels
 describe evidence role, not truth, and every vendor or practitioner claim is
 bounded again in the dated chapter that relies on it.
 
@@ -19,50 +19,13 @@ bounded again in the dated chapter that relies on it.
 
 ## Mix at a glance
 
-- `community-discussion`: 30
-- `primary-vendor-release`: 10
-- `community-technical-discussion`: 8
-- `primary-open-source-code`: 4
-- `primary-practitioner-report`: 4
-- `practitioner-analysis`: 2
-- `primary-practitioner-benchmark`: 2
-- `primary-practitioner-reproduction`: 2
-- `primary-research-paper`: 2
-- `attributable-social-claim`: 1
-- `community-discussion-correction`: 1
-- `community-discussion-with-practitioner-report`: 1
-- `community-inspectable-correction`: 1
-- `inaccessible-primary`: 1
-- `independent-practitioner-reproduction`: 1
-- `independent-production-measurement`: 1
-- `independent-trade-report`: 1
-- `primary-authoritative-correction`: 1
-- `primary-benchmark`: 1
-- `primary-distributor-release`: 1
-- `primary-incident-report`: 1
-- `primary-open-source-change`: 1
-- `primary-operational-evaluation`: 1
-- `primary-operational-security-report`: 1
-- `primary-practitioner-analysis`: 1
-- `primary-practitioner-case-study`: 1
-- `primary-practitioner-claim`: 1
-- `primary-practitioner-data`: 1
-- `primary-practitioner-measurement`: 1
-- `primary-security-disclosure`: 1
-- `primary-security-trace`: 1
-- `primary-sponsored-report`: 1
-- `primary-user-issue`: 1
-- `primary-vendor-announcement`: 1
-- `primary-vendor-demonstration`: 1
-- `primary-vendor-experiment`: 1
-- `primary-vendor-policy`: 1
-- `primary-vendor-report`: 1
-- `primary-vendor-research`: 1
-- `secondary-practitioner-critique`: 1
-- `secondary-report`: 1
-- `secondary-research-report`: 1
-- `secondary-technical-report`: 1
-- `secondary-wire-report`: 1
+- Primary sources and data: 57
+- Community discussion: 46
+- Independent sources: 3
+- Practitioner analysis: 2
+- Secondary reporting: 5
+- Attributable social evidence: 1
+- Inaccessible primary evidence: 1
 
 ## 2026-05-19 (context before the reporting window)
 
@@ -338,5 +301,37 @@ bounded again in the dated chapter that relies on it.
   **Limits:** Discussion evidence only; DI 2; exact thread timestamp 2026-07-21T08:44:23Z.
 - [OpenAI and Hugging Face partner to address security incident during model evaluation](https://openai.com/index/hugging-face-model-evaluation-security-incident/) - `primary-incident-report`. Primary evidence identifying the evaluated models, sandbox escape, package-cache zero-day, Hugging Face breach path, and remediation.
   **Limits:** Confidence C; OpenAI and Hugging Face are direct incident participants, but the investigation is preliminary and the vulnerabilities and model behavior were not independently reproduced.
+
 - [Qwen-Image-3.0](https://qwen.ai/blog?id=qwen-image-3.0) - `primary-vendor-demonstration`. Primary launch demonstration for long instructions, dense layouts, small text, languages, styles, and connected retrieval.
   **Limits:** Confidence C; rendered page did not establish weights, license, pricing, or independent benchmarks.
+
+## 2026-07-22
+
+- [APIFlow-Bench](https://blog.postman.com/apiflow-bench/) - `primary-vendor-benchmark`. Primary evidence for the task bank, long-chain results, and failure analysis.
+  **Limits:** Confidence B for the measurements and C for generalization; the tasks are generated, REST-only, span 13 worlds, and the full-chain result covers eleven 20-step chains. Claude Opus 4.8 served as the solvability oracle.
+- [APIFlow-Bench transcripts](https://github.com/postmanlabs/apiflow-bench-transcripts) - `primary-benchmark-data`. Inspectable trial transcripts behind the reported results.
+  **Limits:** The repository exposes 44,362 transcripts; 3 intended grid cells were not scored.
+- [Introducing OpenAI Presence](https://openai.com/index/introducing-openai-presence/) - `primary-vendor-release`. Product evidence for limited availability, policies, evaluation, escalation, and claimed support outcomes.
+  **Limits:** Confidence C; OpenAI's operational results were not independently verified.
+- [HN discussion: OpenAI Presence](https://news.ycombinator.com/item?id=49008089) - `community-discussion`. Practitioner concerns about domain depth, consulting-led deployment, ownership, and lock-in.
+  **Limits:** Discussion evidence only; DI 2; exact timestamp 2026-07-22T15:12:26Z.
+- [Microsoft Agent Framework Harness release](https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/) - `primary-framework-release`. Release evidence for the stable Python and .NET harness and its default runtime features.
+  **Limits:** Confidence B for the interface; production-readiness language is Microsoft's characterization.
+- [Microsoft harness documentation](https://learn.microsoft.com/agent-framework/agents/harness) - `primary-technical-documentation`. Detailed contract for persistence, compaction, planning, approvals, skills, background agents, and shell access.
+  **Limits:** Mutable documentation; compaction is configurable, file-backed memory can be disabled, skills are optional, and background/file/loop/shell tools are opt-in or unreleased. The shell deny-list is not a security boundary.
+- [CrucibleBench](https://cruciblebench.ai/) - `primary-practitioner-benchmark`. Proof-of-concept report for the persistent-world evaluation and judge-ablation result.
+  **Limits:** Confidence B for measurements; rankings are exploratory and lack a human-rater baseline.
+- [Can a MUD Evaluate LLMs?](https://doi.org/10.5281/zenodo.21386663) - `primary-benchmark-data`. Paper, transcripts, code, scoring logic, analysis, and billing record.
+  **Limits:** The record's July 22 creation and HN launch anchor this edition despite an earlier publication field.
+- [HN discussion: CrucibleBench](https://news.ycombinator.com/item?id=49008538) - `community-technical-discussion`. Discussion of evaluation cost, prompt sensitivity, token budgets, and artifact transparency.
+  **Limits:** Discussion evidence only; the author supplied framing while commenters questioned cost, judge choice, token budgets, and prompt sensitivity. DI 2; exact timestamp 2026-07-22T15:39:01Z.
+- [AMD and Anthropic strategic partnership](https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus) - `primary-vendor-announcement`. Terms for planned capacity, engineering collaboration, and future equity investment.
+  **Limits:** Confidence C; capacity and the up-to-$5-billion investment are commitments, not completed deployments.
+- [Terence Tao's ChatGPT conversation](https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56) - `primary-conversation-artifact`. Inspectable expert-directed representation changes, decomposition, calculations, and verification.
+  **Limits:** Confidence C for interpretation; this is a human-guided workflow, not evidence of autonomous proof discovery.
+- [HN discussion: Terence Tao's ChatGPT conversation](https://news.ycombinator.com/item?id=49010345) - `community-technical-discussion`. Practitioner interpretation of expert steering, verification, mathematical tooling, and autonomous-discovery claims.
+  **Limits:** Discussion evidence only; DI 2; inspected after 260 points and 125 comments were visible.
+- [GigaToken](https://github.com/marcelroed/gigatoken) - `primary-open-source-code`. Implementation, benchmarks, optimization notes, compatibility modes, and known limitations for CPU tokenization.
+  **Limits:** Confidence C for broad speed claims because the benchmarks are project-authored; the repository validates outputs for the stated data and hardware.
+- [HN discussion: GigaToken](https://news.ycombinator.com/item?id=49010167) - `community-technical-discussion`. Practitioner discussion of SIMD and cache techniques, inference-time limits, and training, routing, and rate-limiting uses.
+  **Limits:** Discussion evidence only; DI 2; inspected after 151 points and 27 comments were visible.

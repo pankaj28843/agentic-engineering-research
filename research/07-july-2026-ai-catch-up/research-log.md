@@ -3,10 +3,9 @@
 ## Scope and evidence cutoff
 
 This packet reconstructs AI, LLM, and agentic-engineering developments from 1
-through 21 July 2026 in Europe/Copenhagen. It uses a calendar-day ledger with
-exclusive UTC boundaries rather than treating a search engine's displayed date
-as the event date. The final retrieval cutoff is recorded after the 21 July
-refresh; earlier captures preserve their own timestamps under `tmp/`.
+July through a partial 22 July 2026 edition in Europe/Copenhagen. The partial
+edition's evidence cutoff is `2026-07-22T21:44:10+02:00`; earlier captures
+preserve their own timestamps under `tmp/`.
 
 The reporting method and page design were frozen before full discovery. The
 durable contracts are [publication-spec.md](publication-spec.md) and
@@ -112,6 +111,20 @@ publication artifacts without timezones. Those conditions cause explicit
 missing states, qualified wording, demotion, or rejection rather than invented
 precision. The later lanes retain the same adjudication rules.
 
+## July 22 routine delta
+
+The partial July 22 extension reused the frozen publication rubric and used
+only the `research-web-critical` and `search-hn` workflows. Headed Google
+discovery covered 15 exact-date query families over 30 rendered result pages.
+The first broad batch produced 168 candidates; a second targeted batch checked
+six narrower query families. Twenty selected original or canonical HN pages
+were extracted with no workflow failures or warnings. Seven stories survived
+the evidence and relevance gates.
+
+No Ask Agents, social archive, video, PDF, book, or planning workflow supplied
+research for this delta. Local subagents performed source-trace and editorial
+checks against the same extracted evidence; they did not add external claims.
+
 ## Tool gaps repaired
 
 The publication reproduced three reusable tool gaps and paused research to
@@ -190,33 +203,40 @@ discovery-only posts cannot prove a broader event.
 
 ## Final audit record
 
-The 22 July completion pass produced the following evidence:
+The 22 July completion pass and partial-day extension produced the following
+evidence:
 
-- Discovery: 32 accepted exact-date Google queries, 64 rendered result pages,
-  486 candidates, and 21 canonical daily HN archives, plus a completed-day HN
-  refresh. The Google workflows reported no failures or warnings.
-- Selection: 56 stories across all 21 dates: 14 leads, 35 secondaries, and 7
+- Discovery: the completed 1-21 July edition used 32 accepted exact-date Google
+  queries, 64 rendered result pages, 486 candidates, and 21 canonical daily HN
+  archives. The July 22 delta added the 15-query, 30-page headed discovery and
+  canonical HN inspection recorded above. The workflows reported no failures
+  or warnings.
+- Selection: 63 stories across all 22 dates: 15 leads, 38 secondaries, and 10
   radar items. The issue validator reported zero editorial errors; July 10
   remains an evidence-bounded quiet day with no manufactured lead.
-- Sources: 101 canonical URLs and 102 story references. The 101 unique story
-  references cover the full catalog; the earlier Hugging Face incident source
-  is intentionally reused by its July 21 continuation. The source-family mix is
-  47 primary, 42 community, 3 independent, 2 practitioner, 5 secondary, 1
+- Sources: 115 canonical URLs and 116 story references. The 115 unique story
+  URLs cover the full catalog; the earlier Hugging Face incident source is
+  intentionally reused by its July 21 continuation. The source-family mix is
+  57 primary, 46 community, 3 independent, 2 practitioner, 5 secondary, 1
   attributable social, and 1 inaccessible primary. No Google wrapper or
   tracking URL remains.
-- Extraction: 98 clean snapshots, 3 documented missing captures, and 2
-  under-80-word GitHub warnings. Normalized article content totals 114,659
-  words; generated Markdown totals 120,403 `wc -w` tokens.
-- Print geometry: the period map is one A4 page. All 21 independent daily PDFs
+- Extraction: the original 21-day edition retained 98 clean snapshots, 3
+  documented missing captures, and 2 under-80-word GitHub warnings. The July 22
+  delta added 20 selected or follow-up headed page captures. Its pages were not
+  rerun through the article post-processor.
+- Print geometry: the previously accepted period map is one A4 page. All 21
+  previously rendered independent daily PDFs
   passed required-text and 1-2-page validation: 12 one-page chapters and 9
   two-page chapters, 30 pages total. The centered 166 mm body measure is about
   41% wider than the original 118 mm column.
-- Assembled publication: 55 A4 pages, PDF 1.7, required opening/date/closing
+- Assembled publication: the previously accepted 1-21 July book is 55 A4 pages,
+  PDF 1.7, with required opening/date/closing
   text present, each dated chapter heading exactly once and in chronological
-  order, and all 101 canonical URLs present as link annotations. The only extra
+  order, and all 101 then-canonical URLs present as link annotations. The only extra
   external link is the general Hacker News archive; other extras are internal
-  table-of-contents links.
-- Visual audit: 160 dpi rasters and progressive visual-reasoning artifacts
+  table-of-contents links. The partial July 22 chapter was not added to or
+  rerendered in that print artifact during this routine audio delta.
+- Visual audit: the prior 160 dpi rasters and progressive visual-reasoning artifacts
   covered 10 representative book pages with no processing failures: the cover,
   one-page map, quiet July 10 fixture, both July 15 and July 21 pages, and the
   start, middle, and end of the closing guide. Mechanical validation checked all
@@ -226,7 +246,7 @@ The 22 July completion pass produced the following evidence:
   risk but does not replace a semantic tag tree.
 
 Source audit note: `uv run python scripts/validate_research.py` passed all seven
-themes. The guide contains 25 numbered Markdown files and 18,104 words, uses
+themes after the partial July 22 extension. The guide uses
 descriptive inline source links, labels vendor claims and counter-evidence,
 documents query batches, two-page SERP depth, headed extraction, HN use, and
 limitations, and keeps generated article snapshots under `tmp/`. No unattended
@@ -234,29 +254,30 @@ daemon lifecycle command appears in the packet.
 
 ## Podcast evidence handoff
 
-After the packet was final, the deterministic podcast evidence materializer ran
-with an observed freeze marker and no inferred request timestamp:
+After the extended packet passed validation, the deterministic podcast evidence
+materializer ran with observed request and freeze timestamps:
 
 ```bash
 python3 .agents/skills/publish-ai-news/scripts/materialize_podcast_handoff.py \
   research/07-july-2026-ai-catch-up \
   --from 2026-07-01 \
-  --to 2026-07-21 \
-  --packet-frozen-at 2026-07-22T15:16:59Z \
-  --output tmp/podcast-handoffs/july-2026-ai-catch-up/podcast-handoff.json
+  --to 2026-07-22 \
+  --packet-frozen-at 2026-07-22T22:02:57+02:00 \
+  --run-requested-at 2026-07-22T21:11:22+02:00 \
+  --output tmp/podcast-handoffs/july-2026-through-2026-07-22/podcast-handoff.json
 ```
 
-The command wrote 241,620 bytes with SHA-256
-`2ade3b81aaf3f2387101bd03bf0fdf3de285a7468cbcf0cf77f6f44bd07e4d6d`.
-The payload binds 21 dated chapters, 56 guide-ordered stories, 101 canonical
-source records, 102 story-source references, and 43 canonical HN references.
+The command wrote 268,750 bytes with SHA-256
+`e12ae7410174ec9177da9d69a8d350cb20d2e0b6948b5bad11ed614d222ac616`.
+The payload binds 22 dated chapters, 63 guide-ordered stories, 115 canonical
+source records, 116 story-source references, and 47 canonical HN references.
 The joins have no missing or unused source URL. It emits three complete weekly
-unions (20, 14, and 22 stories) and preserves July 10 as the sole typed
-zero-story date. The July 14 guide binding is
-`a88b0fa543ad17c1a544ea5db0cc00413efd86747b4b22c92f76689294c0f229`;
+unions and preserves July 10 as the sole typed zero-story date. The July 22
+guide binding is
+`ee844edc7048bed8314baa96d13c395738b80d0a6bb95b83ef2279cfe720d614`;
 the story and source ledger bindings are
-`1fa983b6c9bb078b6ff66690f502bf525ebf0b678dd10d285a14e10000326696`
-and `cf16a1b5ea6cae0bb9d99b0146d824d639a2220f7c859155835aed0ae7f6981b`.
+`a48a600ed23b218dc04f30f7cb7fc95e29dcf6ad6311ac5169a8c021442ee534`
+and `e2f26865dbfbbc3a6e94bae86b2ec123f8329831b34d5e8836021ce4e5deba09`.
 
 The handoff remains generated scratch state under `tmp/`. Downstream audio
 production must retain its hash and owns synthesis, cast, TTS, audio processing,

@@ -2,7 +2,7 @@
 
 ## Executive judgment
 
-The first three weeks of July 2026 did not justify replacing an engineering
+The first 22 days of July 2026 did not justify replacing an engineering
 strategy with whichever model launched last. They did justify changing the unit
 of analysis. Model quality, harness behavior, evaluation design, security
 boundaries, and cost now interact strongly enough that a model-only comparison
@@ -13,14 +13,20 @@ Five conclusions have the strongest support:
 1. **Private, reviewed evaluation is now a procurement control.** OpenAI's
    audit found roughly 30% of SWE-Bench Pro public broken and retracted its
    earlier recommendation, while Databricks showed that a private codebase,
-   harness choice, and per-task cost can change the apparent winner. Read the
-   [8 July evidence](guide/09-2026-07-08.md).
+   harness choice, and per-task cost can change the apparent winner. APIFlow-
+   Bench then showed that an agent can reach the correct external state yet
+   report the wrong final answer, while CrucibleBench showed rankings moving
+   with judge choice. Read the [8 July](guide/09-2026-07-08.md) and
+   [22 July](guide/23-2026-07-22.md) evidence.
 2. **The harness is part of system behavior.** Token-length anomalies, strict
    tool-schema failures, context overhead, question timeouts, and usable-context
    metadata changed outcomes independently of a headline model release. The
    evidence is spread across [4 July](guide/05-2026-07-04.md),
    [12 July](guide/13-2026-07-12.md), [17 July](guide/18-2026-07-17.md), and
-   [18 July](guide/19-2026-07-18.md).
+   [18 July](guide/19-2026-07-18.md), and
+   [22 July](guide/23-2026-07-22.md). Microsoft's released Agent Framework
+   harness made persistence, compaction, planning, approvals, and optional
+   execution tools explicit product choices rather than invisible plumbing.
 3. **Human control surfaces are security boundaries.** An AI-assisted audit
    produced seven fixed cryptographic bugs, but an autonomous-agent intrusion
    and a timed-out clarification prompt showed the opposite side: credential
@@ -133,19 +139,20 @@ comparison is a workload architecture, not a leaderboard row.
 
 ## Confidence and limits
 
-The edition assigns confidence separately from relevance. Fourteen items clear
+The edition assigns confidence separately from relevance. Fifteen items clear
 the lead threshold, but several high-consequence releases remain confidence C
 because the only performance evidence is vendor-generated. Confidence D is
 reserved for the Reuters Alibaba report and the inaccessible Anthropic
 export-control announcement, whose claims are carefully attributed rather than
 promoted into established fact.
 
-The evidence base contains 101 canonical sources and 98 clean article snapshots.
-Three URLs lacked compatible `html.json` captures: an access-gated Anthropic X
-post, an unselected secondary context article, and an attributable social post.
-Two GitHub article extractions were shorter than the 80-word warning threshold;
-their complete headed page captures remain available under `tmp/`. Hacker News
-provides 43 cataloged discussion records, which is useful for
+The evidence base contains 115 canonical sources. The original 21-day print
+edition produced 98 clean article snapshots; the partial July 22 delta added 14
+selected headed page captures without rerunning that post-processing step.
+Three earlier URLs lacked compatible `html.json` captures, and two earlier
+GitHub extractions were shorter than the 80-word warning threshold. Their
+headed page evidence remains available under `tmp/`. Hacker News provides 47
+cataloged discussion records, which is useful for
 counterarguments but not representative of all engineering communities.
 
 A completed-day refresh began at `2026-07-22T00:00:12+02:00`. One exact-date
@@ -155,6 +162,13 @@ material continuation. Headed extraction of OpenAI's incident account and its
 HN discussion added the sandbox-escape mechanism to the final chapter. Google
 custom-date pages, result counts, HN points, and external-agent answers remain
 discovery evidence only and never support an item-level claim.
+
+The partial July 22 delta used only the `research-web-critical` and `search-hn`
+workflows. Fifteen exact-date Google query families produced 30 rendered result
+pages; 20 selected original or discussion pages were extracted without workflow
+failures or warnings. Seven stories survived the same frozen rubric. No Ask
+Agents, social archive, video, PDF, book, or planning workflow contributed to
+that delta.
 
 ## Immediate operating agenda
 

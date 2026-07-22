@@ -3,11 +3,11 @@
     "title": "July 2026 AI Engineering Catch-Up",
     "timezone": "Europe/Copenhagen",
     "from": "2026-07-01",
-    "to": "2026-07-21",
-    "evidence_cutoff_at": "2026-07-22T00:04:50+02:00",
+    "to": "2026-07-22",
+    "evidence_cutoff_at": "2026-07-22T21:44:10+02:00",
     "rubric_version": "2026-07-frozen-v1",
-    "partial": false,
-    "partial_date": null
+    "partial": true,
+    "partial_date": "2026-07-22"
   },
   "stories": [
     {
@@ -1347,6 +1347,174 @@
       "source_urls": [
         "https://qwen.ai/blog?id=qwen-image-3.0",
         "https://news.ycombinator.com/item?id=48989701"
+      ]
+    },
+    {
+      "id": "2026-07-22-apiflow-bench",
+      "edition_date": "2026-07-22",
+      "title": "Agents finished the work, then gave the wrong answer",
+      "placement": "lead",
+      "material_delta": "Postman released a 467-task API benchmark showing long-chain degradation and 169 failures where agents reached the correct workspace state but returned the wrong final answer.",
+      "confidence": "B",
+      "discussion_intensity": 0,
+      "date_rule": 4,
+      "continuation_of": null,
+      "relevance": {
+        "consequence": 34,
+        "catch_up_dependency": 20,
+        "novelty_or_correction": 17,
+        "durability": 14,
+        "breadth": 9,
+        "overlap_adjustment": 0,
+        "total": 94
+      },
+      "source_urls": [
+        "https://blog.postman.com/apiflow-bench/",
+        "https://github.com/postmanlabs/apiflow-bench-transcripts"
+      ]
+    },
+    {
+      "id": "2026-07-22-openai-presence",
+      "edition_date": "2026-07-22",
+      "title": "OpenAI packages enterprise agents as operated systems",
+      "placement": "secondary",
+      "material_delta": "OpenAI released Presence in limited general availability as a deployed voice-and-chat agent system combining policy, evaluation, escalation, approved actions, and continuous improvement.",
+      "confidence": "C",
+      "discussion_intensity": 2,
+      "date_rule": 4,
+      "continuation_of": null,
+      "relevance": {
+        "consequence": 32,
+        "catch_up_dependency": 18,
+        "novelty_or_correction": 16,
+        "durability": 13,
+        "breadth": 9,
+        "overlap_adjustment": 0,
+        "total": 88
+      },
+      "source_urls": [
+        "https://openai.com/index/introducing-openai-presence/",
+        "https://news.ycombinator.com/item?id=49008089"
+      ]
+    },
+    {
+      "id": "2026-07-22-microsoft-agent-framework-harness",
+      "edition_date": "2026-07-22",
+      "title": "Microsoft makes the harness a reusable runtime",
+      "placement": "secondary",
+      "material_delta": "Microsoft released a stable Python and .NET harness combining tool loops, persisted history, planning, compaction, approvals, web search, and OpenTelemetry.",
+      "confidence": "B",
+      "discussion_intensity": 0,
+      "date_rule": 4,
+      "continuation_of": null,
+      "relevance": {
+        "consequence": 33,
+        "catch_up_dependency": 20,
+        "novelty_or_correction": 16,
+        "durability": 14,
+        "breadth": 8,
+        "overlap_adjustment": 0,
+        "total": 91
+      },
+      "source_urls": [
+        "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+        "https://learn.microsoft.com/agent-framework/agents/harness"
+      ]
+    },
+    {
+      "id": "2026-07-22-cruciblebench-judge-instability",
+      "edition_date": "2026-07-22",
+      "title": "One LLM judge moved a leaderboard six places",
+      "placement": "secondary",
+      "material_delta": "CrucibleBench released a 650-run proof of concept showing that removing LLM-judge-dependent dimensions can move model rankings by as many as six positions.",
+      "confidence": "B",
+      "discussion_intensity": 2,
+      "date_rule": 4,
+      "continuation_of": null,
+      "relevance": {
+        "consequence": 28,
+        "catch_up_dependency": 18,
+        "novelty_or_correction": 18,
+        "durability": 14,
+        "breadth": 7,
+        "overlap_adjustment": 0,
+        "total": 85
+      },
+      "source_urls": [
+        "https://cruciblebench.ai/",
+        "https://doi.org/10.5281/zenodo.21386663",
+        "https://news.ycombinator.com/item?id=49008538"
+      ]
+    },
+    {
+      "id": "2026-07-22-amd-anthropic-capacity",
+      "edition_date": "2026-07-22",
+      "title": "AMD and Anthropic tie capacity, software, and equity",
+      "placement": "radar",
+      "material_delta": "AMD and Anthropic announced up to two gigawatts of MI450-series capacity, joint Claude and ROCm engineering, and a future AMD equity investment of up to $5 billion.",
+      "confidence": "C",
+      "discussion_intensity": 0,
+      "date_rule": 4,
+      "continuation_of": null,
+      "relevance": {
+        "consequence": 30,
+        "catch_up_dependency": 16,
+        "novelty_or_correction": 15,
+        "durability": 14,
+        "breadth": 9,
+        "overlap_adjustment": 0,
+        "total": 84
+      },
+      "source_urls": [
+        "https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus"
+      ]
+    },
+    {
+      "id": "2026-07-22-tao-chatgpt-workflow",
+      "edition_date": "2026-07-22",
+      "title": "Tao shows expert steering, not autonomous discovery",
+      "placement": "radar",
+      "material_delta": "Terence Tao shared a ChatGPT session that made the expert's representation changes, decomposition, and verification steps inspectable around a claimed Jacobian-conjecture counterexample.",
+      "confidence": "C",
+      "discussion_intensity": 2,
+      "date_rule": 4,
+      "continuation_of": null,
+      "relevance": {
+        "consequence": 18,
+        "catch_up_dependency": 12,
+        "novelty_or_correction": 14,
+        "durability": 9,
+        "breadth": 6,
+        "overlap_adjustment": 0,
+        "total": 59
+      },
+      "source_urls": [
+        "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56",
+        "https://news.ycombinator.com/item?id=49010345"
+      ]
+    },
+    {
+      "id": "2026-07-22-gigatoken",
+      "edition_date": "2026-07-22",
+      "title": "GigaToken attacks tokenization with SIMD and cache engineering",
+      "placement": "radar",
+      "material_delta": "GigaToken published an open-source CPU tokenizer with repository benchmarks showing large throughput gains from SIMD pretokenization, caching, and reduced Python and thread overhead.",
+      "confidence": "C",
+      "discussion_intensity": 2,
+      "date_rule": 4,
+      "continuation_of": null,
+      "relevance": {
+        "consequence": 18,
+        "catch_up_dependency": 9,
+        "novelty_or_correction": 15,
+        "durability": 10,
+        "breadth": 7,
+        "overlap_adjustment": 0,
+        "total": 59
+      },
+      "source_urls": [
+        "https://github.com/marcelroed/gigatoken",
+        "https://news.ycombinator.com/item?id=49010167"
       ]
     }
   ]
