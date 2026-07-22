@@ -146,6 +146,12 @@ counter-evidence, access limits, and inferences at the sentence where they
 matter. Keep bulky browser artifacts under `tmp/` and canonical metadata in
 `sources.json`.
 
+This readable research packet may explain access, extraction, edition-date, and
+timezone decisions because they are part of its audit trail. Those explanations
+are not automatically podcast dialogue. Any downstream audio adaptation should
+keep process administration off-mic and preserve only claim-level uncertainty
+whose removal would change what a listener reasonably believes.
+
 ## Protected Content And Overflow
 
 Protect the factual proposition, builder impact, claim state, material

@@ -332,6 +332,49 @@ counter-evidence for contested claims; all source URLs are canonical; every
 daily PDF passes; the assembled PDF has no blank page; and visual findings are
 resolved or explicitly accepted as residual risk.
 
+## Phase 10: Freeze The Podcast Evidence Handoff
+
+When the issue will feed podcast production, read the
+[podcast evidence handoff contract](references/podcast-handoff-contract.md).
+Materialize the handoff only after the story ledger, source catalog, dated
+chapters, source audit, and repository validation are final:
+
+```bash
+PACKET="research/<NN-issue-slug>"
+HANDOFF="tmp/podcast-handoffs/<issue-slug>/podcast-handoff.json"
+
+python3 .agents/skills/publish-ai-news/scripts/materialize_podcast_handoff.py \
+  "$PACKET" \
+  --from <YYYY-MM-DD> \
+  --to <YYYY-MM-DD> \
+  --packet-frozen-at <timezone-aware-ISO-timestamp> \
+  --output "$HANDOFF"
+```
+
+Use the observed request time with `--run-requested-at` only when it is known.
+Record the exact command, output path, printed SHA-256, and validation counts in
+the packet's `research-log.md`. If the packet changes, rerun validation and
+materialize a new handoff; a prior hash never describes revised evidence.
+
+Verify that every `days[]` object contains `guide_markdown` identical to the
+complete UTF-8 dated chapter. This preserves factual exposition, Builder impact,
+caveats, discussion notes, evidence links, and radar prose for downstream
+authors; the adjacent guide byte count and SHA-256 authenticate the text. The
+field is additive under handoff schema v1, so existing consumers may ignore it.
+
+Keep research-process evidence in the handoff without implying that it belongs
+in the episode. Date-window and timezone reconciliation, retrieval or parsing
+failures, page visibility, and source-access administration are provenance, not
+listener copy. A downstream author may retain a concise caveat only when its
+removal would materially overstate a claim; otherwise the author should tell
+the tight supported story or attributed practitioner experience and leave the
+production mechanics in evidence or show notes.
+
+This phase transfers full guide prose, evidence, guide ordering, explicit gaps,
+and weekly source unions. It does not define episode prose, cast, voices, TTS,
+audio processing, filenames, RSS publication, or human listening approval.
+Those decisions and their provenance belong to the downstream audio repository.
+
 ## Parallel Research Guardrail
 
 Use parallel agents only when the user explicitly requests delegation or the
@@ -365,6 +408,8 @@ rewrite the edition's historical evidence state.
 - `/ui-visual-reasoning` owns progressive raster inspection.
 - `/source-audit` owns the final theme evidence audit.
 - `/plan-capsule` owns resumable planning for substantial issues.
+- The downstream audio repository consumes the versioned podcast evidence
+  handoff and owns synthesis, audio, RSS, and listening approval.
 
 ## Common Failure Modes
 
@@ -390,3 +435,8 @@ rewrite the edition's historical evidence state.
   renderer or Markdown anchors before release.
 - Raster review finds clipped or stranded content: fix publication-wide CSS or
   prose, rerun all affected daily fixtures, and repeat the visual audit.
+- Podcast production starts reconstructing source joins from prose: stop and
+  materialize the versioned evidence handoff from the validated packet.
+- A podcast author only receives normalized caveat or discussion fields: stop;
+  require the exact `days[].guide_markdown` value so factual, Builder-impact,
+  and radar prose is not silently discarded.

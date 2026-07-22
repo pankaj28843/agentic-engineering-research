@@ -4,6 +4,7 @@ BOOK_EXPORT_DIR ?= tmp/book-export
 
 validate:
 	uv run python scripts/validate_research.py
+	uv run python -m unittest discover -s tests -p 'test_*.py'
 
 extract-harness-articles:
 	uv run python scripts/extract_theme_articles.py research/01-harness-engineering --scratch-root tmp/research-web-critical/agentic-engineering-harness-engineering

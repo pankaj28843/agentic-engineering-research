@@ -27,11 +27,13 @@ This repository organizes thematic research on agentic engineering: using LLM-po
 ## Research rules
 
 - Ground claims in extracted source content, not search snippets. Google SERP snippets are leads only.
+- Use `cdp --browser-mode headed` for every live web read, including Hacker News; do not use direct HTTP or a headless fallback.
 - Prefer primary/official sources, then practitioner reports, then community/social signals. Label vendor claims and skeptical counter-evidence separately.
 - Keep `AGENTS.md` short. Put durable knowledge in `docs/` and theme folders; put bulky raw artifacts and article snapshots in `tmp/`.
 - Each theme must be useful as personalized learning material: include a chapter-wise, source-linked, ELI5 deep-dive guide under `guide/`, not only a short briefing.
 - When adding a theme, include `README.md`, `briefing.md`, `source-index.md`, `research-log.md`, `sources.json`, and `guide/00-README.md` plus chapter files.
 - Use `scripts/extract_theme_articles.py` to post-process captured CDP `html.json` files into clean article Markdown under `tmp/` before writing long-form guide chapters.
+- When a dated issue feeds audio production, materialize the `publish-ai-news` podcast handoff after final validation; downstream repositories own synthesis, TTS, audio, RSS, and human review.
 
 ## CDP daemon lifecycle guard
 
