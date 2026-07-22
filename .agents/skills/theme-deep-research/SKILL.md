@@ -26,6 +26,8 @@ Use this for durable repo research, not one-off chat answers.
   not run `cdp daemon start`, `cdp daemon restart`, `cdp daemon keepalive`, or
   `cdp doctor --active-browser-probe` without explicit human approval.
 - Put bulky SERP/page artifacts in `tmp/`, never in git.
+- Use `cdp --browser-mode headed` for every live web read, including Hacker
+  News. Do not use direct HTTP or headless browser fallbacks.
 - Google snippets and AI summaries are leads only. Cite extracted source pages.
 - Keep batches human-paced: <=10 Google queries per batch, `serp --parallel 1`.
 
@@ -52,7 +54,7 @@ Use this for durable repo research, not one-off chat answers.
 4. Run paginated SERP collection:
 
    ```bash
-   cdp workflow web-research serp \
+   cdp --browser-mode headed workflow web-research serp \
      --query-file "$ROOT/queries-batch1.txt" \
      --result-pages 3 \
      --serp google \
@@ -73,15 +75,28 @@ Use this for durable repo research, not one-off chat answers.
 6. Add practitioner signals:
 
    ```bash
-   curl -Gs "https://hn.algolia.com/api/v1/search" \
-     --data-urlencode "query=<theme>" \
-     --data-urlencode "tags=story" \
-     --data-urlencode "numericFilters=points>10" \
-     --data-urlencode "hitsPerPage=50" > "$ROOT/hn-stories.json"
+   printf '%s\n' \
+     'https://hn.algolia.com/api/v1/search?query=<url-encoded-theme>&tags=story&numericFilters=points%3E10&hitsPerPage=50' \
+     > "$ROOT/hn-search-urls.txt"
+
+   cdp --browser-mode headed workflow web-research extract \
+     --url-file "$ROOT/hn-search-urls.txt" \
+     --max-pages 1 \
+     --parallel 1 \
+     --selector body \
+     --out-dir "$ROOT/hn-search" \
+     --min-visible-words 1 \
+     --min-html-chars 50 \
+     --min-markdown-words 1 \
+     --json > "$ROOT/hn-search-summary.json"
 
    command -v socli >/dev/null && \
      socli research "<theme>" --since 365d --out "$ROOT/socli-report.md"
    ```
+
+   Treat the rendered Algolia body as a discovery index only. Add selected
+   canonical HN item pages and their linked originals to the headed visit list
+   before using them in synthesis.
 
 7. Write a deliberate visit list. Prefer canonical source URLs. If Google emits
    redirect wrappers, extract the true target from `url=`, `q=`, or `u=` and
@@ -91,7 +106,7 @@ Use this for durable repo research, not one-off chat answers.
    drops, stop and ask the user to restore it; do not run daemon repair commands.
 
    ```bash
-   cdp workflow web-research extract \
+   cdp --browser-mode headed workflow web-research extract \
      --url-file "$ROOT/visit-urls.txt" \
      --max-pages 100 \
      --parallel 4 \
