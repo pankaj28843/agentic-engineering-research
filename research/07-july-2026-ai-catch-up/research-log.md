@@ -208,17 +208,20 @@ The 22 July completion pass produced the following evidence:
   under-80-word GitHub warnings. Normalized article content totals 114,659
   words; generated Markdown totals 120,403 `wc -w` tokens.
 - Print geometry: the period map is one A4 page. All 21 independent daily PDFs
-  passed required-text and 1-2-page validation: 11 one-page chapters and 10
-  two-page chapters, 31 pages total.
-- Assembled publication: 63 A4 pages, PDF 1.7, required opening/date/closing
+  passed required-text and 1-2-page validation: 12 one-page chapters and 9
+  two-page chapters, 30 pages total. The centered 166 mm body measure is about
+  41% wider than the original 118 mm column.
+- Assembled publication: 55 A4 pages, PDF 1.7, required opening/date/closing
   text present, each dated chapter heading exactly once and in chronological
   order, and all 101 canonical URLs present as link annotations. The only extra
   external link is the general Hacker News archive; other extras are internal
   table-of-contents links.
-- Visual audit: grayscale rasters covered all 31 daily pages and all 63 book
-  pages with no processing failures. Direct review covered the cover, one-page
-  map, quiet July 10 fixture, dense July 15 break, both final-day pages, and the
-  closing page. No blank, clipped, overlapping, or stranded content was found.
+- Visual audit: 160 dpi rasters and progressive visual-reasoning artifacts
+  covered 10 representative book pages with no processing failures: the cover,
+  one-page map, quiet July 10 fixture, both July 15 and July 21 pages, and the
+  start, middle, and end of the closing guide. Mechanical validation checked all
+  55 pages for nonblank A4 bounds. No blank, clipped, overlapping, or stranded
+  content was found.
   The PDF is untagged; correct one-column text extraction mitigates reading-order
   risk but does not replace a semantic tag tree.
 

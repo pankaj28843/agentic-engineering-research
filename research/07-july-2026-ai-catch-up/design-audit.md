@@ -40,7 +40,7 @@ URLs.
 | Muted ink | Neutral gray `#5d5b57` | Separates metadata without relying on hue |
 | Rules | Neutral gray `#b8b4ad` | Builds hierarchy without cards or shaded panels |
 | Body | 10.5 pt minimum, 1.45 line height | Keeps dense reporting readable on A4 |
-| Measure | 118 mm maximum, roughly 55-72 characters | Supports sustained reading without columns |
+| Measure | 166 mm maximum, roughly 80-100 characters | Uses the A4 sheet efficiently while retaining a readable single column |
 | Shape | Square edges, thin rules, no shadows | Preserves an editorial rather than app-dashboard character |
 | Imagery | None unless an evidence-bearing diagram earns space | Avoids atmosphere competing with reporting |
 | Motion | Not applicable to the PDF | No animated behavior to explain or disable |
@@ -110,11 +110,13 @@ Validation has three layers:
    select suspicious tiles from a contact sheet, and escalate only those areas
    needed to decide a concrete rework.
 
-The final stylesheet passed all three layers on 22 July 2026. The fixture set
-contains 21 independently rendered A4 chapters: 11 use one page and 10 use two,
-with no blank or clipped pages. The 63-page assembled PDF preserves date order
-and all 101 canonical source links. Progressive grayscale review covered the
-cover, one-page period map, quiet July 10 chapter, dense July 15 break, both
-July 21 pages, every generated page through blank-tile checks, and the final
-page. The PDF remains untagged, so semantic accessibility depends on the source
-Markdown and correct extracted reading order rather than a tagged PDF tree.
+The final stylesheet passed all three layers on 22 July 2026. It uses 16 mm
+page-side margins and a centered 166 mm body measure, expanding the original
+118 mm column by about 41%. The fixture set contains 21 independently rendered
+A4 chapters: 12 use one page and 9 use two, with no blank or clipped pages. The
+55-page assembled PDF preserves date order and all 101 canonical source links.
+Progressive raster review covered 10 representative pages: the cover, one-page
+period map, quiet July 10 chapter, both July 15 and July 21 pages, and the
+start, middle, and final pages of the long closing guide. The PDF remains
+untagged, so semantic accessibility depends on the source Markdown and correct
+extracted reading order rather than a tagged PDF tree.

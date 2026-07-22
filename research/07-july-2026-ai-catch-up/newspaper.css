@@ -1,6 +1,6 @@
 @page {
   size: A4 portrait;
-  margin: 20mm 20mm 22mm;
+  margin: 20mm 16mm 22mm;
 
   @top-center {
     content: string(chapter-title, first);
@@ -30,7 +30,8 @@ body {
 }
 
 body {
-  max-width: 118mm;
+  width: 100%;
+  max-width: 166mm;
   margin: 0 auto;
   font-size: 10.5pt;
   line-height: 1.45;

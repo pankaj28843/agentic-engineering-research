@@ -169,9 +169,11 @@ satisfy a source requirement.
 The design is a quiet, high-density broadsheet for practitioners. Date, delta,
 impact, and evidence form one scan path.
 
-- A4 portrait with 20 mm top and side margins and a 22 mm bottom margin.
+- A4 portrait with 20 mm top, 16 mm side, and 22 mm bottom page margins; center
+  the body at a 166 mm maximum measure for 22 mm effective side gutters.
 - Body type at least 10.5 pt and line height at least 1.45.
-- A single 55-72-character reading measure; no dense multi-column body copy.
+- A single roughly 80-100-character reading measure; no dense multi-column body
+  copy.
 - White paper, near-black ink, one dark-red accent, and neutral rules.
 - Grayscale-safe hierarchy; no cards, badges, gradients, shadows, or ornamental
   imagery.
