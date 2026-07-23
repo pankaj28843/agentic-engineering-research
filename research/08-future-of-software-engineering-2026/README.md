@@ -30,6 +30,22 @@ orientation, evidence audit, and implementation. The
   audit-phase routing.
 - [Assets notes](assets/README.md) — image and publication provenance.
 
+## Published editions — 23 July 2026
+
+The six-part audio edition is live as
+[Future of Software Engineering 2026: A Skeptical Field Guide](https://rssplayer-feeds.d.pankajsingh.dev/pub/f/7560e3305bfe495771a06dc0c030cbb0fb40a541edc2e229.xml).
+The feed and every enclosure were generated from the audited packet, then
+checked through the headed browser. The six programs run from 21:06 to 22:56.
+
+The book edition was built as A5 PDF, EPUB, MOBI, and Kindle EPUB. The PDF has
+387 pages and 88,522 extractable words; the ebook archives and chapter
+navigation passed structural checks. Artifact hashes and the browser/audio
+publication evidence are recorded in the
+[research log](research-log.md#downstream-publication-record--23-july-2026).
+
+These are derived publication artifacts, not evidence sources. Their URLs and
+hashes therefore do not enter `sources.json`.
+
 ## Scope and structure
 
 The 53 numbered chapters preserve the report's exact structure:

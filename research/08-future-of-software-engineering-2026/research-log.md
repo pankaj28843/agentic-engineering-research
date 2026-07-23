@@ -176,7 +176,8 @@ Every content file has one podcast hook and one onward-reading route.
 
 The machine manifest and human source index each contain 158 distinct canonical
 URLs. The guide, briefing, packet README, and research log use 121 distinct
-external citations; every one resolves to a manifest entry. The other 37
+evidence-source citations; every one resolves to a manifest entry. Derived
+publication links recorded below are outside that evidence count. The other 37
 manifest entries remain ledger-only after synthesis, preserving rejected,
 lead-only, bounded, or redundant candidates for audit rather than silently
 discarding the selection history. Google redirect URLs and tracking parameters
@@ -203,15 +204,53 @@ establish universal productivity multipliers, fixed autonomy thresholds,
 population rates from community discussion, a measured ecosystem-wide
 code-to-spec transition, or a universal human–agent teaming advantage.
 
-## Publication gates
+## Downstream publication record — 23 July 2026
 
-Before repository publication:
+The research packet passed its source/citation/depth audit and repository
+validator before publication. The theme landed in commit `ff1d99e`; the
+Unicode-safe PDF compatibility pass landed in `e3a333c`.
 
-1. reconcile 53 numbered chapters, six interludes, and one guide index;
-2. run a source/citation/depth audit;
-3. run `uv run python scripts/validate_research.py`;
-4. review the complete diff and commit the theme as one coherent packet.
+### Book
 
-Podcast and book outputs are downstream publication targets. Their artifact
-identities, feed checks, format validation, and visual QA will be added here
-after they are produced.
+The downstream book build produced:
+
+| Artifact | SHA-256 |
+| --- | --- |
+| `future-of-software-engineering-2026.pdf` | `23e1a5025564928b3ecd47ff646c7873c67ef2fc427c9e3ba478e270b41c053b` |
+| `future-of-software-engineering-2026.epub` | `4d96dcff4217d22a815794e9213d855b3adc9b9fc64cb7102fe2bf503923f7f2` |
+| `future-of-software-engineering-2026.mobi` | `541b85672720d9fa662bafaec6a5c5e02cf664f297653706cb0f2225155f2a41` |
+| `future-of-software-engineering-2026.kindle.epub` | `955e9d43fabd967bf9c377b4eeaa9c80269a5fc21e01c990f9a826db6cc8f7f2` |
+
+The A5 PDF has 387 pages and 88,522 extractable words. First, middle, and final
+page samples were visually inspected without clipping. EPUB and Kindle
+archives passed integrity checks, both contained all 60 guide documents, and
+the MOBI file passed type validation.
+
+### Podcast
+
+Six three-voice scripts were produced from the guide. The centralized
+transcript gate passed all of them with 2,715–2,829 spoken words, 60–75 turns,
+12 segments, and 8–11 source anchors each. Estimated runtimes were 18.1–18.9
+minutes, and the adjacent-episode duplicate-turn check found no matches.
+
+The synthesized masters run from 1,266.024 to 1,376.232 seconds. Every file
+decoded end to end, used mono MP3 at 24 kHz and 96 kbps, and matched its 12
+chapter records and expected turn-clip count. Integrated loudness was
+−19.4/−19.5 LUFS, true peak was −2.2 to −2.4 dBTP, and loudness range was
+3.8–4.0 LU.
+
+The public series is
+[Future of Software Engineering 2026: A Skeptical Field Guide](https://rssplayer-feeds.d.pankajsingh.dev/pub/f/7560e3305bfe495771a06dc0c030cbb0fb40a541edc2e229.xml),
+feed ID `a6501d38-1535-46a4-8983-ec737f70c8aa`. Its publication receipt has
+SHA-256
+`9eb04e68368efb0d1fef978e8726b43d1d381ba5ee8e96b4af32a7a21e8ec0c9`.
+
+Live verification used the already-running headed CDP browser. The RSS request
+returned HTTP 200, parsed without an XML error, exposed the exact series title,
+and contained six ordered items with unique GUIDs, `audio/mpeg` enclosures,
+expected byte lengths, and hashes matching the local masters. The episode 6
+enclosure also returned HTTP 200; Chrome decoded it to 1,310.583 seconds,
+buffered it, and played about 20 seconds without a media error.
+
+Publication URLs and artifact hashes are provenance for derived outputs, not
+research evidence, so they are intentionally excluded from `sources.json`.
