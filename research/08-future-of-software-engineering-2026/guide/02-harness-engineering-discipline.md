@@ -24,9 +24,9 @@ Each can also be computational or inferential. A type checker is computational: 
 A guide without a sensor can encode a rule without revealing whether it worked. A sensor without a guide can make the agent repeat a known mistake and rediscover the correction. The steering loop joins them:
 
 ```text
-intent → guide → agent action → sensor → evidence → correction
-                    ↑                         |
-                    └── harness revision ─────┘
+intent -> guide -> agent action -> sensor -> evidence -> correction
+                    ^                         |
+                    +---- harness revision ---+
 ```
 
 This is why a harness is more than “context.” Context engineering decides what information reaches a model call. Harness engineering also governs actions, permissions, state, evaluation, recovery, and promotion through a lifecycle.

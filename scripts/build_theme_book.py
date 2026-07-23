@@ -390,6 +390,10 @@ def run_pandoc(markdown_path: Path, output_path: Path, *, title: str, author: st
         "-o",
         str(output_path),
     ]
+    if output_path.suffix.lower() == ".pdf":
+        xelatex = shutil.which("xelatex")
+        if xelatex:
+            cmd.extend(["--pdf-engine", xelatex])
     run_command(cmd)
 
 

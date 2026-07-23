@@ -36,7 +36,7 @@ The precise conclusion is that, in this setting, AI-assisted completion coexiste
 
 The [CHI 2025 critical-thinking study](https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf) surveyed 319 Prolific participants who used generative AI at least weekly for work and retained 936 first-hand task examples. Participants were young and technology-skewed: 71.79% were 18–34, 59 reported computer or mathematical work, and 309 used ChatGPT.
 
-Participants reported critical-thinking enactment in 555 of 936 examples. Mixed-effects models found that higher confidence in AI was associated with less perceived critical-thinking enactment (`β = -0.69`, `p < .001`), while self-confidence was associated with more. Qualitative responses described verification, integration, and stewardship as places where thinking moved.
+Participants reported critical-thinking enactment in 555 of 936 examples. Mixed-effects models found that higher confidence in AI was associated with less perceived critical-thinking enactment (`beta = -0.69`, `p < .001`), while self-confidence was associated with more. Qualitative responses described verification, integration, and stewardship as places where thinking moved.
 
 This was cross-sectional self-report from people already using the tools. Confidence was not randomized, expertise was self-described, and the study did not measure correctness, objective cognition, skill loss, or retention. It would be wrong to subtract 555 from 936 and claim the remainder involved “no critical thinking.” The unit was a reported example and the construct was perceived enactment.
 

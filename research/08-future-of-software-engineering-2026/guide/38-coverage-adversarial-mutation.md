@@ -105,7 +105,7 @@ Record incremental yield after each stage:
 
 ```text
 unique relevant findings
-────────────────────────────────────────
+----------------------------------------
 engineer + agent + CI + triage effort
 ```
 

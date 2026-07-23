@@ -19,7 +19,7 @@ Evidence does not automatically travel upward. Faster first drafts can increase 
 
 A useful accounting identity is:
 
-> net lifecycle effect = local acceleration − displaced review, integration, rework, release, and incident cost
+> net lifecycle effect = local acceleration - displaced review, integration, rework, release, and incident cost
 
 This is a conceptual model, not a formula with universally measurable units. Its purpose is to force the missing work back into the claim.
 
@@ -27,7 +27,7 @@ This is a conceptual model, not a formula with universally measurable units. Its
 
 METR’s [2026 uplift update](https://metr.org/blog/2026-02-24-uplift-update/) is unusually transparent about unstable measurement. The underlying randomized study involved 57 experienced open-source developers, 143 repositories, and more than 800 prespecified tasks with AI allowed or disallowed. Participants had a median of ten years’ experience. An early analysis estimated that AI use made work 19% longer, with an interval from 2% to 39% longer.
 
-Later-source estimates moved toward possible speedups: −18% time for returning developers and −4% for new developers, with both uncertainty intervals crossing zero. METR judged those later estimates unreliable because recruitment, task choice, participation, compensation, and time tracking changed; developers selectively omitted many tasks. This is not evidence that AI has one negative or positive rate. It is evidence that randomized real-work studies remain vulnerable to selection and protocol drift—and that conclusions should weaken when validity weakens.
+Later-source estimates moved toward possible speedups: -18% time for returning developers and -4% for new developers, with both uncertainty intervals crossing zero. METR judged those later estimates unreliable because recruitment, task choice, participation, compensation, and time tracking changed; developers selectively omitted many tasks. This is not evidence that AI has one negative or positive rate. It is evidence that randomized real-work studies remain vulnerable to selection and protocol drift—and that conclusions should weaken when validity weakens.
 
 McKinsey’s [developer study](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/unleashing-developer-productivity-with-generative-ai) involved more than 40 developers in the United States and Asia over several weeks, using three task categories and both human judges and automated quality checks. Documentation and new-code tasks were reported as substantially faster, refactoring showed large gains, but complex tasks improved by less than 10%; some less-experienced developers were 7–10% slower. The published account does not provide raw data, full assignment details, uncertainty, or downstream maintenance outcomes. It supports task and experience heterogeneity, not a portfolio multiplier.
 
