@@ -1,0 +1,2060 @@
+[
+  {
+    "url": "https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_future_of_software_engineering_europe_2026.pdf",
+    "title": "The Future of Software Engineering 2026: Europe",
+    "quality": "primary-retreat-report",
+    "role": "Source agenda whose 53 literal bullets and six Part 3 headings define the series",
+    "source_ids": [
+      "report"
+    ],
+    "phases": [
+      "00-provenance"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://martinfowler.com/bliki/FutureOfSoftwareDevelopment.html",
+    "title": "Future of Software Development",
+    "quality": "primary-participant-index",
+    "role": "Martin Fowler's index into retreat fragments and participant accounts; dependent provenance, not independent replication",
+    "source_ids": [
+      "fowler-index"
+    ],
+    "phases": [
+      "00-provenance"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://martinfowler.com/fragments/2026-07-06.html",
+    "title": "Fowler fragment, 6 July 2026",
+    "quality": "dependent-retreat-witness",
+    "role": "Participant synthesis used only to establish retreat provenance and salience, not independent replication",
+    "source_ids": [
+      "PROV-S01"
+    ],
+    "phases": [
+      "00-provenance"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://martinfowler.com/fragments/2026-07-13.html",
+    "title": "Fowler fragment, 13 July 2026",
+    "quality": "dependent-retreat-witness",
+    "role": "Participant synthesis used only to establish retreat provenance and salience, not independent replication",
+    "source_ids": [
+      "PROV-S02"
+    ],
+    "phases": [
+      "00-provenance"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://infrastructure-as-code.com/posts/fose-july-2026.html",
+    "title": "Future of Software Engineering, July 2026",
+    "quality": "dependent-retreat-witness",
+    "role": "Participant account used only to establish retreat provenance and salience, not independent replication",
+    "source_ids": [
+      "PROV-S03"
+    ],
+    "phases": [
+      "00-provenance"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://annievella.com/posts/finding-comfort-in-the-uncertainty/",
+    "title": "Finding Comfort in the Uncertainty",
+    "quality": "dependent-retreat-witness",
+    "role": "Participant account used only to establish retreat provenance and salience, not independent replication",
+    "source_ids": [
+      "PROV-S04"
+    ],
+    "phases": [
+      "00-provenance"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://ocytko.net/posts/fose-2026-reflections/",
+    "title": "FoSE 2026 Reflections",
+    "quality": "dependent-retreat-witness",
+    "role": "Participant account used only to establish retreat provenance and salience, not independent replication",
+    "source_ids": [
+      "PROV-S05"
+    ],
+    "phases": [
+      "00-provenance"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.ivettordog.com/blog/2026-07-05-future-of-software-engineering-retreat-reflections",
+    "title": "Future of Software Engineering Retreat Reflections",
+    "quality": "dependent-retreat-witness",
+    "role": "Participant account used only to establish retreat provenance and salience, not independent replication",
+    "source_ids": [
+      "PROV-S06"
+    ],
+    "phases": [
+      "00-provenance"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.linkedin.com/posts/jimmynilsson_twsoftwaredev26-activity-7478347334784016385-ijb8/",
+    "title": "Retreat reflection",
+    "quality": "dependent-retreat-witness",
+    "role": "Participant account used only to establish retreat provenance and salience, not independent replication",
+    "source_ids": [
+      "PROV-S07"
+    ],
+    "phases": [
+      "00-provenance"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://martinfowler.com/fragments/2026-07-21.html",
+    "title": "Fowler fragment, 21 July 2026",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S01"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://martinfowler.com/articles/harness-engineering.html",
+    "title": "Harness engineering for coding agent users",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S02"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://stackoverflow.blog/2026/05/21/coding-agents-are-giving-everyone-decision-fatigue/",
+    "title": "Coding agents are giving everyone decision fatigue",
+    "quality": "audited-phase-source",
+    "role": "Audited in multiple phases; see source IDs and phase evidence ledgers",
+    "source_ids": [
+      "P01-S03",
+      "P02-S01"
+    ],
+    "phases": [
+      "01-verification-harness",
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+    "title": "We are changing our developer productivity experiment",
+    "quality": "audited-phase-source",
+    "role": "Audited in multiple phases; see source IDs and phase evidence ledgers",
+    "source_ids": [
+      "P01-S04",
+      "P03-S19"
+    ],
+    "phases": [
+      "01-verification-harness",
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://cacm.acm.org/news/how-to-cross-the-ai-code-productivity-divide/",
+    "title": "How to cross the AI code productivity divide",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S05"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2510.05441v1",
+    "title": "UnitTenX: Generating Tests for Legacy Packages with AI",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S06"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2511.17330v3",
+    "title": "Agentic Verification of Software Systems",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S07"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2602.00180v1",
+    "title": "Spec-Driven Development: From Code to Contract in the Age of AI Coding Agents",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S08"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2606.19544v1",
+    "title": "A systematic, large-scale evaluation of LLM-as-a-judge",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S09"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://openreview.net/forum?id=G0dksFayVq",
+    "title": "JudgeBench",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S10"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2607.12068v1",
+    "title": "Assessing the Quality and Robustness of Agent-Generated Tests",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S11"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2603.13724",
+    "title": "Testing with AI Agents",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S12"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2602.00409",
+    "title": "Are Coding Agents Generating Over-Mocked Tests?",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S13"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2602.07900v1",
+    "title": "Rethinking the Value of Agent-Generated Tests",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S14"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2603.00520v1",
+    "title": "SWE-ABS",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S15"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://stryker-mutator.io/",
+    "title": "Stryker Mutator",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S16"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://hypothesis.readthedocs.io/en/latest/",
+    "title": "Hypothesis",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S17"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://engineering.fb.com/2025/09/30/security/llms-are-the-key-to-mutation-testing-and-better-compliance/",
+    "title": "LLMs are the key to mutation testing and better compliance",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S18"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://link.springer.com/article/10.1007/s10664-024-10496-y",
+    "title": "Article DOI 10.1007/s10664-024-10496-y",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S19"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://rebels.cs.uwaterloo.ca/papers/emse2016_mcintosh.pdf",
+    "title": "An empirical study of the impact of modern code review",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S20"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2606.13175v1",
+    "title": "The End of Code Review: Coding Agents Supersede Human Reviewers",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S21"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2606.09498v1",
+    "title": "Self-Harness: Harnesses That Improve Themselves",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S22"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+    "title": "Harness Engineering for Self-Improvement",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S23"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.oreilly.com/radar/stop-overengineering-your-agent-harness/",
+    "title": "Stop Overengineering Your Agent Harness",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S24"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2605.18747v1",
+    "title": "Toward Executable, Verifiable, and Stateful Agent Systems",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S25"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2606.26300v1",
+    "title": "The Verification Horizon: No Silver Bullet for Coding Agent Verification",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S26"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=48798815",
+    "title": "Does code cleanliness affect coding agents? A controlled experiment",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S27"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=48416264",
+    "title": "Harness engineering: leveraging Codex in an agent-first world",
+    "quality": "audited-phase-source",
+    "role": "Selected and audited for verification and harness engineering",
+    "source_ids": [
+      "P01-S28"
+    ],
+    "phases": [
+      "01-verification-harness"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://towardsdatascience.com/why-adding-more-ai-agents-made-our-system-slower/",
+    "title": "“Why Adding More AI Agents Made Our System Slower”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S02"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=44526912",
+    "title": "Hacker News, “AI Coding Tools Can Reduce Productivity”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S21"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2601.20245v2",
+    "title": "“How AI Impacts Skill Formation,” arXiv:2601.20245v2",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S03"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2025/12/New-Future-Of-Work-Report-2025.pdf",
+    "title": "Microsoft, New Future of Work Report 2025",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S04"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://link.springer.com/article/10.1007/s00146-025-02686-z",
+    "title": "“AI Deskilling Is a Structural Problem”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S05"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf",
+    "title": "“The Impact of Generative AI on Critical Thinking”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S06"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2451958826002046",
+    "title": "“Cognitive Offloading in Student–AI Collaboration”",
+    "quality": "rejected-access-shell",
+    "role": "Rejected: headed-browser artifact was a Cloudflare challenge rather than article content",
+    "source_ids": [
+      "P02-S07"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://ctl.duke.edu/ai-ethics-learning-toolkit/does-ai-harm-critical-thinking/",
+    "title": "Duke Center for Teaching and Learning, “Does AI Harm Critical Thinking?”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S08"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.cs.ubc.ca/~rtholmes/papers/splash_2025_salomon.pdf",
+    "title": "Salomon et al., “An Exploration of the Effects of Generative AI on Software Engineering Workflow and Collaboration”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S11"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.se.cs.uni-saarland.de/publications/docs/WSD+.pdf",
+    "title": "“An Empirical Study of Knowledge Transfer in AI Pair Programming”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S13"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2507.11543v1",
+    "title": "“A Review of Generative AI in Computer Science Education”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S18"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2603.22672v1",
+    "title": "“Three Years with Classroom AI in Introductory Programming”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S19"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2405.01543v1",
+    "title": "“Transforming Software Development with Generative AI: Empirical Insights on Collaboration and Workflow”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S10"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://scholarspace.manoa.hawaii.edu/bitstreams/4f29b0c8-06ac-4d5d-9fa0-52eb93321eb2/download",
+    "title": "“How GitHub Copilot and ChatGPT Influence Solo and Pair Programming”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S12"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://blog.crisp.se/2025/06/02/michaelgothe/mob-programming-with-ai-inside-a-high-performing-teams-journey",
+    "title": "Crisp, “Mob Programming with AI”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S14"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://spin.atomicobject.com/junior-dev-pitfalls-with-llm/",
+    "title": "Atomic Object, “Junior Devs—Avoid These Pitfalls with an LLM”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S15"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://martinfowler.com/fragments/2026-02-04.html",
+    "title": "Fowler fragment, 4 February 2026",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S22"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://martinfowler.com/fragments/2026-02-13.html",
+    "title": "Fowler fragment, 13 February 2026",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S23"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://maintainable.software/agentic-engineering-part-2-agentic-codebase-principles/",
+    "title": "“Maintainable Software: Agentic Codebase Principles”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S09"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/platform-engineering/what-is-platform-engineering",
+    "title": "Microsoft Learn, “What Is Platform Engineering?”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S16"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.hackersandwizards.dev/rollout/",
+    "title": "hackers&wizards, “Rollout & Scale”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S17"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://overwatering.org/blog/2026/07/notes-from-fose-europe/",
+    "title": "Giles Edwards-Alexander, “Notes from FoSE Europe”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S24"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.syntasso.io/post/ai-is-changing-software-engineering-the-fundamentals-still-matter",
+    "title": "Abby Bangser, “AI Is Changing Software Engineering. Fundamentals Still Matter”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S25"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://verraes.net/2026/07/software-design-in-the-agentic-age/",
+    "title": "Mathias Verraes, “Software Design in the Agentic Age: Place Your Bets”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S26"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=48326721",
+    "title": "Hacker News, “What If Remote Working, Not AI, Is to Blame for Weak Junior Engineers?”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S20"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.linkedin.com/pulse/software-engineering-having-raft-moment-andrew-harmel-law-f6mle/",
+    "title": "Andrew Harmel-Law, “Software Engineering Is Having Its Raft Moment”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S27"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.linkedin.com/pulse/my-future-software-engineering-retreat-psychological-notes-ledovaya-vr87e/",
+    "title": "Yanina Ledovaya, “My Future of Software Engineering Retreat: Psychological Notes”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for teams, learning, and skill formation",
+    "source_ids": [
+      "P02-S28"
+    ],
+    "phases": [
+      "02-teams-learning-and-skill-formation"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.thoughtworks.com/insights/articles/claude-code-cobol-modernization-reality",
+    "title": "Thoughtworks, “Claude Code and COBOL modernization: What’s the reality?”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S01"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://devblogs.microsoft.com/all-things-azure/how-we-use-ai-agents-for-cobol-migration-and-mainframe-modernization/",
+    "title": "Microsoft DevBlogs, “How We Use AI Agents for COBOL Migration and Mainframe Modernization”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S02"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.mdpi.com/2073-431X/14/7/244",
+    "title": "“Human–AI Collaboration in the Modernization of COBOL-Based Legacy Systems: The Case of DOGE”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S03"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://dl.acm.org/doi/full/10.1145/3786170.3788390",
+    "title": "“LLM-Assisted Retro-Documentation for Legacy COBOL Applications in Banking”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S04"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://claude.com/blog/how-ai-helps-break-cost-barrier-cobol-modernization",
+    "title": "Anthropic, “How AI helps break the cost barrier of COBOL modernization”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S05"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.reuters.com/business/ibm-posts-steepest-daily-drop-since-2000-after-anthropic-says-ai-can-modernize-2026-02-24/",
+    "title": "Reuters on IBM’s February 2026 market drop",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S06"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://github.com/otterkit/otterkit-cobol/issues/6",
+    "title": "Otterkit COBOL issue #6, “Implement NIST85 Test Suite”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S07"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/ai-for-it-modernization-faster-cheaper-and-better",
+    "title": "McKinsey, “AI for IT modernization: Faster, cheaper, and better”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S08"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2605.17535v1",
+    "title": "“AgentModernize”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S09"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2602.09944v1",
+    "title": "“Environment-in-the-Loop: Rethinking Code Migration with LLM-based Agents”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S10"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2606.11863v1",
+    "title": "“Enhancing LLM-Based Code Translation with Verified Multi-Semantic Representations”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S11"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2605.21537v1",
+    "title": "“Articulate but Wrong: Self-Review Failures in LLM-Based Code Modernization”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S12"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2602.09930",
+    "title": "“JMigBench”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S13"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2607.01213v1",
+    "title": "“RepoRescue”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S14"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.thoughtworks.com/radar/techniques/living-documentation-in-legacy-systems",
+    "title": "Thoughtworks Technology Radar, “Living documentation in legacy systems”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S15"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://vinny.dev/blog/2026-07-17-everyone-knows-you-never-rewrite/",
+    "title": "Vinny Carpenter, “Everyone Knows You Never Rewrite”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S16"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=46678550",
+    "title": "Hacker News discussion of AI and COBOL modernization",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S17"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=43505659",
+    "title": "Hacker News discussion of the proposed SSA rewrite",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S18"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/unleashing-developer-productivity-with-generative-ai",
+    "title": "McKinsey, “Unleashing developer productivity with generative AI”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S20"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://getdx.com/report/how-companies-measure-ai-impact-in-engineering/",
+    "title": "DX, “How companies measure AI impact in engineering”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S21"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://newsletter.pragmaticengineer.com/p/the-impact-of-ai-on-software-engineers-2026",
+    "title": "The Pragmatic Engineer, “The impact of AI on software engineers in 2026”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S22"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.bain.com/insights/from-pilots-to-payoff-generative-ai-in-software-development-technology-report-2025/",
+    "title": "Bain, “From pilots to payoff: Generative AI in software development”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S23"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2603.16975v1",
+    "title": "“The State of Generative AI in Software Development”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S24"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.channeldive.com/news/flexera-itam-ai-cost-tracking-tokenmaxxing/823709/",
+    "title": "Channel Dive on Flexera ITAM and AI-cost visibility",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S25"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.cfodive.com/news/7-10-firms-report-ai-cost-overruns/825961/",
+    "title": "CFO Dive, “Nearly 7 in 10 firms report AI cost overruns”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S26"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.wwt.com/wwt-research/how-to-securely-implement-ai-coding-assistants-across-the-enterprise",
+    "title": "WWT, “How to Securely Implement AI Coding Assistants Across the Enterprise”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for legacy modernization and expectations",
+    "source_ids": [
+      "P03-S27"
+    ],
+    "phases": [
+      "03-legacy-modernization-and-expectations"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.usenix.org/publications/loginonline/we-have-package-you-comprehensive-analysis-package-hallucinations-code",
+    "title": "USENIX, “We Have a Package for You!”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S01"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://github.com/trendmicro/slopsquatting",
+    "title": "Trend Micro slopsquatting repository",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S02"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2606.08444v1",
+    "title": "“When LLMs Invent Rust Crates”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S03"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.stepsecurity.io/blog/introducing-the-npm-package-cooldown-check",
+    "title": "StepSecurity npm cooldown check",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S04"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.activestate.com/blog/beyond-dependency-cooldowns/",
+    "title": "ActiveState, “A Cooldown Is Not a Sourcing Strategy”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S05"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.sygnia.co/threat-reports-and-advisories/npm-supply-chain-attack-september-2025/",
+    "title": "Sygnia September 2025 npm incident",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S06"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://socket.dev/blog/pnpm-10-16-adds-new-setting-for-delayed-dependency-updates",
+    "title": "Socket on pnpm minimum release age",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S07"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2605.09594",
+    "title": "“Trust Me, Import This”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S29"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=43663777",
+    "title": "Hacker News discussion",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S32"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.SP.800-207.pdf",
+    "title": "NIST SP 800-207, Zero Trust Architecture",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S08"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-supply-chain-security-guidance",
+    "title": "NIST software-supply-chain guidance hub",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S09"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html",
+    "title": "OpenSSF Security-Focused Guide for AI Code Assistant Instructions",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S10"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://cloudsecurityalliance.org/blog/2026/02/02/the-agentic-trust-framework-zero-trust-governance-for-ai-agents",
+    "title": "CSA Agentic Trust Framework",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S11"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://galileo.ai/blog/ai-governance-framework",
+    "title": "Galileo AI governance framework",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S12"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/agents/adoption-maturity-model/maturity-model-security-governance",
+    "title": "Microsoft AI-agent security and governance maturity model",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S13"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.databricks.com/blog/responsible-ai",
+    "title": "Databricks responsible AI",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S14"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://digitalinfrastructures.nl/posts/risk-value/",
+    "title": "“Risk versus Value” practitioner post",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S15"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2603.20953v1",
+    "title": "“Before the Tool Call” / Open Agent Passport",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S31"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.docker.com/blog/comparing-sandboxing-approaches-ai-agents/",
+    "title": "Docker sandbox comparison",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S16"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://emirb.github.io/blog/microvm-2026/",
+    "title": "independent microVM survey",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S17"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://blogs.oracle.com/cloud-infrastructure/fusion-ai-agents-secure-by-enforcement",
+    "title": "Oracle secure enforcement for Fusion AI agents",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S18"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/07/16/least-privilege-for-ai-agents-identity-access-and-tool-binding/",
+    "title": "Microsoft least privilege for AI agents",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S19"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://kodekloud.com/blog/least-privilege-for-ai-agents-securing-kubectl-terraform-and-cloud-clis/",
+    "title": "KodeKloud on kubectl, Terraform, and cloud CLIs",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S20"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2603.17419",
+    "title": "“Caging the Agents”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S30"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.mindstudio.ai/blog/mcp-servers-35x-more-tokens-cli-tools-reliability-benchmark",
+    "title": "MindStudio MCP-versus-CLI benchmark",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S21"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://getnadir.com/blog/mcp-server-tool-schema-token-overhead-cost",
+    "title": "Nadir MCP schema-overhead analysis",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S22"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.reddit.com/r/LangChain/comments/1qukgay/preloading_mcp_tools_cost_me_50k_tokens_per_run/",
+    "title": "Reddit MCP preload report",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S23"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.anthropic.com/news/claude-sonnet-5",
+    "title": "Anthropic Claude Sonnet 5 launch and pricing",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S24"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://theaiengineer.substack.com/p/should-you-self-host-inference",
+    "title": "“Should You Self-Host Inference?”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S25"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.computerweekly.com/news/366639689/Weighing-the-trade-offs-of-neoclouds-and-sovereign-clouds",
+    "title": "Computer Weekly on neocloud and sovereign tradeoffs",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S26"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://journal.uptimeinstitute.com/neoclouds-a-cost-effective-ai-infrastructure-alternative/",
+    "title": "Uptime Institute neocloud analysis",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S27"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2509.18101v1",
+    "title": "on-premise versus hosted LLM cost preprint",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for governance, tokenomics, and security",
+    "source_ids": [
+      "P04-S28"
+    ],
+    "phases": [
+      "04-governance-tokenomics-and-security"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2606.26289v1",
+    "title": "Augmentation with Dilution",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S01"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.coderabbit.ai/blog/ai-is-burning-out-the-people-who-keep-open-source-alive",
+    "title": "CodeRabbit, “AI is burning out the people who keep open source alive”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S02"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://assets.empirical-software.engineering/pdf/ieeesw26-ai-slop.pdf",
+    "title": "An Endless Stream of AI Slop",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S03"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.jeffgeerling.com/blog/2026/ai-is-destroying-open-source/",
+    "title": "Jeff Geerling, “AI is destroying Open Source”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S04"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159",
+    "title": "LLVM AI-tool policy RFC",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S05"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.qemu.org/docs/master/devel/code-provenance.html",
+    "title": "QEMU code-provenance policy",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S06"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2603.26487",
+    "title": "Beyond Banning AI: GenAI Governance in OSS Communities",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S07"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/",
+    "title": "GitHub, “Eternal September of open source”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S08"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://shujisado.org/2026/03/10/can-you-relicense-open-source-by-rewriting-it-with-ai-the-chardet-7-0-dispute/",
+    "title": "the chardet 7.0 AI-rewrite dispute",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S09"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.linuxfoundation.org/blog/the-open-source-legacy-and-ais-licensing-challenge",
+    "title": "Linux Foundation, “The Open Source Legacy and AI's Licensing Challenge”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S10"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.science.org/doi/10.1126/science.adz9311",
+    "title": "Who is using AI to code? Global diffusion and impact of generative AI",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S11"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://newsletter.pragmaticengineer.com/p/when-ai-writes-almost-all-code-what",
+    "title": "When AI writes almost all code, what happens to software engineering?",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S12"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://unu.edu/sites/default/files/2026-06/AI_Systems_as_Digital_Public_Goods_0.pdf",
+    "title": "AI Systems as Digital Public Goods",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S13"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.nature.com/articles/s41467-026-73866-8",
+    "title": "Steering open-source AI to accelerate the sustainable development goals",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S14"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://societyandai.org/perspectives/beyond-the-open-weights/",
+    "title": "Beyond the Open-Weights",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S15"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://mpra.ub.uni-muenchen.de/127361/1/MPRA_paper_127361.pdf",
+    "title": "AI as Public Infrastructure: A Critical Review",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S16"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.hbs.edu/ris/Publication%20Files/26-036_e7d0e59a-904c-49f1-b610-56eb2bdfe6f9.pdf",
+    "title": "Cyborgs, Centaurs and Self-Automators",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S17"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://digitaleconomy.stanford.edu/app/uploads/2025/06/CentaurEvaluations.pdf",
+    "title": "AI Should Not Be an Imitation Game: Centaur Evaluations",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S18"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.mdpi.com/1099-4300/28/4/377",
+    "title": "Human-in-the-Loop Artificial Intelligence: A Systematic Review",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S19"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2606.22484v2",
+    "title": "Graduated Human Oversight for Agentic Code Generation",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S20"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.uxtigers.com/post/humans-negative-value",
+    "title": "“When Humans Add Negative Value”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S21"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://queue.acm.org/detail.cfm?id=3363293",
+    "title": "The Effects of Mixing Machine Learning and Human Judgment",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S22"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://aaronhertzmann.com/2022/12/17/when-tech-changes-art.html",
+    "title": "When Machines Change Art",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S23"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.aeaweb.org/articles?id=10.1257/jep.33.2.51",
+    "title": "“Automation” of Manufacturing in the Late Nineteenth Century",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S24"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://researchonline.lse.ac.uk/id/eprint/69811/1/Wajcman_Automation%20is%20it%20really%20different%20this%20time.pdf",
+    "title": "Automation: is it really different this time?",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S25"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.researchcatalogue.net/view/2206275/2206274",
+    "title": "A brief history of the drum machine",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S26"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2304.11172",
+    "title": "The centaur programmer",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S27"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.thenewatlantis.com/publications/can-chess-survive-artificial-intelligence",
+    "title": "Can Chess Survive Artificial Intelligence?",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S28"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://academic.oup.com/pnasnexus/article/5/3/pgag030/8490283",
+    "title": "Toward a science of human–AI teaming for decision making",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S29"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13035987/",
+    "title": "Protecting clinical value judgment in the age of AI",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S30"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://theconversation.com/in-the-age-of-ai-human-creative-output-is-becoming-a-luxury-276514",
+    "title": "“Human creative output is becoming a luxury”",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S31"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://www.sciencedirect.com/science/article/pii/S0278431925000532",
+    "title": "ScienceDirect candidate",
+    "quality": "rejected-access-shell",
+    "role": "Rejected after initial and deferred retries: headed-browser artifact remained a CAPTCHA shell",
+    "source_ids": [
+      "P05-S32"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2607.12057v1",
+    "title": "Predicting Acceptance and Review Effort in Human and Agent Pull Requests",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S33"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://arxiv.org/html/2601.16809v1",
+    "title": "Will It Survive? Deciphering the Fate of AI-Generated Code in Open Source",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S34"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=46641042",
+    "title": "HN: tldraw pauses external contributions",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S35"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47324087",
+    "title": "HN: Debian decides not to decide",
+    "quality": "audited-phase-source",
+    "role": "Extracted and audited for open source, specifications, and human judgment",
+    "source_ids": [
+      "P05-S36"
+    ],
+    "phases": [
+      "05-open-source-specifications-and-human-judgment"
+    ],
+    "audit_date": "2026-07-23"
+  }
+]
