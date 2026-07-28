@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fixture.invalid/schemas/capstone-v2-decision.schema.json",
+  "title": "Capstone v2 assistant decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "request_id",
+    "action",
+    "reason",
+    "confidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "request_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{2,63}$"
+    },
+    "action": {
+      "enum": [
+        "answer",
+        "abstain",
+        "read_document",
+        "propose_metadata_update"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "canonical_document_id": {
+      "type": "string",
+      "pattern": "^d-[a-z0-9-]+$"
+    },
+    "expected_version": {
+      "type": "string",
+      "pattern": "^v[1-9][0-9]*$"
+    },
+    "patch": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "review_status": {
+          "enum": [
+            "pending",
+            "approved",
+            "rejected"
+          ]
+        }
+      }
+    },
+    "answer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "citations": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^d-[a-z0-9-]+@v[1-9][0-9]*$"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "action": {
+            "const": "answer"
+          }
+        },
+        "required": [
+          "action"
+        ]
+      },
+      "then": {
+        "required": [
+          "answer",
+          "citations"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "action": {
+            "const": "read_document"
+          }
+        },
+        "required": [
+          "action"
+        ]
+      },
+      "then": {
+        "required": [
+          "canonical_document_id",
+          "expected_version"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "action": {
+            "const": "propose_metadata_update"
+          }
+        },
+        "required": [
+          "action"
+        ]
+      },
+      "then": {
+        "required": [
+          "canonical_document_id",
+          "expected_version",
+          "patch"
+        ]
+      }
+    }
+  ]
+}

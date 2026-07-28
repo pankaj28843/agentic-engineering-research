@@ -29,7 +29,18 @@ Use this for durable repo research, not one-off chat answers.
 - Use `cdp --browser-mode headed` for every live web read, including Hacker
   News. Do not use direct HTTP or headless browser fallbacks.
 - Google snippets and AI summaries are leads only. Cite extracted source pages.
-- Keep batches human-paced: <=10 Google queries per batch, `serp --parallel 1`.
+- Use at most five reviewed research passes. A pass contains one to three
+  deliberate query units and begins with one Google results page per query.
+  Never pre-plan the next unit or pass before reviewing the current artifacts.
+- Stop the Google workflow on the first consent, CAPTCHA, authentication,
+  unusual-traffic, or bot-check page. Do not switch engines or continue
+  scheduling around a challenge.
+- Keep PDF acquisition and conversion as two explicit steps. Acquire the exact
+  source with headed CDP and `click --wait-download`, then run
+  `cdp workflow pdf-to-markdown <local-pdf>` on the downloaded local file.
+  The native workflow reads only an existing embedded text layer and never
+  invokes OCR. Treat `text_layer_missing` with `data.reason=ocr_required` as a
+  stop/alternate-source decision, not permission to add hidden OCR.
 
 ## Workflow
 
@@ -47,56 +58,147 @@ Use this for durable repo research, not one-off chat answers.
    cdp daemon status --json
    ```
 
-3. Build query batches. Include direct, critical, comparison, production,
-   freshness, GitHub, HN, papers/specs, and official docs queries. Keep each
-   batch to 10 lines or fewer.
+3. Choose evidence horizons that fit the topic. Usually pair an evergreen query
+   with a justified recent or longer-window query when change over time matters.
+   Six months is not a universal default: standards and foundational papers may
+   need all-time coverage, while fast-moving product behavior may warrant a
+   shorter window and production lessons may need several years. Record the
+   reason for every date window in `research-log.md`.
 
-4. Run paginated SERP collection:
+   A query unit is one line in the query file: either an all-time query or a
+   query plus a literal tab and Google `tbs` filter. Use only one to three units
+   in a pass. Cover direct, critical, production, comparison, paper/spec,
+   official-documentation, and practitioner angles across the passes rather
+   than front-loading a large batch.
+
+4. Run page-one Google collection for the current pass:
 
    ```bash
+   PASS_ID="01-foundations"
+   PASS_ROOT="$ROOT/pass-$PASS_ID"
+   mkdir -p "$PASS_ROOT/page-1"
+
+   # One to three reviewed query units. Add a tab-separated tbs filter only
+   # when the topic-fit horizon chosen above calls for it.
+   printf '%s\n' \
+     '<evergreen query>' \
+     > "$PASS_ROOT/queries.txt"
+   printf '%s\t%s\n' \
+     '<windowed query>' \
+     'cdr:1,cd_min:<MM/DD/YYYY>,cd_max:<MM/DD/YYYY>' \
+     >> "$PASS_ROOT/queries.txt"
+
    cdp --browser-mode headed workflow web-research serp \
-     --query-file "$ROOT/queries-batch1.txt" \
-     --result-pages 3 \
+     --query-file "$PASS_ROOT/queries.txt" \
      --serp google \
-     --max-candidates 250 \
-     --candidate-out "$ROOT/candidates-batch1.json" \
-     --out-dir "$ROOT/batch1" \
+     --fallback-serp none \
      --parallel 1 \
+     --navigation-delay 30s \
+     --result-pages 1 \
+     --fast-fail-blocked \
+     --blocked-failure-threshold 1 \
+     --progress stderr \
+     --max-candidates 100 \
+     --candidate-out "$PASS_ROOT/page-1/candidates.json" \
+     --out-dir "$PASS_ROOT/page-1" \
      --min-visible-words 50 \
      --min-html-chars 1000 \
      --min-markdown-words 50 \
-     --json > "$ROOT/serp-summary-batch1.json"
+     --wait 15s \
+     --settle 2s \
+     --json > "$PASS_ROOT/page-1/summary.json"
    ```
 
-5. Inspect `candidates.tsv` before choosing URLs. Pages 2-3 often surface HN
-   threads, criticism, GitHub implementations, and security caveats that the top
-   page misses.
+   Within one invocation, `--navigation-delay 30s` enforces a minimum interval
+   between navigation starts. It is pacing, not readiness: `--wait` is the
+   per-page readiness deadline and `--settle` requires a continuous quiet
+   period after content thresholds pass. Increasing readiness waits does not
+   satisfy the pacing requirement, and pacing does not prove useful content.
 
-6. Add practitioner signals:
+   CDP now gives each query artifact a collision-safe ID that includes its
+   one-based input position and evidence-window identity, for example
+   `001-production-llm-systems--all-time/page-1/` or
+   `002-production-llm-systems--tbs-<hash>/page-1/`. Repeated text or paired
+   horizons therefore remain distinct within the pass.
+
+5. Review the complete page-one artifacts before planning another Google
+   invocation. Inspect `candidates.tsv`, the summary, rendered Markdown/HTML,
+   block warnings, source mix, duplicated claims, and missing evidence classes.
+   Spend at least 30 seconds doing actual artifact inspection and reasoning
+   between Google invocations; a blind sleep is not a review. Record the
+   resulting keep/reject/gap decisions in `research-log.md`, then choose whether
+   to stop, create the next query unit/pass, or escalate a specific query.
+
+   Pages 2–3 are a reviewed escalation, never a blanket default. Escalate only
+   when page one exposes a concrete unresolved gap, place the selected query
+   units in a new query file, and use a separate output directory:
 
    ```bash
-   printf '%s\n' \
-     'https://hn.algolia.com/api/v1/search?query=<url-encoded-theme>&tags=story&numericFilters=points%3E10&hitsPerPage=50' \
-     > "$ROOT/hn-search-urls.txt"
+   mkdir -p "$PASS_ROOT/pages-2-3-escalation"
 
-   cdp --browser-mode headed workflow web-research extract \
-     --url-file "$ROOT/hn-search-urls.txt" \
-     --max-pages 1 \
+   cdp --browser-mode headed workflow web-research serp \
+     --query-file "$PASS_ROOT/escalated-queries.txt" \
+     --serp google \
+     --fallback-serp none \
      --parallel 1 \
-     --selector body \
-     --out-dir "$ROOT/hn-search" \
-     --min-visible-words 1 \
-     --min-html-chars 50 \
-     --min-markdown-words 1 \
-     --json > "$ROOT/hn-search-summary.json"
-
-   command -v socli >/dev/null && \
-     socli research "<theme>" --since 365d --out "$ROOT/socli-report.md"
+     --navigation-delay 30s \
+     --result-pages 3 \
+     --fast-fail-blocked \
+     --blocked-failure-threshold 1 \
+     --progress stderr \
+     --candidate-out "$PASS_ROOT/pages-2-3-escalation/candidates.json" \
+     --out-dir "$PASS_ROOT/pages-2-3-escalation" \
+     --min-visible-words 50 \
+     --min-html-chars 1000 \
+     --min-markdown-words 50 \
+     --wait 15s \
+     --settle 2s \
+     --json > "$PASS_ROOT/pages-2-3-escalation/summary.json"
    ```
 
-   Treat the rendered Algolia body as a discovery index only. Add selected
-   canonical HN item pages and their linked originals to the headed visit list
-   before using them in synthesis.
+   This reruns page one for a self-contained escalation artifact; only pages two
+   and three are the added discovery depth. Review the escalation before any
+   further pass. If progress or captured artifacts show the first challenge,
+   stop immediately and ask the user to clear it before a later invocation.
+
+6. Add practitioner and paper evidence only after selecting canonical URLs.
+   Prefer the source-native headed collectors:
+
+   ```bash
+   mkdir -p "$ROOT/source-native"
+
+   cdp --browser-mode headed workflow hacker-news collect \
+     'https://news.ycombinator.com/item?id=<id>' \
+     > "$ROOT/source-native/hn-<id>.md"
+
+   cdp --browser-mode headed workflow reddit collect \
+     'https://www.reddit.com/r/<subreddit>/comments/<id>/<slug>/' \
+     > "$ROOT/source-native/reddit-<id>.md"
+
+   cdp --browser-mode headed workflow x collect \
+     'https://x.com/<handle>/status/<id>' \
+     > "$ROOT/source-native/x-<id>.md"
+
+   cdp --browser-mode headed workflow linkedin collect \
+     'https://www.linkedin.com/posts/<canonical-activity>/' \
+     > "$ROOT/source-native/linkedin-<activity-id>.md"
+
+   cdp --browser-mode headed workflow arxiv collect \
+     'https://arxiv.org/abs/<version-pinned-paper-id>' \
+     > "$ROOT/source-native/arxiv-<paper-id>.md"
+   ```
+
+   Search listings and SERP pages remain discovery indexes, not evidence. Check
+   the returned item/post/paper identity against the selected canonical URL.
+   An identity mismatch, login shell, unrelated feed, empty source-native
+   record, or redirect to a different item is not evidence. Correct the URL or
+   reject the source.
+
+   Use generic headed extraction for these source classes only when the
+   source-native workflow is unavailable and the rendered page independently
+   proves the same canonical identity. Label that fallback in
+   `research-log.md`; generic markup must never override a source-native
+   identity mismatch.
 
 7. Write a deliberate visit list. Prefer canonical source URLs. If Google emits
    redirect wrappers, extract the true target from `url=`, `q=`, or `u=` and
@@ -110,6 +212,7 @@ Use this for durable repo research, not one-off chat answers.
      --url-file "$ROOT/visit-urls.txt" \
      --max-pages 100 \
      --parallel 4 \
+     --content-extractor auto \
      --selector body \
      --out-dir "$ROOT/pages" \
      --min-visible-words 50 \
@@ -156,6 +259,18 @@ Use this for durable repo research, not one-off chat answers.
     uv run python scripts/validate_research.py
     ```
 
+## Regression cases
+
+| Situation | Required behavior |
+| --- | --- |
+| The prompt suggests six months for every topic. | Choose and justify topic-fit horizons; normally retain evergreen coverage and add a window only where freshness matters. |
+| A pass proposes four queries or page three by default. | Reduce it to one to three query units and one reviewed page; escalate selected gaps separately. |
+| A second Google invocation is ready immediately. | Inspect the current artifacts and reason about gaps for at least 30 seconds before invoking Google again. |
+| Google shows consent, auth, unusual traffic, CAPTCHA, or a bot check. | Stop on that first page; do not fall back to another engine or continue the pass. |
+| A selected HN, Reddit, X, LinkedIn, or arXiv URL is needed as evidence. | Run its headed source-native `collect` workflow and verify returned identity before citation. |
+| A generic capture resolves to a different post or profile. | Reject it as evidence; generic extraction cannot repair an identity mismatch. |
+| A PDF renders in Chrome. | Acquire it separately with headed `click --wait-download`, then use the local `pdf-to-markdown` workflow; record both provenance steps and never imply OCR. |
+
 ## Synthesis rubric
 
 Every theme guide should:
@@ -175,7 +290,8 @@ Every briefing should answer:
 
 - What is the evidence-weighted verdict?
 - Which claims are well-supported, weakly supported, or contested?
-- What changed after reading pages 2-3 of Google results?
+- When deeper results were justified, what changed after the separately reviewed
+  pages 2–3 escalation?
 - Where do HN/social practitioners agree or disagree?
 - What are the likely failure modes and incentives of the sources?
 - What should the next researcher do?

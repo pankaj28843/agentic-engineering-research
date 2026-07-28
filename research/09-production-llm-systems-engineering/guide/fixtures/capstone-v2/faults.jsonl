@@ -1,0 +1,5 @@
+{"fault_id":"f-r05-cancel","scope":"request","request_id":"r-05","at_ms":200,"kind":"cancel_requested","expected_effect":"remove_queued_request_without_start"}
+{"fault_id":"f-r06-429","scope":"attempt","request_id":"r-06","attempt":1,"at_dispatch_ms":400,"kind":"provider_429","phase":"before_service","retry_after_ms":200,"expected_effect":"retry_ready_at_600"}
+{"fault_id":"f-e09a-stale-authority","scope":"evaluation","case_id":"e-09a","kind":"state_mutation_before_commit","operations":["revoke_role:manager","delete_target:d-north-manager"],"expected_effect":"authorization_denied_before_adapter"}
+{"fault_id":"f-e09b-ack-loss","scope":"evaluation","case_id":"e-09b","kind":"response_lost_after_commit","idempotency_key":"fixture-write-003","expected_effect":"effect_unknown_then_status_reconciles_original_receipt"}
+{"fault_id":"f-tool-swap","scope":"trajectory","trajectory_id":"core-tool-swap","kind":"registry_mismatch","observed_server_id":"fixture-shadow-tools","observed_schema_digest":"sha256:fixture-tools-evil","expected_effect":"reject_before_execution"}

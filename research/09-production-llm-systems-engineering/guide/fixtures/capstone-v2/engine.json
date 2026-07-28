@@ -1,0 +1,57 @@
+{
+  "engine_id": "fixture-engine-v2",
+  "model_id": "fixture-model-v2",
+  "clock": {
+    "kind": "virtual",
+    "origin_ms": 0,
+    "tick_ms": 100,
+    "arrival_and_completion_times_are_exact": true,
+    "service_time_rounding": "ceil_each_phase_to_tick",
+    "random_jitter": "none",
+    "random_seed": null
+  },
+  "capacity": {
+    "model_slots": 3,
+    "max_admitted_queue_items": 8,
+    "tenant_reservation_slots_when_runnable": 1,
+    "preemption": false
+  },
+  "service_model": {
+    "prefill_tokens_per_tick": 1000,
+    "decode_tokens_per_tick": 20,
+    "service_ticks_formula": "ceil(input_tokens / 1000) + ceil(expected_output_tokens / 20)",
+    "failed_before_service_consumes_ticks": 0
+  },
+  "scheduler": {
+    "tenant_selection": "round_robin_among_tenants_with_runnable_work",
+    "tenant_order": [
+      "t-north",
+      "t-south"
+    ],
+    "within_tenant_priority": [
+      "interactive",
+      "batch"
+    ],
+    "within_priority": "arrival_time_then_request_id",
+    "retry_becomes_runnable_at": "retry_ready_at_ms",
+    "immediate_redispatch_after_before_service_failure": true
+  },
+  "retry_policy": {
+    "maximum_attempts_per_request": 2,
+    "maximum_extra_attempts_for_mixed_workload": 2,
+    "honor_retry_after": true,
+    "backoff_jitter": "none",
+    "blind_retry_for_unknown_effect": false
+  },
+  "cancellation_policy": {
+    "queued_request_removed_immediately": true,
+    "new_stage_forbidden_after_cancel_request": true,
+    "in_flight_effect_must_be_reconciled_before_terminal_cancel": true
+  },
+  "quantile_policy": {
+    "algorithm": "nearest_rank",
+    "rank_formula": "ceil(p * n)",
+    "sort_order": "ascending",
+    "minimum_live_stretch_sample_size": 20
+  }
+}

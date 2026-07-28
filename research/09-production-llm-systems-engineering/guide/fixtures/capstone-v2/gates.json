@@ -1,0 +1,117 @@
+{
+  "gate_set_id": "capstone-v2-gates",
+  "core": {
+    "security": {
+      "unauthorized_objects": {
+        "operator": "eq",
+        "threshold": 0
+      },
+      "unauthorized_citations": {
+        "operator": "eq",
+        "threshold": 0
+      },
+      "unauthorized_cache_hits": {
+        "operator": "eq",
+        "threshold": 0
+      },
+      "unauthorized_stream_bytes": {
+        "operator": "eq",
+        "threshold": 0
+      },
+      "unauthorized_tool_effects": {
+        "operator": "eq",
+        "threshold": 0
+      },
+      "canary_external_search_bytes": {
+        "operator": "eq",
+        "threshold": 0,
+        "proof": "egress_sink_bytes_after_policy"
+      }
+    },
+    "scheduler": {
+      "queue_peak_items": {
+        "operator": "lte",
+        "threshold": 8,
+        "expected": 8
+      },
+      "interactive_completion_latency_ms_max": {
+        "operator": "lte",
+        "threshold": 6000,
+        "expected": 2260,
+        "population": "accepted interactive requests in workloads/mixed.jsonl"
+      },
+      "batch_completion_latency_ms_max": {
+        "operator": "lte",
+        "threshold": 30000,
+        "expected": 3780,
+        "population": "r-04-batch-burst"
+      },
+      "south_r03_completion_slowdown_max": {
+        "operator": "lte",
+        "threshold": 2.0,
+        "expected": 1.0,
+        "formula": "(mixed_end_ms - mixed_at_ms) / (baseline_end_ms - baseline_at_ms)"
+      },
+      "extra_attempts": {
+        "operator": "lte",
+        "threshold": 2,
+        "expected": 1
+      },
+      "r05_started_stages_after_cancel": {
+        "operator": "eq",
+        "threshold": 0
+      },
+      "orphan_work": {
+        "operator": "eq",
+        "threshold": 0
+      }
+    },
+    "evaluation": {
+      "required_case_ids": [
+        "e-01",
+        "e-02",
+        "e-03",
+        "e-04",
+        "e-05",
+        "e-06",
+        "e-07",
+        "e-08",
+        "e-09a",
+        "e-09b",
+        "e-10"
+      ],
+      "hard_gate_failures": {
+        "operator": "eq",
+        "threshold": 0
+      }
+    },
+    "cost": {
+      "case_id": "e-09b",
+      "formula": "(input_tokens * input_usd_per_million_tokens / 1000000) + (output_tokens * output_usd_per_million_tokens / 1000000) + (write_tool_attempts * write_tool_attempt_usd)",
+      "expected_usd": 0.0042,
+      "comparison": "exact_decimal_to_4_places"
+    }
+  },
+  "live_stretch": {
+    "required_workload_card_fields": [
+      "engine",
+      "engine_version_or_commit",
+      "model",
+      "hardware",
+      "concurrency",
+      "duration",
+      "warmup",
+      "request_mix",
+      "faults",
+      "pricing_snapshot_at"
+    ],
+    "p95_policy": {
+      "minimum_sample_size": 20,
+      "algorithm": "nearest_rank",
+      "rank_formula": "ceil(0.95 * n)",
+      "report_sample_size": true,
+      "report_confidence_or_uncertainty": true
+    },
+    "rule": "Live p95 values are stretch evidence and never replace deterministic core maxima."
+  }
+}

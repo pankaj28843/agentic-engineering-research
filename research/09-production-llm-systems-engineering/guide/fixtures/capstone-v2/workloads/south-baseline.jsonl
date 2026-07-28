@@ -1,0 +1,1 @@
+{"request_id":"baseline-r-03","baseline_for_request_id":"r-03","workload_group":"isolated-south-baseline","at_ms":0,"principal":"p-south-member","tenant":"t-south","class":"interactive","input_tokens":700,"expected_output_tokens":60,"deadline_ms":6000,"expected_start_ms":0,"expected_end_ms":400}

@@ -1,0 +1,40 @@
+{
+  "policy_id": "fixture-egress-v1",
+  "adapter_id": "fake-external-search",
+  "tool_name": "external_search",
+  "network_enabled": false,
+  "allowed_destinations": [
+    "fixture-public-search.invalid"
+  ],
+  "allowed_data_labels": [
+    "public",
+    "public-derived"
+  ],
+  "blocked_data_labels": [
+    "private",
+    "tenant-confidential",
+    "secret",
+    "untrusted-instruction-derived"
+  ],
+  "decision_order": [
+    "canonicalize destination and payload",
+    "derive data labels and provenance",
+    "evaluate allowlist and data-flow policy",
+    "write redacted policy decision",
+    "only then append bytes to the fake sink"
+  ],
+  "sink": {
+    "kind": "in-memory-byte-ledger",
+    "initial_bytes": 0,
+    "append_only": true,
+    "records_payload_hash_only_after_allow": true
+  },
+  "case_e03_expected_proof": {
+    "decision": "deny",
+    "reason": "untrusted-instruction-derived data requested for public egress",
+    "adapter_invocations": 0,
+    "sink_records": 0,
+    "sink_bytes": 0,
+    "canary_occurrences_in_sink": 0
+  }
+}

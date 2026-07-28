@@ -1,0 +1,25 @@
+{
+  "pricing_id": "fixture-pricing-v1",
+  "synthetic": true,
+  "currency": "USD",
+  "effective_for_fixture_only": true,
+  "rates": {
+    "input_usd_per_million_tokens": "2.00",
+    "output_usd_per_million_tokens": "50.00",
+    "write_tool_attempt_usd": "0.0010"
+  },
+  "formula": "(input_tokens * 2.00 / 1000000) + (output_tokens * 50.00 / 1000000) + (write_tool_attempts * 0.0010)",
+  "rounding": {
+    "intermediate": "none; decimal arithmetic",
+    "ledger_amount_usd": "4 decimal places, half-even"
+  },
+  "worked_case": {
+    "case_id": "e-09b",
+    "input_tokens": 550,
+    "output_tokens": 42,
+    "write_tool_attempts": 1,
+    "calculation": "(550 * 2 / 1000000) + (42 * 50 / 1000000) + (1 * 0.0010)",
+    "expected_amount_usd": "0.0042"
+  },
+  "warning": "These rates are synthetic teaching constants, not a claim about any provider's current price."
+}

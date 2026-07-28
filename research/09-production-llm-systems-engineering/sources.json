@@ -1,0 +1,1463 @@
+[
+  {
+    "url": "https://openai.com/index/harness-engineering/",
+    "title": "Harness engineering: leveraging Codex in an agent-first world",
+    "author_or_organization": "OpenAI",
+    "quality": "official-practitioner",
+    "role": "Primary production account defining harness engineering and the repository/environment feedback loop around coding agents.",
+    "source_ids": [
+      "CH01-S01"
+    ],
+    "chapters": [
+      "01"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://martinfowler.com/articles/harness-engineering.html",
+    "title": "Harness engineering for coding agent users",
+    "author_or_organization": "Birgitta Böckeler / Thoughtworks",
+    "quality": "independent-practitioner",
+    "role": "Independent synthesis that sharpens the term and exposes where harness work differs from prompt work.",
+    "source_ids": [
+      "CH01-S02"
+    ],
+    "chapters": [
+      "01"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=48416264",
+    "title": "Hacker News: Harness engineering — Leveraging Codex in an agent-first world",
+    "author_or_organization": "Hacker News community",
+    "quality": "community-signal",
+    "role": "Practitioner discussion supplies skepticism, vocabulary disputes, and operational counterexamples.",
+    "source_ids": [
+      "CH01-S03"
+    ],
+    "chapters": [
+      "01"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://x.com/ghumare64/status/2062430351021015331",
+    "title": "@ghumare64: As an AI Engineer, please learn — 22 production disciplines",
+    "author_or_organization": "Gaurav Humare",
+    "quality": "native-social-signal",
+    "role": "Bounded curriculum signal: the native root contains the 22-topic field-interest map, but it is intentionally uncited in technical prose and supplies no technical validation.",
+    "source_ids": [
+      "CH01-S04"
+    ],
+    "chapters": [
+      "01"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+    "title": "Effective context engineering for AI agents",
+    "author_or_organization": "Anthropic",
+    "quality": "official-practitioner",
+    "role": "Primary engineering guidance on selecting, compressing, and refreshing agent context.",
+    "source_ids": [
+      "CH02-S01"
+    ],
+    "chapters": [
+      "02"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://sourcegraph.com/blog/context-engineering",
+    "title": "Context Engineering: A Practical Guide for AI Agents (2026)",
+    "author_or_organization": "Sourcegraph",
+    "quality": "official-practitioner",
+    "role": "Production coding-agent perspective on context lifecycle and system boundaries.",
+    "source_ids": [
+      "CH02-S02"
+    ],
+    "chapters": [
+      "02"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://www.langchain.com/blog/context-engineering-for-agents",
+    "title": "Context Engineering",
+    "author_or_organization": "LangChain",
+    "quality": "vendor-practitioner",
+    "role": "Concrete taxonomy of context types and agent-time context operations.",
+    "source_ids": [
+      "CH02-S03"
+    ],
+    "chapters": [
+      "02"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=44427757",
+    "title": "Hacker News: The new skill in AI is not prompting, it is context engineering",
+    "author_or_organization": "Hacker News community",
+    "quality": "community-signal",
+    "role": "Bounded community counter-signal: the native thread records rebrand and buzzword skepticism, not prevalence or a technical result; it remains intentionally uncited.",
+    "source_ids": [
+      "CH02-S04"
+    ],
+    "chapters": [
+      "02"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/database/optimize-llm-response-costs-and-latency-with-effective-caching/",
+    "title": "Optimize LLM response costs and latency with effective caching",
+    "author_or_organization": "Amazon Web Services",
+    "quality": "official-practitioner",
+    "role": "Explains exact and semantic caching mechanisms, economics, and architecture choices.",
+    "source_ids": [
+      "CH03-S01"
+    ],
+    "chapters": [
+      "03"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2601.16286v1",
+    "title": "SemanticALLI: Caching Reasoning, Not Just Responses, in Agentic Systems",
+    "author_or_organization": "Varun Chillara et al.",
+    "quality": "primary-research",
+    "role": "Recent semantic-cache research provides algorithms, benchmarks, and limitations beyond vendor claims.",
+    "source_ids": [
+      "CH03-S02"
+    ],
+    "chapters": [
+      "03"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://portkey.ai/blog/semantic-caching-thresholds",
+    "title": "Semantic Caching Thresholds and Why They Matter",
+    "author_or_organization": "Portkey",
+    "quality": "vendor-practitioner",
+    "role": "Operational treatment of similarity thresholds and the false-hit/false-miss tradeoff.",
+    "source_ids": [
+      "CH03-S03"
+    ],
+    "chapters": [
+      "03"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://pyimagesearch.com/2026/05/04/semantic-caching-for-llms-ttls-confidence-and-cache-safety/",
+    "title": "Semantic Caching for LLMs: TTLs, Confidence, and Cache Safety",
+    "author_or_organization": "PyImageSearch",
+    "quality": "independent-practitioner",
+    "role": "Recent implementation-oriented discussion of TTLs, confidence, invalidation, and cache safety.",
+    "source_ids": [
+      "CH03-S04"
+    ],
+    "chapters": [
+      "03"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/1706.03762v7",
+    "title": "Attention Is All You Need",
+    "author_or_organization": "Ashish Vaswani et al. / Google Brain, Google Research, University of Toronto",
+    "quality": "primary-research",
+    "role": "Foundational, architecture-specific source for the original encoder-decoder Transformer, query/key/value attention, and causal decoder masking; not a description of every modern decoder-only serving implementation.",
+    "source_ids": [
+      "CH03A-S01"
+    ],
+    "chapters": [
+      "03a"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+    "title": "Language Models are Unsupervised Multitask Learners",
+    "author_or_organization": "Alec Radford et al. / OpenAI",
+    "quality": "primary-research",
+    "role": "Foundational, model-specific source for GPT-2 language modeling and byte-level BPE; not current serving-performance evidence.",
+    "source_ids": [
+      "CH03A-S02"
+    ],
+    "chapters": [
+      "03a"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://aclanthology.org/D19-1410/",
+    "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+    "author_or_organization": "Nils Reimers and Iryna Gurevych / Association for Computational Linguistics",
+    "quality": "primary-research",
+    "role": "Foundational, task-specific evidence for sentence embeddings and cosine-similarity retrieval; does not establish truth, authorization, or tenant compatibility.",
+    "source_ids": [
+      "CH03A-S03"
+    ],
+    "chapters": [
+      "03a"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2607.08057v1",
+    "title": "Towards Efficient Large Language Model Serving: A Survey on System-Aware KV Cache Optimization",
+    "author_or_organization": "Jiantong Jiang et al.",
+    "quality": "primary-research",
+    "role": "System-aware survey maps KV-cache reuse, compression, eviction, placement, and scheduling; the version was resolved from the rendered arXiv page.",
+    "source_ids": [
+      "CH04-S01"
+    ],
+    "chapters": [
+      "04"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2604.05012v1",
+    "title": "Comparative Characterization of KV Cache Management Strategies for LLM Inference",
+    "author_or_organization": "Oteo Mamo et al.",
+    "quality": "primary-research",
+    "role": "Comparative evidence distinguishes the real workloads and metrics behind KV-cache policies.",
+    "source_ids": [
+      "CH04-S02"
+    ],
+    "chapters": [
+      "04"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://docs.nvidia.com/dynamo/dev/digest/agentic-inference",
+    "title": "Agentic Inference",
+    "author_or_organization": "NVIDIA",
+    "quality": "official-documentation",
+    "role": "Vendor architecture material connects long-running agent workloads to distributed KV-cache pressure.",
+    "source_ids": [
+      "CH04-S03"
+    ],
+    "chapters": [
+      "04"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ap3bkt/kv_cache_is_huge_and_bottlenecks_llm_inference_we/",
+    "title": "r/LocalLLaMA: KV Cache is huge and bottlenecks LLM inference",
+    "author_or_organization": "Reddit / r/LocalLLaMA",
+    "quality": "native-social-signal",
+    "role": "Hands-on discussion surfaces memory sizing confusion and deployment pain that polished docs omit.",
+    "source_ids": [
+      "CH04-S04"
+    ],
+    "chapters": [
+      "04"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://www.linkedin.com/posts/aanchalkaramchandani_inside-llm-inference-when-the-kv-cache-no-activity-7450945152912822273-YIpQ",
+    "title": "Aanchal Karamchandani: Inside LLM inference — when the KV cache no longer fits",
+    "author_or_organization": "Aanchal Karamchandani",
+    "quality": "native-social-signal",
+    "role": "Capture gap and discovery-only: the activity URL was found, but the root post or carousel body was not captured; it remains intentionally uncited and supports no KV-cache claim.",
+    "source_ids": [
+      "CH04-S05"
+    ],
+    "chapters": [
+      "04"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2504.14489v3",
+    "title": "Towards High-Goodput LLM Serving with Prefill-decode Multiplexing",
+    "author_or_organization": "Yukang Chen et al.",
+    "quality": "primary-research",
+    "role": "Primary goodput study explains prefill/decode interference and disaggregation decisions.",
+    "source_ids": [
+      "CH05-S01"
+    ],
+    "chapters": [
+      "05"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://docs.vllm.ai/en/latest/features/disagg_prefill/",
+    "title": "Disaggregated Prefilling (experimental)",
+    "author_or_organization": "vLLM Project",
+    "quality": "official-documentation",
+    "role": "Implementation documentation states mechanics, constraints, and when disaggregated prefill is unsuitable.",
+    "source_ids": [
+      "CH05-S02"
+    ],
+    "chapters": [
+      "05"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://haoailab.com/blogs/distserve-retro/",
+    "title": "DistServe Retro",
+    "author_or_organization": "Hao AI Lab",
+    "quality": "independent-practitioner",
+    "role": "Retrospective gives design history and lessons from DistServe rather than only benchmark claims.",
+    "source_ids": [
+      "CH05-S03"
+    ],
+    "chapters": [
+      "05"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/disaggregated-prefill-and-decode-for-llm-inference-on-sagemaker-hyperpod/",
+    "title": "Disaggregated prefill and decode for LLM inference on SageMaker HyperPod",
+    "author_or_organization": "Amazon Web Services",
+    "quality": "official-practitioner",
+    "role": "Production deployment view ties TTFT, inter-token latency, hardware, and operations together.",
+    "source_ids": [
+      "CH05-S04"
+    ],
+    "chapters": [
+      "05"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://vllm.ai/blog/2025-09-05-anatomy-of-vllm",
+    "title": "Inside vLLM: Anatomy of a High-Throughput LLM Inference System",
+    "author_or_organization": "Aleksa Gordić / vLLM",
+    "quality": "official-practitioner",
+    "role": "Engine anatomy explains scheduler, paged KV memory, batching, and request lifecycle as one system.",
+    "source_ids": [
+      "CH06-S01"
+    ],
+    "chapters": [
+      "06"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://huggingface.co/blog/continuous_batching",
+    "title": "Continuous batching",
+    "author_or_organization": "Hugging Face",
+    "quality": "official-practitioner",
+    "role": "First-principles explanation and runnable mental model for continuous batching.",
+    "source_ids": [
+      "CH06-S02"
+    ],
+    "chapters": [
+      "06"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2511.17593v1",
+    "title": "Comparative Analysis of Large Language Model Inference Serving Systems: A Performance Study of vLLM and HuggingFace TGI",
+    "author_or_organization": "Saicharan Kolluru",
+    "quality": "primary-research",
+    "role": "Comparative serving study provides throughput and latency evidence across vLLM and TGI.",
+    "source_ids": [
+      "CH06-S03"
+    ],
+    "chapters": [
+      "06"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://github.com/vllm-project/vllm",
+    "title": "vLLM: Easy, fast, and cheap LLM serving for everyone",
+    "author_or_organization": "vLLM Project",
+    "quality": "implementation-source",
+    "role": "The implementation repository anchors terminology and lets readers trace claimed mechanisms to code.",
+    "source_ids": [
+      "CH06-S04"
+    ],
+    "chapters": [
+      "06"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://www.linkedin.com/posts/andrewyng_new-course-on-serving-llms-efficiently-activity-7468342916764250112-8HxO",
+    "title": "Andrew Ng: New course on Serving LLMs Efficiently",
+    "author_or_organization": "Andrew Ng / DeepLearning.AI",
+    "quality": "native-social-signal",
+    "role": "Capture gap and discovery-only: the retained body is a third-party comment rather than Andrew Ng's root post; it remains intentionally uncited and supports no adoption or technical claim.",
+    "source_ids": [
+      "CH06-S05"
+    ],
+    "chapters": [
+      "06"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2502.19732v1",
+    "title": "Speculative Decoding and Beyond: An In-Depth Review of Techniques",
+    "author_or_organization": "Yunhai Hu et al.",
+    "quality": "primary-research",
+    "role": "Survey establishes speculative-decoding families, verification cost, acceptance, and system interactions.",
+    "source_ids": [
+      "CH07-S01"
+    ],
+    "chapters": [
+      "07"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/an-introduction-to-speculative-decoding-for-reducing-latency-in-ai-inference/",
+    "title": "An Introduction to Speculative Decoding for Reducing Latency in AI Inference",
+    "author_or_organization": "NVIDIA",
+    "quality": "official-practitioner",
+    "role": "Clear implementation-oriented explanation of draft/verify latency mechanics and hardware concerns.",
+    "source_ids": [
+      "CH07-S02"
+    ],
+    "chapters": [
+      "07"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://research.google/pubs/distillspec-improving-speculative-decoding-via-knowledge-distillation/",
+    "title": "DistillSpec: Improving speculative decoding via knowledge distillation",
+    "author_or_organization": "Google Research",
+    "quality": "primary-research",
+    "role": "DistillSpec directly connects knowledge distillation to draft-model acceptance and serving speed.",
+    "source_ids": [
+      "CH07-S03"
+    ],
+    "chapters": [
+      "07"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://icml.cc/virtual/2025/poster/43871",
+    "title": "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+    "author_or_organization": "Peijie Dong et al.",
+    "quality": "primary-research",
+    "role": "Evidence on compressed models' agentic capabilities checks the assumption that smaller always means equivalent.",
+    "source_ids": [
+      "CH07-S04"
+    ],
+    "chapters": [
+      "07"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2411.02355v4",
+    "title": "“Give Me BF16 or Give Me Death”? Accuracy-Performance Trade-Offs in LLM Quantization",
+    "author_or_organization": "Eldar Kurtić et al.",
+    "quality": "primary-research",
+    "role": "Broad quantization survey supplies definitions, method taxonomy, quality measures, and research limits.",
+    "source_ids": [
+      "CH08-S01"
+    ],
+    "chapters": [
+      "08"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://huggingface.co/docs/transformers/en/quantization/concept_guide",
+    "title": "Quantization concepts",
+    "author_or_organization": "Hugging Face",
+    "quality": "official-documentation",
+    "role": "Practical definitions connect numeric formats and weight/activation choices to supported tooling.",
+    "source_ids": [
+      "CH08-S02"
+    ],
+    "chapters": [
+      "08"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://www.generalcompute.com/blog/quantization-for-inference-gptq-awq-smoothquant-fp8",
+    "title": "Quantization for Inference: GPTQ, AWQ, SmoothQuant, and FP8",
+    "author_or_organization": "General Compute",
+    "quality": "independent-practitioner",
+    "role": "Comparative engineering explanation distinguishes post-training algorithms from storage formats.",
+    "source_ids": [
+      "CH08-S03"
+    ],
+    "chapters": [
+      "08"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s9iyrw/has_anyone_tested_the_quantization_quality/",
+    "title": "r/LocalLLaMA: Quantization quality for AWQ, GPTQ, FP8, and NVFP4",
+    "author_or_organization": "Reddit / r/LocalLLaMA",
+    "quality": "native-social-signal",
+    "role": "Current user testing and disagreement provide skeptical evidence on perceived quality loss.",
+    "source_ids": [
+      "CH08-S04"
+    ],
+    "chapters": [
+      "08"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
+    "title": "Introducing Structured Outputs in the API",
+    "author_or_organization": "OpenAI",
+    "quality": "official-documentation",
+    "role": "Provider contract and constrained-decoding behavior establish what schema guarantees do and do not mean.",
+    "source_ids": [
+      "CH09-S01"
+    ],
+    "chapters": [
+      "09"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+    "title": "Structured Outputs",
+    "author_or_organization": "Anthropic",
+    "quality": "official-documentation",
+    "role": "A second provider reveals portability differences, limitations, and error behavior.",
+    "source_ids": [
+      "CH09-S02"
+    ],
+    "chapters": [
+      "09"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2501.10868v1",
+    "title": "Generating Structured Outputs from Language Models: Benchmark and Studies",
+    "author_or_organization": "Saibo Geng et al.",
+    "quality": "primary-research",
+    "role": "Research taxonomy explains constrained generation techniques and evaluation dimensions.",
+    "source_ids": [
+      "CH09-S03"
+    ],
+    "chapters": [
+      "09"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://aclanthology.org/2025.ranlp-1.124/",
+    "title": "The Hidden Cost of Structure: How Constrained Decoding Affects Language Model Performance",
+    "author_or_organization": "Maximilian Schall and Gerard de Melo",
+    "quality": "primary-research",
+    "role": "Empirical evidence tests how constrained decoding changes output quality rather than only validity.",
+    "source_ids": [
+      "CH09-S04"
+    ],
+    "chapters": [
+      "09"
+    ],
+    "audit_date": "2026-07-28",
+    "representations": {
+      "landing": "https://aclanthology.org/2025.ranlp-1.124/",
+      "pdf": "https://aclanthology.org/2025.ranlp-1.124.pdf"
+    },
+    "evidence_route": "headed HTML plus headed-browser-acquired PDF converted to Markdown with OCR disabled"
+  },
+  {
+    "url": "https://cadence.withremote.ai/blog/structured-outputs-llm-production",
+    "title": "Structured outputs in production: lessons learned",
+    "author_or_organization": "Harsh Shuddhalwar / Cadence",
+    "quality": "independent-practitioner",
+    "role": "Production lessons cover validation, retries, repairs, and remaining application-level failure modes.",
+    "source_ids": [
+      "CH09-S05"
+    ],
+    "chapters": [
+      "09"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://proceedings.mlr.press/v267/patil25a.html",
+    "title": "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models",
+    "author_or_organization": "Shishir G. Patil et al.",
+    "quality": "primary-research",
+    "role": "Berkeley Function Calling Leaderboard grounds tool-use reliability in measurable categories.",
+    "source_ids": [
+      "CH10-S01"
+    ],
+    "chapters": [
+      "10"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2411.13547v2",
+    "title": "ToolScan: A Benchmark for Characterizing Errors in Tool-Use LLMs",
+    "author_or_organization": "Shirley Kokane et al.",
+    "quality": "primary-research",
+    "role": "ToolScan characterizes tool-selection and argument-generation error types.",
+    "source_ids": [
+      "CH10-S02"
+    ],
+    "chapters": [
+      "10"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://www.anthropic.com/engineering/advanced-tool-use",
+    "title": "Introducing advanced tool use on the Claude Developer Platform",
+    "author_or_organization": "Anthropic",
+    "quality": "official-practitioner",
+    "role": "Provider engineering guidance covers tool discovery, examples, contracts, and token-efficient use.",
+    "source_ids": [
+      "CH10-S03"
+    ],
+    "chapters": [
+      "10"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2606.01416v1",
+    "title": "Self-Healing Agentic Orchestrators for Reliable Tool-Augmented Large Language Model Systems",
+    "author_or_organization": "Rahul Suresh Babu and Adarsh Agrawal",
+    "quality": "primary-research",
+    "role": "Self-healing orchestration evidence supports a critical treatment of retry and recovery patterns.",
+    "source_ids": [
+      "CH10-S04"
+    ],
+    "chapters": [
+      "10"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2603.05344v1",
+    "title": "Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned",
+    "author_or_organization": "Nghi D. Q. Bui / OpenDev",
+    "quality": "primary-research",
+    "role": "Terminal-agent study exposes safety and liveness issues in open-ended execution.",
+    "source_ids": [
+      "CH11-S01"
+    ],
+    "chapters": [
+      "11"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2602.22302v1",
+    "title": "Agent Behavioral Contracts: Formal Specification and Runtime Enforcement for Reliable Autonomous AI Agents",
+    "author_or_organization": "Varun Pratap Bhardwaj",
+    "quality": "primary-research",
+    "role": "Behavioral contracts provide a formal vocabulary for permitted actions, invariants, and termination.",
+    "source_ids": [
+      "CH11-S02"
+    ],
+    "chapters": [
+      "11"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://blogs.oracle.com/ai-and-datascience/runtime-budget-guardrails-agentic-ai",
+    "title": "Runtime Budget Guardrails for Agentic AI",
+    "author_or_organization": "Oracle",
+    "quality": "vendor-practitioner",
+    "role": "Concrete token, time, tool, and iteration budgets translate guardrails into runtime controls.",
+    "source_ids": [
+      "CH11-S03"
+    ],
+    "chapters": [
+      "11"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=43542259",
+    "title": "Hacker News: Do not let an LLM make decisions or execute business logic",
+    "author_or_organization": "Hacker News community",
+    "quality": "community-signal",
+    "role": "Practitioner debate surfaces the gap between model safety layers and business-logic authorization.",
+    "source_ids": [
+      "CH11-S04"
+    ],
+    "chapters": [
+      "11"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2410.10347v3",
+    "title": "A Unified Approach to Routing and Cascading for LLMs",
+    "author_or_organization": "Jasper Dekoninck et al.",
+    "quality": "primary-research",
+    "role": "RouteLLM supplies routing algorithms, cost-quality evaluation, and benchmark assumptions.",
+    "source_ids": [
+      "CH12-S01"
+    ],
+    "chapters": [
+      "12"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2503.10657",
+    "title": "RouterEval: A Comprehensive Benchmark for Routing LLMs to Explore Model-level Scaling Up in LLMs",
+    "author_or_organization": "Zhongzhan Huang et al.",
+    "quality": "primary-research",
+    "role": "Independent routing benchmark tests generalization and identifies evaluation weaknesses.",
+    "source_ids": [
+      "CH12-S02"
+    ],
+    "chapters": [
+      "12"
+    ],
+    "audit_date": "2026-07-28",
+    "representations": {
+      "landing": "https://aclanthology.org/2025.findings-emnlp.208/",
+      "html": "https://arxiv.org/html/2503.10657",
+      "pdf": "https://aclanthology.org/2025.findings-emnlp.208.pdf"
+    },
+    "evidence_route": "headed HTML plus headed-browser-acquired PDF converted to Markdown with OCR disabled"
+  },
+  {
+    "url": "https://research.ibm.com/publications/large-language-model-routing-with-benchmark-datasets",
+    "title": "Large Language Model Routing With Benchmark Datasets",
+    "author_or_organization": "IBM Research",
+    "quality": "primary-research",
+    "role": "Industry research adds workload-aware routing evidence and reproducible benchmark framing.",
+    "source_ids": [
+      "CH12-S03"
+    ],
+    "chapters": [
+      "12"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://blog.logrocket.com/llm-routing-right-model-for-requests/",
+    "title": "LLM routing in production: Choosing the right model for every request",
+    "author_or_organization": "LogRocket",
+    "quality": "independent-practitioner",
+    "role": "Application-oriented guide connects route policy to fallbacks and degraded user experience.",
+    "source_ids": [
+      "CH12-S04"
+    ],
+    "chapters": [
+      "12"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2605.01664v1",
+    "title": "A Hybrid Retrieval and Reranking Framework for Evidence-Grounded Retrieval-Augmented Generation",
+    "author_or_organization": "Fariba Afrin Irany and Sampson Akwafuo",
+    "quality": "primary-research",
+    "role": "Recent RAG architecture evidence covers hybrid retrieval and system-level interactions.",
+    "source_ids": [
+      "CH13-S01"
+    ],
+    "chapters": [
+      "13"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://unstructured.io/insights/rag-pipeline-challenges-from-data-ingestion-to-retrieval",
+    "title": "RAG Pipeline Challenges: From Data Ingestion to Retrieval",
+    "author_or_organization": "Unstructured",
+    "quality": "vendor-practitioner",
+    "role": "Production pipeline account emphasizes ingestion, parsing, freshness, and retrieval failure before generation.",
+    "source_ids": [
+      "CH13-S02"
+    ],
+    "chapters": [
+      "13"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://blogs.oracle.com/developers/production-rag-evaluation-keyword-vector-sql-or-hybrid-search",
+    "title": "Production RAG Evaluation: Keyword, Vector, SQL, or Hybrid Search?",
+    "author_or_organization": "Oracle",
+    "quality": "vendor-practitioner",
+    "role": "Concrete comparison of keyword, vector, SQL, and hybrid retrieval choices.",
+    "source_ids": [
+      "CH13-S03"
+    ],
+    "chapters": [
+      "13"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=37824547",
+    "title": "Hacker News: RAG at scale — synchronizing and ingesting billions of embeddings",
+    "author_or_organization": "Hacker News community",
+    "quality": "community-signal",
+    "role": "Practitioner scaling discussion contributes incidents, simpler alternatives, and operational skepticism.",
+    "source_ids": [
+      "CH13-S04"
+    ],
+    "chapters": [
+      "13"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://www.linkedin.com/posts/elliotone_most-rag-systems-fail-before-the-llm-even-activity-7475503003295232000-OMrU",
+    "title": "LinkedIn comments on Elliot One: Most RAG systems fail before the LLM even runs",
+    "author_or_organization": "Lukas Walter and Elliot One",
+    "quality": "native-social-signal",
+    "role": "Captured comments by Lukas Walter and Elliot One name retrieval, chunking, metadata, authorization, freshness, and telemetry concerns; the unavailable root body is not treated as evidence for its title claim.",
+    "source_ids": [
+      "CH13-S05"
+    ],
+    "chapters": [
+      "13"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2405.07437v2",
+    "title": "Evaluation of Retrieval-Augmented Generation: A Survey",
+    "author_or_organization": "Hao Yu et al.",
+    "quality": "primary-research",
+    "role": "RAG evaluation survey organizes retrieval, generation, grounding, and end-to-end metrics; the version was resolved from the rendered arXiv page.",
+    "source_ids": [
+      "CH14-S01"
+    ],
+    "chapters": [
+      "14"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2603.09891v1",
+    "title": "Overview of the TREC 2025 Retrieval Augmented Generation (RAG) Track",
+    "author_or_organization": "Shivani Upadhyay et al.",
+    "quality": "primary-research",
+    "role": "TREC-style evaluation adds rigorous retrieval protocols and current benchmark evidence.",
+    "source_ids": [
+      "CH14-S02"
+    ],
+    "chapters": [
+      "14"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2510.17853v3",
+    "title": "CiteGuard: Faithful Citation Attribution for LLMs via Retrieval-Augmented Validation",
+    "author_or_organization": "Yee Man Choi et al.",
+    "quality": "primary-research",
+    "role": "CiteGuard separates citation presence from faithful attribution and supporting evidence.",
+    "source_ids": [
+      "CH14-S03"
+    ],
+    "chapters": [
+      "14"
+    ],
+    "audit_date": "2026-07-28",
+    "representations": {
+      "landing": "https://aclanthology.org/2026.acl-long.282/",
+      "html": "https://arxiv.org/html/2510.17853v3",
+      "pdf": "https://aclanthology.org/2026.acl-long.282.pdf"
+    },
+    "evidence_route": "headed HTML plus headed-browser-acquired PDF converted to Markdown with OCR disabled"
+  },
+  {
+    "url": "https://www.pinecone.io/learn/series/vector-databases-in-production-for-busy-engineers/rag-evaluation/",
+    "title": "RAG Evaluation: Don’t let customers tell you first",
+    "author_or_organization": "Pinecone",
+    "quality": "vendor-practitioner",
+    "role": "Accessible production workflow turns retrieval metrics into an iterative engineering loop.",
+    "source_ids": [
+      "CH14-S04"
+    ],
+    "chapters": [
+      "14"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2601.22025v2",
+    "title": "When Generic Prompt Improvements Hurt: Evaluation-Driven Iteration for LLM Applications",
+    "author_or_organization": "Daniel Commey",
+    "quality": "primary-research",
+    "role": "Recent evaluation framework emphasizes iteration, failure taxonomies, and regression use.",
+    "source_ids": [
+      "CH15-S01"
+    ],
+    "chapters": [
+      "15"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2606.19544v1",
+    "title": "Reliability without Validity: A Systematic, Large-Scale Evaluation of LLM-as-a-Judge Models Across Agreement, Consistency, and Bias",
+    "author_or_organization": "Justin D. Norman et al.",
+    "quality": "primary-research",
+    "role": "Systematic judge study provides evidence on reliability, agreement, and evaluation design.",
+    "source_ids": [
+      "CH15-S02"
+    ],
+    "chapters": [
+      "15"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2506.22316v4",
+    "title": "Evaluating Scoring Bias in LLM-as-a-Judge",
+    "author_or_organization": "Qingquan Li et al.",
+    "quality": "primary-research",
+    "role": "Position and scoring bias research prevents uncritical use of LLM-as-a-judge.",
+    "source_ids": [
+      "CH15-S03"
+    ],
+    "chapters": [
+      "15"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://techcommunity.microsoft.com/blog/educatordeveloperblog/evaluating-the-evaluator-how-to-test-an-llm-judge-with-microsoft-agent-framework/4516639",
+    "title": "Evaluating the Evaluator: How to Test an LLM Judge with Microsoft Agent Framework",
+    "author_or_organization": "Microsoft",
+    "quality": "official-practitioner",
+    "role": "Concrete meta-evaluation procedure connects judge tests to production tooling.",
+    "source_ids": [
+      "CH15-S04"
+    ],
+    "chapters": [
+      "15"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=44430117",
+    "title": "Hacker News: About AI Evals",
+    "author_or_organization": "Hacker News community",
+    "quality": "community-signal",
+    "role": "Practitioner discussion adds failure cases, cost concerns, and disagreement about eval usefulness.",
+    "source_ids": [
+      "CH15-S05"
+    ],
+    "chapters": [
+      "15"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://x.com/suraj_sharma14/status/2081273315901964705",
+    "title": "@suraj_sharma14: Golden datasets and evaluation systems",
+    "author_or_organization": "Suraj Sharma",
+    "quality": "native-social-signal",
+    "role": "Current practitioner advice on golden datasets is a useful adoption signal to verify against evaluation research.",
+    "source_ids": [
+      "CH15-S06"
+    ],
+    "chapters": [
+      "15"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://opentelemetry.io/docs/specs/semconv/registry/attributes/gen-ai/",
+    "title": "Gen AI semantic attributes",
+    "author_or_organization": "OpenTelemetry",
+    "quality": "official-standard",
+    "role": "Canonical semantic attributes provide the trace and metric vocabulary for interoperable instrumentation.",
+    "source_ids": [
+      "CH16-S01"
+    ],
+    "chapters": [
+      "16"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://opentelemetry.io/blog/2026/genai-observability/",
+    "title": "Inside the LLM Call: GenAI Observability with OpenTelemetry",
+    "author_or_organization": "James Newton-King / OpenTelemetry",
+    "quality": "official-practitioner",
+    "role": "Current OpenTelemetry guidance explains the emerging end-to-end GenAI observability model.",
+    "source_ids": [
+      "CH16-S02"
+    ],
+    "chapters": [
+      "16"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/comprehensive-observability-for-amazon-sagemaker-ai-llm-inference-from-gpu-utilization-to-llm-quality/",
+    "title": "Comprehensive observability for Amazon SageMaker AI LLM inference: From GPU utilization to LLM quality",
+    "author_or_organization": "Amazon Web Services",
+    "quality": "official-practitioner",
+    "role": "Production monitoring example spans infrastructure, inference metrics, and output quality.",
+    "source_ids": [
+      "CH16-S03"
+    ],
+    "chapters": [
+      "16"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=39371297",
+    "title": "Hacker News: You do not need to adopt new tools for LLM observability",
+    "author_or_organization": "Hacker News community",
+    "quality": "community-signal",
+    "role": "Practitioner debate supplies tool criticism and cautions against collecting traces without operational questions.",
+    "source_ids": [
+      "CH16-S04"
+    ],
+    "chapters": [
+      "16"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://www.finops.org/wg/finops-for-ai-tools-services-considerations/",
+    "title": "FinOps for AI: Tools & Services Considerations",
+    "author_or_organization": "FinOps Foundation",
+    "quality": "official-standard",
+    "role": "FinOps Foundation guidance identifies AI-specific allocation and usage-data requirements.",
+    "source_ids": [
+      "CH17-S01"
+    ],
+    "chapters": [
+      "17"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://www.finops.org/framework/capabilities/unit-economics/",
+    "title": "Unit Economics",
+    "author_or_organization": "FinOps Foundation",
+    "quality": "official-standard",
+    "role": "Unit-economics framework grounds feature, workflow, tenant, and business-value attribution.",
+    "source_ids": [
+      "CH17-S02"
+    ],
+    "chapters": [
+      "17"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://www.finops.org/wg/optimizing-genai-usage/",
+    "title": "Optimizing GenAI Usage: A FinOps Perspective on Cost, Performance, and Efficiency",
+    "author_or_organization": "FinOps Foundation",
+    "quality": "official-practitioner",
+    "role": "Optimization guidance ties tokens and models to product demand, waste, and engineering controls.",
+    "source_ids": [
+      "CH17-S03"
+    ],
+    "chapters": [
+      "17"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=47332177",
+    "title": "Hacker News: Forecasting AI API costs for agent workflows",
+    "author_or_organization": "Hacker News community",
+    "quality": "community-signal",
+    "role": "Real cost discussion supplies pricing surprises and practitioner allocation heuristics.",
+    "source_ids": [
+      "CH17-S04"
+    ],
+    "chapters": [
+      "17"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+    "title": "LLM Prompt Injection Prevention Cheat Sheet",
+    "author_or_organization": "OWASP",
+    "quality": "security-authority",
+    "role": "Threat model and layered mitigations establish a baseline for prompt-injection defense.",
+    "source_ids": [
+      "CH18-S01"
+    ],
+    "chapters": [
+      "18"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/MCP_Security_Cheat_Sheet.html",
+    "title": "MCP (Model Context Protocol) Security Cheat Sheet",
+    "author_or_organization": "OWASP",
+    "quality": "security-authority",
+    "role": "Tool-protocol security guidance covers permissions, confused deputies, credentials, and supply chain.",
+    "source_ids": [
+      "CH18-S02"
+    ],
+    "chapters": [
+      "18"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/RAG_Security_Cheat_Sheet.html",
+    "title": "Retrieval-Augmented Generation (RAG) Security Cheat Sheet",
+    "author_or_organization": "OWASP",
+    "quality": "security-authority",
+    "role": "Retrieval-specific guidance covers poisoned corpora, trust boundaries, and output handling.",
+    "source_ids": [
+      "CH18-S03"
+    ],
+    "chapters": [
+      "18"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2603.22928v1",
+    "title": "SoK: The Attack Surface of Agentic AI — Tools, and Autonomy",
+    "author_or_organization": "Ali Dehghantanha and Sajad Homayoun",
+    "quality": "primary-research",
+    "role": "Recent attack-surface taxonomy gives critical evidence across tools, memory, autonomy, and orchestration.",
+    "source_ids": [
+      "CH18-S04"
+    ],
+    "chapters": [
+      "18"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2510.09093v2",
+    "title": "Exploiting Web Search Tools of AI Agents for Data Exfiltration",
+    "author_or_organization": "Dennis Rall et al.",
+    "quality": "primary-research",
+    "role": "Data-exfiltration experiments demonstrate why prompt-only mitigations are insufficient.",
+    "source_ids": [
+      "CH18-S05"
+    ],
+    "chapters": [
+      "18"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Multi_Tenant_Security_Cheat_Sheet.html",
+    "title": "Multi-Tenant Application Security Cheat Sheet",
+    "author_or_organization": "OWASP",
+    "quality": "security-authority",
+    "role": "General tenant-isolation patterns provide the application and data-layer foundation.",
+    "source_ids": [
+      "CH19-S01"
+    ],
+    "chapters": [
+      "19"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2508.08438v2",
+    "title": "Selective KV-Cache Sharing to Mitigate Timing Side-Channels in LLM Inference",
+    "author_or_organization": "Kexin Chu et al.",
+    "quality": "primary-research",
+    "role": "SafeKV evaluates selective sharing as a defense against cross-tenant KV-cache timing leakage.",
+    "source_ids": [
+      "CH19-S02"
+    ],
+    "chapters": [
+      "19"
+    ],
+    "audit_date": "2026-07-28",
+    "representations": {
+      "html": "https://arxiv.org/html/2508.08438v2",
+      "pdf": "https://arxiv.org/pdf/2508.08438v2"
+    },
+    "evidence_route": "headed arXiv HTML extraction"
+  },
+  {
+    "url": "https://www.ndss-symposium.org/ndss-paper/i-know-what-you-asked-prompt-leakage-via-kv-cache-sharing-in-multi-tenant-llm-serving/",
+    "title": "I Know What You Asked: Prompt Leakage via KV-Cache Sharing in Multi-Tenant LLM Serving",
+    "author_or_organization": "Guanlong Wu et al.",
+    "quality": "primary-research",
+    "role": "PromptPeek demonstrates an API-visible KV-cache timing attack against shared multi-tenant inference.",
+    "source_ids": [
+      "CH19-S06"
+    ],
+    "chapters": [
+      "19"
+    ],
+    "audit_date": "2026-07-28",
+    "representations": {
+      "landing": "https://www.ndss-symposium.org/ndss-paper/i-know-what-you-asked-prompt-leakage-via-kv-cache-sharing-in-multi-tenant-llm-serving/",
+      "pdf": "https://www.ndss-symposium.org/wp-content/uploads/2025-1772-paper.pdf"
+    },
+    "evidence_route": "headed NDSS landing-page extraction plus headed-browser-acquired PDF converted to Markdown with OCR disabled"
+  },
+  {
+    "url": "https://arxiv.org/html/2605.11202v1",
+    "title": "Continuous Discovery of Vulnerabilities in LLM Serving Systems with Fuzzing",
+    "author_or_organization": "Yunze Zhao et al.",
+    "quality": "primary-research",
+    "role": "Automated vulnerability discovery supplies concrete serving-stack isolation failures.",
+    "source_ids": [
+      "CH19-S03"
+    ],
+    "chapters": [
+      "19"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2606.00485v1",
+    "title": "Confused ChatGPT: Cross-App Context Poisoning via First-Party APIs",
+    "author_or_organization": "Chao Wang, Somesh Jha, and Zhiqiang Lin",
+    "quality": "primary-research",
+    "role": "Cross-application context poisoning demonstrates hidden trust relationships between first-party integrations.",
+    "source_ids": [
+      "CH19-S04"
+    ],
+    "chapters": [
+      "19"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://owasp.org/www-project-agent-memory-guard/",
+    "title": "OWASP Agent Memory Guard",
+    "author_or_organization": "OWASP",
+    "quality": "security-authority",
+    "role": "Memory-focused controls extend tenant boundaries into persistent agent state.",
+    "source_ids": [
+      "CH19-S05"
+    ],
+    "chapters": [
+      "19"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2601.07054v1",
+    "title": "Fine-Tuning vs. RAG for Multi-Hop Question Answering with Novel Knowledge",
+    "author_or_organization": "Zhuoyi Yang et al.",
+    "quality": "primary-research",
+    "role": "Controlled comparison exposes when fine-tuning and retrieval help or fail on novel knowledge.",
+    "source_ids": [
+      "CH20-S01"
+    ],
+    "chapters": [
+      "20"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2509.20820v1",
+    "title": "Distilling Many-Shot In-Context Learning into a Cheat Sheet",
+    "author_or_organization": "Ukyo Honda, Soichiro Murakami, and Peinan Zhang",
+    "quality": "primary-research",
+    "role": "Distilling many-shot in-context learning shows a concrete bridge between prompting and learned artifacts.",
+    "source_ids": [
+      "CH20-S02"
+    ],
+    "chapters": [
+      "20"
+    ],
+    "audit_date": "2026-07-28",
+    "representations": {
+      "landing": "https://aclanthology.org/2025.findings-emnlp.930/",
+      "html": "https://arxiv.org/html/2509.20820v1",
+      "pdf": "https://aclanthology.org/2025.findings-emnlp.930.pdf"
+    },
+    "evidence_route": "headed HTML plus headed-browser-acquired PDF converted to Markdown with OCR disabled"
+  },
+  {
+    "url": "https://www.tmls.nyc/research/finetune-vs-rag-vs-prompt",
+    "title": "Finetune Vs Rag Vs Prompt",
+    "author_or_organization": "TMLS Research",
+    "quality": "independent-practitioner",
+    "role": "Decision framework translates mechanisms into requirements and failure-driven selection.",
+    "source_ids": [
+      "CH20-S03"
+    ],
+    "chapters": [
+      "20"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://ai.meta.com/blog/when-to-fine-tune-llms-vs-other-techniques/",
+    "title": "To fine-tune or not to fine-tune",
+    "author_or_organization": "Meta AI",
+    "quality": "official-practitioner",
+    "role": "Large-scale practitioner perspective supplies lifecycle and organizational tradeoffs.",
+    "source_ids": [
+      "CH20-S04"
+    ],
+    "chapters": [
+      "20"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/llm-benchmarking-fundamental-concepts/",
+    "title": "LLM Inference Benchmarking: Fundamental Concepts",
+    "author_or_organization": "NVIDIA",
+    "quality": "official-practitioner",
+    "role": "Defines TTFT, inter-token latency, throughput, and concurrency for comparable measurement.",
+    "source_ids": [
+      "CH21-S01"
+    ],
+    "chapters": [
+      "21"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/llm-inference-benchmarking-how-much-does-your-llm-inference-cost/",
+    "title": "LLM Inference Benchmarking: How Much Does Your LLM Inference Cost?",
+    "author_or_organization": "NVIDIA",
+    "quality": "official-practitioner",
+    "role": "Connects service-level performance measures to infrastructure and cost.",
+    "source_ids": [
+      "CH21-S02"
+    ],
+    "chapters": [
+      "21"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2507.03834v1",
+    "title": "Economic Evaluation of LLMs",
+    "author_or_organization": "Michael J. Zellinger and Matt Thomson",
+    "quality": "primary-research",
+    "role": "Economic evaluation provides workload-level cost/performance evidence and caveats.",
+    "source_ids": [
+      "CH21-S03"
+    ],
+    "chapters": [
+      "21"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://www.digitalocean.com/blog/llm-inference-tradeoffs",
+    "title": "The LLM Inference Trilemma: Throughput, Latency, Cost",
+    "author_or_organization": "DigitalOcean",
+    "quality": "vendor-practitioner",
+    "role": "Accessible synthesis frames latency, quality, cost, and reliability as a Pareto problem.",
+    "source_ids": [
+      "CH21-S04"
+    ],
+    "chapters": [
+      "21"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2604.07609v1",
+    "title": "Blink: CPU-Free LLM Inference by Delegating the Serving Stack to GPU and SmartNIC",
+    "author_or_organization": "Mohammad Siavashi et al. / KTH Royal Institute of Technology and RISE",
+    "quality": "primary-research",
+    "role": "Author-benchmarked preprint with a versioned, matched-server tail-latency and goodput comparison; additional DPU hardware, disabled baseline features, omitted cancellation and cost, unreleased code, and placeholder conference metadata constrain generalization.",
+    "source_ids": [
+      "CH21-S05"
+    ],
+    "chapters": [
+      "21"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2607.17525v1",
+    "title": "FailureAtlas: A Taxonomy of Failure Modes in Multi-Provider LLM Serving Infrastructure",
+    "author_or_organization": "Vishal Pandey and Gopal Singh / Metriqual",
+    "quality": "primary-research",
+    "role": "Multi-provider taxonomy organizes transient, semantic, policy, routing, and fallback failures.",
+    "source_ids": [
+      "CH22-S01"
+    ],
+    "chapters": [
+      "22"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2606.14589v1",
+    "title": "When Errors Become Narratives: A Longitudinal Taxonomy of Silent Failures in a Production LLM Agent Runtime",
+    "author_or_organization": "Wei Wu",
+    "quality": "primary-research",
+    "role": "Longitudinal production study supplies evidence about silent failures and monitoring gaps.",
+    "source_ids": [
+      "CH22-S02"
+    ],
+    "chapters": [
+      "22"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://arxiv.org/html/2603.06847v1",
+    "title": "Characterizing Faults in Agentic AI: A Taxonomy of Types, Symptoms, and Root Causes",
+    "author_or_organization": "Mehil B. Shah et al.",
+    "quality": "primary-research",
+    "role": "Agentic fault taxonomy connects symptoms to components and recovery strategies.",
+    "source_ids": [
+      "CH22-S03"
+    ],
+    "chapters": [
+      "22"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://www.growthbook.io/insights/why-your-ai-model-performs-great-offline-but-fails-production",
+    "title": "Why your AI model performs great offline but fails in production",
+    "author_or_organization": "GrowthBook",
+    "quality": "vendor-practitioner",
+    "role": "Vendor-authored staged-evaluation and rollout checklist; not production-outcome evidence.",
+    "source_ids": [
+      "CH22-S04"
+    ],
+    "chapters": [
+      "22"
+    ],
+    "audit_date": "2026-07-28"
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=46013935",
+    "title": "Hacker News: Agent design is still hard",
+    "author_or_organization": "Hacker News community",
+    "quality": "community-signal",
+    "role": "Practitioner experiences reveal hard-to-benchmark agent failures and operational workarounds.",
+    "source_ids": [
+      "CH22-S05"
+    ],
+    "chapters": [
+      "22"
+    ],
+    "audit_date": "2026-07-28"
+  }
+]
