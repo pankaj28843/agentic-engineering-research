@@ -173,6 +173,44 @@ class BuildThemeBookTests(unittest.TestCase):
 
         self.assertEqual(unresolved, [])
 
+    @unittest.skipUnless(shutil.which("pandoc"), "pandoc is required for EPUB styling")
+    def test_epub_canvas_is_plain_and_reader_owned(self) -> None:
+        markdown = self.temp_root / "plain.md"
+        markdown.write_text(
+            "# Plain book\n\n"
+            "The device should own the reading canvas, colors, font, and margins.\n",
+            encoding="utf-8",
+        )
+        epub_path = self.temp_root / "plain.epub"
+
+        MODULE.run_pandoc(
+            markdown,
+            epub_path,
+            title="Plain book",
+            author="Test Author",
+        )
+
+        with zipfile.ZipFile(epub_path) as archive:
+            stylesheet = "\n".join(
+                archive.read(name).decode("utf-8")
+                for name in archive.namelist()
+                if name.endswith(".css")
+            )
+
+        self.assertRegex(
+            stylesheet,
+            r"(?s)@page\s*\{[^}]*margin:\s*0(?:[;\s}]|$)",
+        )
+        self.assertRegex(
+            stylesheet,
+            r"(?s)html,\s*body\s*\{[^}]*margin:\s*0(?:[;\s}]|$)"
+            r"[^}]*padding:\s*0(?:[;\s}]|$)"
+            r"[^}]*background:\s*transparent(?:[;\s}]|$)",
+        )
+        self.assertNotIn("background-color: #fdfdfd", stylesheet)
+        self.assertNotIn("font-family: Georgia", stylesheet)
+        self.assertNotIn("color: #1a1a1a", stylesheet)
+
     def test_pdf_requires_unicode_engine(self) -> None:
         markdown = self.temp_root / "input.md"
         markdown.write_text("# Unicode\n\n↘ ≈ ─\n", encoding="utf-8")

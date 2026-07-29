@@ -37,6 +37,7 @@ PDF_ENGINE = "xelatex"
 PDF_MAIN_FONT = "DejaVu Sans"
 PDF_MONO_FONT = "DejaVu Sans Mono"
 PDF_REQUIRED_GLYPHS = ("↘", "≈", "─")
+EPUB_STYLESHEET = ROOT / "scripts" / "theme_book_epub.css"
 
 ALLOWED_FORMATS = {"markdown", "epub", "pdf", "mobi", "kindle-epub"}
 FORMAT_ALIASES = {
@@ -680,8 +681,16 @@ def run_pandoc(markdown_path: Path, output_path: Path, *, title: str, author: st
     if not pandoc:
         raise SystemExit("pandoc not found on PATH; install pandoc or build markdown only")
     pdf_toolchain: tuple[str, str] | None = None
+    epub_stylesheet: Path | None = None
     if output_path.suffix.lower() == ".pdf":
         pdf_toolchain = require_pdf_toolchain(markdown_path)
+    elif output_path.suffix.lower() == ".epub":
+        epub_stylesheet = EPUB_STYLESHEET
+        if not epub_stylesheet.is_file():
+            raise SystemExit(
+                f"EPUB stylesheet not found: {epub_stylesheet}; "
+                "the publisher will not fall back to Pandoc's tinted page style"
+            )
     cmd = [
         pandoc,
         str(markdown_path),
@@ -696,6 +705,8 @@ def run_pandoc(markdown_path: Path, output_path: Path, *, title: str, author: st
         "-o",
         str(output_path),
     ]
+    if epub_stylesheet is not None:
+        cmd.extend(["--css", str(epub_stylesheet)])
     if pdf_toolchain is not None:
         engine, _ = pdf_toolchain
         cmd.extend(

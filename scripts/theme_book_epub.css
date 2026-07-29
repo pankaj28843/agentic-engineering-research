@@ -1,0 +1,88 @@
+/*
+ * Keep the reading canvas reader-owned.
+ *
+ * Kindle and other EPUB readers already provide page color, typeface, and
+ * margin controls. Declaring those at book level creates a tinted inset page
+ * and can fight dark mode or the reader's spacing settings.
+ */
+@page {
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+body {
+  line-height: 1.42;
+  orphans: 2;
+  widows: 2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+p,
+li {
+  line-height: 1.42;
+}
+
+img,
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
+pre {
+  font-size: 0.82em;
+  line-height: 1.3;
+  margin: 0.8em 0;
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace;
+  overflow-wrap: anywhere;
+}
+
+pre code {
+  white-space: inherit;
+}
+
+blockquote {
+  border-left: 0.2em solid currentColor;
+  margin-left: 0;
+  padding-left: 0.8em;
+}
+
+table {
+  border-collapse: collapse;
+  max-width: 100%;
+}
+
+th,
+td {
+  padding: 0.2em 0.4em;
+  vertical-align: top;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid currentColor;
+  margin: 1em 0;
+}

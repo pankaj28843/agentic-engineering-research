@@ -378,3 +378,23 @@ gap searches, external-review dispositions, validation, and publication.
   The four repo-local skills also scan with zero blockers; the two remaining
   `rsync` warnings are explicitly guarded, human-only examples. All four
   worktrees pass `git diff --check`.
+
+## 2026-07-29 — Reader-owned Kindle canvas
+
+- A device review found that the direct EPUB looked like a slightly gray page
+  inset inside Kindle's own page. Inspection traced this to Pandoc's default
+  EPUB CSS: `background-color: #fdfdfd`, a fixed Georgia body font and
+  foreground color, and a 10-pixel `@page` margin.
+- Replaced that default with the neutral `scripts/theme_book_epub.css`
+  contract, following the established FreshRSS ebook behavior: zero
+  book-defined page/document margins, transparent canvas, and no forced body
+  font or foreground color. Kindle now owns its theme, font, and spacing.
+- Added an integration regression that opens the generated EPUB and checks its
+  packaged CSS. The full suite passes with 44 tests, all nine themes validate,
+  and the rebuilt direct EPUB passes ZIP integrity.
+- Rendered the rebuilt EPUB and a current FreshRSS Kindle EPUB with the same
+  Paperwhite profile and 18-point reader margin. Six deterministic Theme 09
+  samples showed a plain reader canvas without a nested tinted page.
+- Rebuilt the local direct EPUB as SHA-256
+  `bed172f534ca00ec19c0087b29effd9ebcab9056c1af4355498b6c2818a58e01`.
+  This corrected artifact has not been submitted to Send to Kindle.

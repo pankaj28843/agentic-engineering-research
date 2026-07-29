@@ -103,6 +103,18 @@ unzip -l tmp/books/01-harness-engineering/01-harness-engineering.epub | \
   rg 'EPUB/(media|assets)/.+\.(png|webp|jpg|jpeg|gif|svg)'
 ```
 
+Direct EPUBs use `scripts/theme_book_epub.css`: the page and document canvas
+have zero book-defined margin, transparent backgrounds, and no forced body
+font or foreground color. Kindle or another reader therefore owns its canvas,
+theme, font, and spacing controls. Verify the packaged stylesheet rather than
+assuming Pandoc used the source CSS:
+
+```bash
+unzip -p \
+  tmp/books/09-production-llm-systems-engineering/09-production-llm-systems-engineering.epub \
+  'EPUB/styles/*.css' | rg '@page|background|font-family|color|margin'
+```
+
 Verify MOBI output:
 
 ```bash
