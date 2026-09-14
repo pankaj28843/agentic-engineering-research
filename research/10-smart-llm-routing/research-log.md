@@ -2,6 +2,24 @@
 
 ## Scope and date
 
+### Final-script editorial revision — 2026-09-14
+
+The fourteen-chapter guide has been reconciled with all four final smart-routing
+episode scripts, rather than the earlier production briefs. Canonical parsed
+script and ordered-transcript fingerprints match the episode release records.
+Whitespace-dependent file fingerprints are recorded separately in the planning
+capsule's `research/final-script-reconciliation.md`.
+
+The revision preserves the original source dates and uncertainty labels. It
+carries forward the distinction between a data-isolation incident and an
+ordinary quality miss; accepted-outcome denominators versus coverage; unknown
+external commits versus retryable failures; local capacity versus accepted
+goodput; and contract-test, replay, side-effect-free shadow and canary evidence.
+Final worked examples remain explicitly illustrative. No new provider facts,
+prices, enterprise replay results or human-listening claims are introduced.
+The user waived further Ask Agents reviews for this revision. Local editorial
+integration and artifact checks do not imply external reviewer approval.
+
 This packet was researched and audited on **2026-09-12** in the Europe/Copenhagen
 timezone. The question was how a large regulated enterprise can choose among
 deterministic handlers, managed APIs, coding-assistant products, and in-house

@@ -14,6 +14,15 @@ call. Its diagram is not evidence. The comparison must use the same requests,
 the same acceptance contract, the same price snapshot, and the same failure
 accounting for every policy.
 
+For RouteLLM, preference-based endpoint selection is the measured mechanism;
+for FrugalGPT, the useful architectural lesson includes bounded escalation.
+Their reported findings remain attached to the papers' selected data, models,
+tasks, methods, and objectives. Before transferring either mechanism, ask
+whether the objective counted evaluator calls, retries, queue delay, human
+correction, and protected-stratum failures. The papers may answer a narrower
+question than this enterprise needs. Keep the mechanism as a candidate and
+require the paired replay; do not turn a paper percentage into a forecast.
+
 ## Mechanism: a baseline ladder and an oracle gap
 
 Start with a named ladder:
@@ -50,6 +59,12 @@ retrospect. Its cost-quality point can bound the opportunity gap. It is not
 deployable because it uses information unavailable before execution. A
 candidate router should narrow the oracle gap without turning hindsight into a
 claim of capability.
+
+Always-Capable is also an empirical reference for the same contract, not a
+perfect oracle or guaranteed ceiling. Freeze the context builder, validator,
+tool contract, and rubric across Always-Mid, Always-Capable, the deterministic
+path where available, and the candidate. A candidate given easier requests or
+a more generous judge has not demonstrated routing benefit.
 
 Use uncertainty that matches the measure. Bootstrap request IDs within strata
 when a simple interval is sufficient. Preserve rare high-consequence failures
@@ -96,7 +111,8 @@ to test; they are not an oracle for this enterprise.
 
 ## Failure drill: a 30% saving after the traffic changed
 
-A report compares January's always-capable mix with February's routed mix and
+In this illustrative failure drill, a report compares January's always-capable
+mix with February's routed mix and
 claims 30% savings. January had many long policy questions; February had mostly
 short summaries after a product launch changed the traffic. The policy was
 also allowed to abstain on long requests. The comparison is confounded by mix
@@ -175,6 +191,17 @@ confident wrong answer and a baseline that asks for human help are not
 comparable if the report counts only completed HTTP responses. Use the same
 acceptance rubric and terminal vocabulary. If one policy supplies fewer
 answers, show coverage next to cost per accepted result.
+
+Chapter 1's twelve-request exercise makes the accounting boundary tangible.
+With three ambiguous requests, two efficient passes and one escalation consume
+three one-unit attempts and one four-unit attempt: seven illustrative attempt
+units, plus validation and any material retrieval or human work. This is not
+a measured saving or a provider price. The full traffic remains twelve
+requests, including the three FAQ lookups, four summaries, three ambiguous
+questions, and two state-changing proposals. Report attempted, accepted,
+abstained, failed, escalated, human-repaired, and blocked outcomes by stratum;
+preserve indeterminate outcomes as well. Do not divide that three-request
+subtotal by all twelve requests and call it cost per accepted outcome.
 
 Finally, freeze the decision before inspection. Name the replay set, price
 snapshot, traffic weights, and promotion rule in advance. This prevents a

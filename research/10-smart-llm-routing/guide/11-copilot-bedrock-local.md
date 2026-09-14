@@ -57,6 +57,33 @@ same object as a `server-side-code-change-proposal` route. The latter can pass
 through `R0` and `A1`; the former may be governed by product settings and
 post-hoc usage signals.
 
+Assign the ownership chain explicitly. The product owns user intent, local
+authority, and the promise to the user. The gateway owns routing under the
+right contract within its intercepted scope. The managed provider owns its
+service implementation, regional availability, contract, and invoice. The
+local platform owns weights, runtime, accelerators, scheduling, monitoring,
+patches, capacity, incidents, and retirement. The domain owner decides whether
+the result meets the business acceptance rubric and what consequence follows.
+An answered health check or returned bytes cannot discharge all five roles.
+
+Group the gateway's proposed contract into four checks:
+
+| Check | Controls for traffic actually intercepted |
+|---|---|
+| Identity and policy | tenant propagation, data class, residency, route eligibility |
+| Accounting and safety | budgets, attribution, idempotency |
+| Request plumbing | request/response schemas, trace correlation, cache scope, provider adapters |
+| Capacity and recovery | capacity admission, declared fallbacks, terminal states |
+
+The route record should group identity (route ID, owner, model or weight pin,
+runtime revision, account, region), contract (data classes, schemas, tools,
+quota, capacity pool), evidence (latency, quality, cache owner, price snapshot,
+fallback set, expiry), and recovery (the rollback action). Process health and
+a loaded model are useful signals, but eligibility requires the identity,
+boundary, runtime, schema, tool, capacity, and acceptance evidence to agree.
+Mark missing evidence unknown or blocked for the affected request class;
+successful admission still does not guarantee an accepted terminal outcome.
+
 ## Worked example: three migration lanes
 
 These are **illustrative planning choices** for a generic enterprise.
@@ -79,11 +106,23 @@ Copilot, compare supported product-level controls and accepted coding outcomes
 where instrumentation permits. Do not invent per-request attribution from a
 seat fee.
 
+For an **illustrative staged migration**, first freeze workload strata,
+acceptance labels, route IDs, trace fields, and current baselines while
+observing the unchanged user-visible path. Next shadow the candidate policy
+using redacted or approved data. Then qualify the alternative against the
+same schemas, tools, capacity, and acceptance rubric. Canary a low-consequence,
+reversible cohort with a kill switch and named rollback owner. Expand by data
+class and workflow only after quality, safety, latency, cost, reconciliation,
+and capacity gates hold. For the first server-side migration, keep the stable
+managed path as **Always-Mid**, a direct baseline with one known rollback
+switch. Copilot remains in its product-specific experiment and denominator.
+
 ## Failure drill: the universal gateway story
 
-A program manager announces that all AI traffic now passes through the
-enterprise gateway. A developer's IDE calls the hosted coding assistant
-directly, while a local service bypasses the gateway during an incident. The
+In this **illustrative** failure drill, a program manager announces that all
+AI traffic now passes through the enterprise gateway. A developer's IDE calls
+the hosted coding assistant directly, while a local service bypasses the
+gateway during an incident. The
 cost dashboard counts only server-side requests and claims a broad savings
 rate. A later policy incident exposes that the observed population was not the
 portfolio.
@@ -94,6 +133,14 @@ integration, and local service admission. Keep a direct fixed baseline for
 server-side traffic. Treat unobservable channels as a separate governance
 workstream until the product exposes sufficient evidence. This is a scope
 correction, not a reason to route outside a data boundary.
+
+Also remove the gateway itself. It is another capacity and failure domain,
+with its own availability and rollback plan. A read-only server route may
+have a bounded direct baseline only when the required policy can be proved at
+the edge. A protected request may have to block. Replicating the control plane
+does not replace a declared safe degraded state, and a direct rollback path
+must not become permission to bypass identity or residency checks. Native
+product traffic retains its product-native recovery controls.
 
 ## Reader exercises
 
@@ -136,6 +183,36 @@ model pin, and compare accepted results. For local traffic, add capacity and
 runtime evidence before expanding load. A route that works in an idle lab is
 not yet a production candidate.
 
+Make the first canary concrete without mistaking its design for a result.
+An **illustrative pilot** chooses a read-only, low-consequence document
+workflow with a stable acceptance rubric, keeps the current Bedrock path as
+Always-Mid, shadows a gateway adapter, and qualifies one local route pinned
+to its weight, runtime, region, capacity pool, and cache scope. Replay the same
+request classes and measure accepted goodput, p95 and p99 latency, queue
+delay, cost per accepted outcome, cache isolation, support minutes, and
+rollback time. Preserve protected strata in every comparison.
+
+Write stop conditions before moving traffic: a hard data-boundary or
+authority violation; material acceptance regression in a protected stratum;
+**two consecutive latency-budget breaches**; registry expiry; unexplained
+cost growth; a capacity failure that removes the declared fallback; or
+reconciliation uncertainty after a possible side effect. These are proposed
+pilot conditions, not a claim that this deployment has passed them. Keep
+high-consequence tool proposals out of this first canary: approval and
+action-digest reconciliation require their own test, and read-only success
+does not transfer authority to cause an irreversible effect.
+
+Run across more than one demand window, including the relevant peak. Freeze
+the baseline and price snapshot for the comparison and refresh volatile facts
+separately. Inspect the local queue during deployment and failure, sample
+human rework, exercise the fallback, and deliberately expire route evidence.
+The evidence pack must join each request's policy revision, route revision,
+model or weight, runtime image, cache decision, capacity snapshot, reservation
+lease, transition reason, and terminal state. At population level retain
+accepted outcomes, rejected results, blocked requests, indeterminate effects,
+queue delay, fallback usage, and cost. A savings claim needs that joined
+population, not merely successful responses.
+
 The portfolio review should happen at a fixed cadence and after material
 events. Check provider terms, product controls, model and runtime updates,
 local utilization, acceptance drift, queue tails, and unobserved channels.
@@ -157,6 +234,47 @@ an entry that says what is observable and which product controls apply. Give a
 Bedrock route the provider account, region, API, and gateway boundary. Give a
 local route the weight, runtime, capacity pool, and incident owner. The shared
 schema makes gaps visible; it does not force false uniformity.
+
+Within that registry, four **illustrative planning categories** make the
+managed/local choice inspectable without asserting a provider ranking:
+
+| Candidate row | Evidence and constraint to record |
+|---|---|
+| Managed burst | public, low-consequence interactive scope; provider, region, price snapshot, quota, latency, cache terms, concentration |
+| Managed restricted-region | mandatory region and contract; narrower eligible fallback set |
+| Local efficient | weight pin, quantization, runtime, pool, utilization, queue, accepted quality |
+| Local capable | potentially higher cost; reservation for a protected quality or consequence class |
+
+Each row needs an owner, data classes, model or weight pin, runtime revision,
+region, schema and tool support, capacity signal, interactive or batch SLO,
+cache owner, fallback set, all five cost layers, evidence expiry, and rollback
+target. Add the accepted-outcome definition and protected strata. Write
+unknown in an unproved cell; a cheaper blank is missing evidence. A
+high-consequence tool proposal still requires approval and action-digest
+reconciliation regardless of which row supplies the model.
+
+Cache ownership is another boundary that a common registry must expose. The
+gateway may coordinate exact or prefix reuse while a provider or local
+runtime maintains a different cache. Name the owner of each layer, which
+identity, tenant, sensitivity, policy revision, corpus version, route revision,
+and tool state participate in its key, who can invalidate it, its retention,
+and what a route change does to existing entries. A hit is an execution
+shortcut, not evidence that reuse remains authorized.
+
+The [OpenAI prompt-caching documentation](https://platform.openai.com/docs/guides/prompt-caching),
+[Anthropic prompt-caching documentation](https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching),
+and [Gemini context-caching documentation](https://ai.google.dev/gemini-api/docs/caching),
+checked in the source audit on **2026-09-12**, describe provider-specific
+mechanisms. The [AWS caching discussion](https://aws.amazon.com/blogs/database/optimize-llm-response-costs-and-latency-with-effective-caching/)
+offers practitioner framing for cost and latency trade-offs. None establishes
+the gateway's isolation, retention, invalidation, or authority contract. Begin
+with narrow exact or explicitly qualified reuse and prove invalidation.
+Semantic equivalence is itself an inference: similar wording can conceal
+different tenant scope, sensitive context, policy, source freshness, or
+side-effect state. An unexplained semantic hit leaves risk outside the
+apparent saving. Charge storage, lookup, invalidation, refresh, validation,
+and stale-reuse repair to the ledger described in
+[Chapter 10](10-managed-vs-local-tco.md).
 
 When ownership changes, update the migration map before the traffic. A team
 that inherits a local service inherits its capacity and security obligations.

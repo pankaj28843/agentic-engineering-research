@@ -48,6 +48,22 @@ and [Gemini context caching](https://ai.google.dev/gemini-api/docs/caching) are
 official sources for provider-specific behavior and terms as audited on
 2026-09-12. They are lookup references, not interchangeable semantics.
 
+A cache hit is an execution path with lookup, material storage and
+invalidation, and validity-checking work. Cross-tenant reuse needs an explicit
+approved sharing scope and an answer free of tenant-scoped facts, hidden
+retrieval, private tool results, or identity-dependent instructions. Bind
+stored provenance to the source context and reject reuse after relevant
+policy, freshness, or tool-permission changes. Semantic similarity cannot
+supply the missing authorization.
+
+Track hit, safe hit, rejected hit, miss, invalidation reason, and acceptance
+separately. A miss still consumes lookup and policy work before generation;
+a stale hit can cause repair or an incident. For comparisons, give fixed
+baselines an equivalent cache opportunity under the same validity rule, or
+report cache as an explicit policy feature with both reuse and no-reuse views.
+The no-cache view tests routing on fresh work; the cache view tests the service
+including reuse. Neither silently stands in for the other.
+
 For batch contracts, consult [OpenAI Batch API](https://platform.openai.com/docs/guides/batch),
 [Anthropic Message Batches](https://docs.anthropic.com/en/docs/build-with-claude/batch-processing),
 and [Gemini Batch API](https://ai.google.dev/gemini-api/docs/batch-api). The
@@ -64,10 +80,16 @@ the scope instead of claiming one universal router.
 
 The following **illustrative calculation** covers 100 requests in a policy
 assistant. Each request includes a large, unchanged approved handbook prefix.
-An exact cache serves 60 requests after the first context preparation. Cache
+For this calculation, an exact **response** cache serves 60 requests with
+reusable answers, rather than merely reusing the handbook prefix. Cache
 reads and writes consume 0.1 unit per request; a model attempt consumes 1 unit;
 validation consumes 0.2 unit. Assume the 60 hits still perform authorization,
 freshness, and answer validation.
+
+This distinction is necessary for the arithmetic: a prefix/context cache
+alone does not establish that 60 answer-generation attempts disappeared.
+The following assumed 1-unit saving is response reuse in this illustrative
+service, not a provider prompt-caching rate or a measured saving.
 
 Without caching, context and model work cost 100 units and validation costs 20,
 for 120 units before any rework. With caching, 40 misses consume 40 model
@@ -77,9 +99,11 @@ if 10 hits are stale or cross a tenant boundary, the apparent 50-unit saving
 is a safety incident and the cache policy has failed.
 
 Now imagine 100 delay-tolerant extractions. A batch window reduces gateway and
-provider overhead under its documented terms, but the work is not counted as
-interactive success until results are reconciled. If 8 jobs expire and are
-retried, their costs and completion-window misses remain in the route ledger.
+provider overhead under its documented terms, but the work is counted as
+batch acceptance only after results satisfy the completion and reconciliation
+contract, never as interactive success merely because it finished. If 8 jobs
+expire and are retried, their costs and completion-window misses remain in
+the route ledger.
 The batch route can be economically better while being categorically invalid
 for a request whose user is waiting.
 
@@ -138,8 +162,10 @@ prove freshness and meaning. “The embeddings are close” cannot authorize a
 cross-tenant answer.
 
 Batching changes the failure state. A synchronous call that times out may be
-retried under an idempotency key. A batch job may be accepted by the provider
-but partially complete, expire, or return results after a policy version has
+retried under an idempotency key only when its effect and recovery contract
+permit it; a possible external effect needs reconciliation first. A batch job
+may be accepted by the provider but partially complete, expire, or return
+results after a policy version has
 changed. Reconcile each item and decide whether old results can still be
 accepted. If not, mark them stale and apply the current route policy.
 
@@ -174,6 +200,25 @@ For batch, record item-level identity and policy version. A job can be accepted
 while one item fails, and a policy can change while results wait. The result
 ledger needs enough information to decide whether to deliver, re-run, or ask a
 human. Batch economics are real only after that join.
+
+Consider an explicitly illustrative batch with 99% of items finished and 1%
+unresolved. The missing 1% stays visible at request level. If the service
+allows partial completion, define exactly what passes; if every item is
+required, the business outcome remains unaccepted until the unresolved work
+is repaired within its contract. Report completion rate, deadline compliance,
+retry work, and coordinator cost. Admission must classify the request's SLO
+before route selection; an interactive request cannot become batch work after
+the fact to improve a cost chart.
+
+Give each logical request an idempotency key and link every provider
+submission to it. Distinguish a retry from a new business request, identify
+the canonical result if two copies complete, and record whether duplicate
+work was chargeable. Count the logical request once in the accepted-outcome
+denominator while retaining all submissions in the numerator. Coordinator
+retries, polling, storage, reconciliation, and operator intervention belong
+in the declared batch cost boundary. The compact report can show cost per
+accepted outcome, acceptance, deadline compliance, and unresolved work, with
+the admission and reconciliation ledger available for inspection.
 
 ## Checkpoint
 

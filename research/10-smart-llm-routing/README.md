@@ -40,6 +40,12 @@ focuses on the route-specific economic and governance consequence.
 
 ## Evidence date and uncertainty
 
+The guide revision of **2026-09-14** incorporates the four final episode
+scripts. This is an editorial revision of the existing evidence, not a fresh
+provider or pricing audit. Their arc carries through eligibility,
+accepted-outcome economics, managed-versus-local ownership, and release
+governance; the guide keeps its fourteen-chapter learning sequence.
+
 The source audit was performed on **2026-09-12**. Current prices, product
 availability, and model capabilities are time-sensitive; consult the dated
 official page in the [source index](source-index.md) before using them in a

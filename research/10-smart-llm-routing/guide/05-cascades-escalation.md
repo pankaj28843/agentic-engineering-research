@@ -54,12 +54,59 @@ threshold can depend on language, context length, consequence, and the cost of
 review. A long-tail stratum may need an earlier escalation or a direct capable
 route. A high-consequence refusal may need a human, not a larger model.
 
+Held-out means excluded from threshold tuning, with deliberate coverage of
+language, task family, context length, risk, tool use, and durable side effects.
+Plot accepted-outcome rate against attributed cost, with latency and escalation
+alongside it and separate curves for protected strata. An illustrative 89%
+aggregate acceptance rate can conceal failure in a small critical class.
+Choose an operating point against the declared acceptance floor, latency
+budget, and cost boundary; do not choose it because the confidence number is
+round. Evaluator errors can correlate with the efficient route's errors, so
+calibration may need deterministic checks, sampled human review, adversarial
+cases, and a capable reference on a governed subset. Evaluator confidence does
+not grant authority to perform an action.
+
 [FrugalGPT](https://arxiv.org/html/2305.05176) is a primary research example
 of combining adaptation, approximation, and cascades under an objective that
 includes cost and quality. Its reported savings belong to the paper's tasks,
 models, and method. [Tian Pan's practitioner account](https://tianpan.co/blog/2025/11/03/llm-routing-model-cascades)
 is a useful implementation discussion, while [Sean Geng's guide](https://seangeng.com/writing/the-honest-guide-to-llm-routing)
 is a skeptical reminder that a cascade needs a trustworthy quality signal.
+
+### An illustrative calculation with an explicit denominator
+
+Consider a separate, deliberately invented cascade: the efficient attempt
+costs 1 unit, the validator 0.5 unit, and capable repair 4 units. If `p` is
+the fraction accepted without repair and every remaining request receives
+that repair, expected model-and-validator work per entering request is
+`1.5 + 4 × (1 − p)`. At `p = 0.8`, this is 2.3 units, before queueing,
+cache effects, or human repair. Dividing 2.3 by 0.8 gives 2.875, but mixes
+all-request work with first-attempt acceptance. It is not final cost per
+accepted outcome. Although 2.875 is numerically below the 4-unit capable
+call, these are different accounting boundaries, and neither comparison
+establishes equivalent accepted service.
+
+Now make the branches explicit in an illustrative population of 100 requests:
+80 pass after the first route and validator, 15 receive capable repair and
+then pass, and 5 are blocked or abandoned without acceptance. First-route and
+validator work is `100 × (1 + 0.5) = 150` units; the 15 repairs add
+`15 × 4 = 60` units. The accounted subtotal is 210 units, plus any additional
+work consumed by the five nonaccepted cases and any declared human work.
+The denominator is 95 accepted requests, not 80 and not 100. This branch
+population differs from the 2.3-unit expectation: only 15 requests receive
+repair here, whereas that expectation repairs all 20 first-pass nonacceptances.
+If a later manual process handles the remaining five, decide before comparing
+policies whether it lies inside the service boundary. Charge consumed work
+even when the request never reaches acceptance.
+
+A transport response is not business acceptance. A produced answer that fails
+the rubric is rejected; a path denied permission or required evidence is
+blocked. Policy abstention belongs in the blocked state and remains visible
+in coverage, without entering the accepted-outcome denominator. If the
+contract permits correction, count accepted-with-rework and record its cost.
+If first-answer acceptance is required, retain the rejected attempt and link
+the later corrected outcome to its parent. Terminal failure means permitted
+recovery ended without acceptance; it is not another name for a timeout.
 
 ## Worked example: a document extractor
 
@@ -82,8 +129,12 @@ and spends capability on the uncertain tail.
 
 Now change the traffic. In a new language, only 55 documents pass the first
 route; 45 escalate. The same cascade costs 100 + 20 + 225 + 12 = 357 units.
-If 38 are accepted, its accepted cost is 9.39 units. A direct capable route
-may now be cheaper after rework. The policy should have a stratum-specific
+An assumed total of 38 accepted documents would give approximately 9.39 units,
+but cannot describe final acceptance under an unchanged rubric when 55 already
+passed. Keep 357 / 38 ≈ 9.39 only as a separate illustrative sensitivity
+calculation with a different final-acceptance assumption, not as a reconciled
+continuation of that 100-document population. A direct capable route may now
+be cheaper after rework. The policy should have a stratum-specific
 threshold or a route rule that recognizes the language before creating a
 longer queue.
 
@@ -94,8 +145,8 @@ not remove them to improve the average.
 
 ## Failure drill: the threshold that creates a retry storm
 
-An owner lowers the escalation threshold because the capable provider's
-invoice rose. More answers are marked “confident,” but multilingual and
+An owner lowers the score required to accept the efficient answer because
+the capable provider's invoice rose. More answers are marked “confident,” but multilingual and
 long-context cases now contain missing fields. Validators reject them. The
 control plane repairs once, retries once, and escalates, so the supposed saving
 becomes a fan-out of calls. Interactive latency breaches its SLO and the
@@ -166,6 +217,11 @@ For a low-consequence summary, one extra capable call may be wasteful. For a
 policy answer, a missed exception may cost much more than the call. The
 threshold therefore belongs to a stratum and an acceptance contract.
 
+Specify the score direction before adjusting it. A minimum score required to
+accept an efficient answer has the opposite operational direction from a
+minimum score required to trigger escalation. “Lower the threshold” alone is
+not a reproducible policy change; record which decision becomes more frequent.
+
 Use a confusion table rather than a single curve. False-cheap means the first
 route looked acceptable but required rework or caused a failure. False-
 expensive means the policy escalated a result that would have passed. Add
@@ -176,6 +232,23 @@ Escalation can also be parallel for a small, bounded verifier, but parallel
 work changes cost and capacity. Choose sequential or parallel from the
 measured acceptance and deadline requirement. Keep one retry owner, one parent
 budget, and one final ledger writer. More attempts do not create more truth.
+
+Test the cascade against a fixed ladder: Always-Mid, Always-Capable,
+Direct-Efficient without escalation, and the Bounded Cascade before adding a
+learned candidate. Always-Mid removes first-choice classification from the
+comparison; Direct-Efficient exposes failures that escalation would otherwise
+hide; Always-Capable tests whether starting with capability avoids repair.
+Pin the request set or declared distribution, context builder, redaction,
+validator and evaluation code, tool/schema contract, acceptance rubric,
+deadline, price snapshot, and protected strata. Give baselines equivalent
+cache and repair policies or report those as explicit differences. A fixed
+baseline is a service contract, not merely a model name.
+
+[RouteLLM](https://arxiv.org/html/2406.18665) and FrugalGPT offer mechanisms
+and experimental questions, not this service's acceptance, savings, latency,
+or safety results. Keep each paper result attached to its workload, baseline,
+evaluator, model versions, sampling, and objective. The enterprise comparison
+still needs its own replay and operational ledger.
 
 ## Checkpoint
 

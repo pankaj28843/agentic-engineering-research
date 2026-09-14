@@ -43,6 +43,15 @@ order. Each one adds an artifact to the same decision record.
 
 ## Reading rules
 
+This edition incorporates the final four-episode scripts on 2026-09-14 while
+retaining the source audit of 2026-09-12. Chapters 1–6 develop the route as a
+policy decision; chapters 5 and 7–9 account for the accepted outcome; chapters
+10–11 examine the cost and responsibility of owning serving infrastructure;
+and chapters 12–14 turn those contracts into release and incident decisions.
+Dialogue has become explanatory prose, worked examples and counterarguments.
+Illustrative incidents and arithmetic remain teaching examples, not field
+measurements or new evidence of enterprise ROI.
+
 “Fact” means the linked source directly supports the statement. “Measurement”
 means a paper or independent benchmark with a bounded workload. “Vendor claim”
 means an interested party's account whose method and transfer limits must be

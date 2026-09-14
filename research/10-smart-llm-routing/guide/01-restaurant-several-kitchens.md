@@ -10,7 +10,8 @@ whether the kitchen can safely handle the ingredients, the deadline, and the
 kind of meal. Then the manager chooses among the safe kitchens. Finally someone
 checks that the order is complete before it is called a success.
 
-LLM routing is that manager. A model is one kitchen. A route is the whole
+LLM routing is that manager. A model is the oven, not the whole kitchen.
+A route is the whole
 qualified path: the model or deterministic handler, the context it may see,
 the tools it may propose, the provider and region, the budget, the retry and
 fallback rules, the validator, and the definition of an accepted outcome. The
@@ -21,6 +22,14 @@ operating decision.
 The durable question is not “which model is smartest?” It is “which eligible
 path can produce an accepted result for this request at the required risk,
 latency, and total cost?”
+
+Consider an illustrative Monday at 9:07: an engineer asks a coding assistant
+to find a failing assertion, change a test, and show a diff. A polished answer
+includes a command that could apply the patch. The repository is restricted,
+and executing the command would alter shared state. Writing the command does
+not authorize its execution. This is where the kitchen analogy ends: the
+technical object is a policy-qualified execution path, including the boundary
+between proposing a change and causing it.
 
 ## Mechanism: envelope, eligibility, choice, outcome
 
@@ -84,6 +93,13 @@ uncertain evidence. Two propose changing account state.
 | 3 | Ambiguous policy question | efficient attempt, then capable escalation if needed | evidence coverage plus calibrated human sample |
 | 2 | State-changing proposal | capable proposal route only | schema, authorization, exact action digest, human approval |
 
+In this illustrative card, both summary routes are readonly: the requested
+language and supplied-document evidence are part of acceptance, and neither
+route receives a write tool. The ambiguous-policy lane additionally requires
+exception preservation, the effective date, and no unresolved contradiction.
+Its calibrated human sample does not replace those requirements. An FAQ miss
+returns an honest not-found state rather than an invented answer.
+
 Suppose the efficient route costs one unit for an attempt and the capable route
 costs four units. The FAQ costs one-tenth of a unit. Those are not prices; they
 are a simple accounting scale. Sending all twelve requests to the efficient
@@ -91,6 +107,16 @@ model appears cheap, but it ignores that the two state-changing requests have
 an authority requirement and that the three policy questions may need a second
 attempt. Sending everything to the capable model is easy to explain but pays
 for capability that the FAQ and routine summaries do not need.
+
+Now suppose the efficient route passes two of the three ambiguous questions
+and escalates one. Those three requests consume three efficient units plus
+four capable units: seven illustrative attempt units, before validation,
+retrieval, or human work. The first-call total of three units is not the cost
+of that route. Add material rework if an accepted-looking answer later needs
+repair, and retain blocked requests in the traffic report. A capable attempt
+for each state-changing proposal can also be assigned four illustrative
+units, but paying those units still buys only a proposal; approval remains
+an independent gate.
 
 The manager's decision record for a policy question might say:
 
@@ -108,7 +134,8 @@ deterministic policy owns the authority boundary.
 
 ## Failure drill: fluent and false-cheap
 
-The efficient route answers all three ambiguous policy questions with polished
+In this illustrative failure drill, the efficient route answers all three
+ambiguous policy questions with polished
 sentences. One contradicts the source, one omits a jurisdictional exception,
 and one invents a missing date. A dashboard that counts HTTP success reports
 three successes. An acceptance ledger reports zero accepted answers unless a
@@ -116,8 +143,12 @@ repair or human review makes them pass.
 
 The false saving came from treating transport completion as business success.
 The missing signals were evidence coverage, contradiction detection, and an
-abstention state. The honest terminal states are accepted, repairable,
-escalated, blocked, or failed. A router should not hide uncertainty by trying
+abstention state. The honest outcome vocabulary includes accepted, repairable,
+escalated, blocked, failed, and indeterminate. Indeterminate means a timeout
+left an external effect possible: the owning business system must reconcile
+the idempotency identity before another effect is attempted. Repairable and
+escalated describe transitions whose eventual outcome must still be recorded.
+A router should not hide uncertainty by trying
 providers until one sounds confident. The [honest practitioner guide to LLM
 routing](https://seangeng.com/writing/the-honest-guide-to-llm-routing) is a
 useful skeptical reading here: routing depends on a quality signal that is
@@ -183,6 +214,16 @@ FAQ, a fixed model, or a direct capable route. If nobody can state the
 baseline, a reported saving has no counterfactual.
 
 ## From kitchen map to route choice
+
+First inventory the actual surfaces. An IDE coding-assistant subscription may
+not pass through the enterprise gateway; managed calls, local open-weight
+serving, and deterministic workflows may have separate control boundaries.
+For each, establish whether it can carry tenant identity, enforce residency,
+expose a route enum and immutable pin, block tools, record cost and outcome,
+and reconcile a possible effect. A surface that cannot enforce a required
+boundary needs a narrower workload scope or a separate route boundary. Product
+routing is evidence of a mechanism within its documented surface, not proof
+that one gateway controls every journey.
 
 The first implementation can be a table, not a learned service. Give every
 request a route card and every route a contract. A table row says: when these

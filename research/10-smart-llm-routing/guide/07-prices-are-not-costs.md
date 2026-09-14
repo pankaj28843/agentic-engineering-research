@@ -38,6 +38,26 @@ GPU, observability, and evaluator capacity to traces. **Product economics**
 asks whether the accepted outcome saves time, improves coverage, or reduces
 risk. A route can improve one view and worsen another.
 
+Acceptance is a contract event, not merely a successful provider response.
+For an illustrative readonly policy answer, the rubric can require the right
+document version and jurisdiction, preserved exceptions, and an explicit
+not-established state when the document is silent. For a tool proposal,
+schema and policy acceptance of a normalized action remains separate from
+approval to execute it. State whether a corrected artifact qualifies as
+accepted-with-rework or whether the first answer must pass; link rejected
+attempts and later repairs to the same logical request.
+
+Abstention is a policy-chosen block. Record its reason and its effect on
+coverage; it is not an accepted outcome and must not enter that denominator.
+Keep blocked requests distinct from produced answers that fail the rubric.
+An indeterminate effect awaits reconciliation by the owning business system;
+terminal failure means the permitted recovery path has ended without
+acceptance. Neither is synonymous with a transport timeout. Report the
+accepted count, coverage, rejected and blocked work, pending reconciliation,
+repair, and terminal failures beside the ratio. A narrow service can be
+intentional, but cannot claim universal savings by abstaining on difficult
+long-context or multilingual requests.
+
 Every price record needs provider, account, region, currency, unit, effective
 start and end, cache or batch treatment, and a source URL. Current official
 lookup pages include [OpenAI API pricing](https://openai.com/api/pricing/),
@@ -48,6 +68,23 @@ lookup pages include [OpenAI API pricing](https://openai.com/api/pricing/),
 not freeze values from those pages; an owner must refresh the registry before a
 decision. [FinOps GenAI guidance](https://www.finops.org/wg/optimizing-genai-usage/)
 is a useful source for allocation and optimization questions.
+
+The source audit remains 2026-09-12; these links are dated evidence and lookup
+locations, not a claim that rates have been checked again. Retain the endpoint
+or model identifier, price-table version, attribution rule, and whether taxes,
+platform fees, or internal allocations are included. Record the price category
+that actually applied to each request or batch, including separate input,
+output, cached, or batch work. A blended rate is interpretable only when its
+category mix is visible.
+
+Keep an immutable experiment record of attempts, measured work, acceptance,
+latency, and failures separate from the projection that joins it to a named
+price snapshot. A price change calls for repricing that work profile without
+rewriting history. A model identifier or tokenizer change creates a new route
+version. Capture deployment or endpoint revision, prompt/tool bundle, and run
+date; if a provider cannot expose a stable version, record that uncertainty
+as a rollout constraint. An observed invoice, a counterfactual estimate, and a
+blended internal allocation are different evidence.
 
 Include counterfactuals. If a routed request used the efficient endpoint, what
 would the always-capable policy have cost under the same context and price
@@ -88,14 +125,43 @@ cost per accepted outcome       2.34 units
 The routed policy accepted two more outcomes, but cost per accepted outcome
 rose by roughly 24% on these assumptions. The decision could still favor it
 for a different product value, safety coverage, or capacity reason, but it is
-not a token-cost win. If an owner reports only the 30% model line, the
-dashboard is hiding the intervention's consequence.
+not an accepted-outcome cost win, despite the 30% token-cost reduction. If an
+owner reports only the 30% model line, the dashboard is hiding the
+intervention's consequence.
 
 Sensitivity analysis identifies the important unknowns. Vary escalation rate,
 human hours, cache hit rate, evaluator calls, and local utilization one at a
 time and together. Record a range when the input is uncertain. Show a break-
 even line: for example, what maximum human rework keeps the routed policy
 below the baseline? That question is actionable for product and operations.
+
+### The support work behind a cheap first call
+
+In another explicitly invented example, 1,000 requests take an efficient first
+route: 600 are accepted immediately, 300 are repaired by a capable route, and
+100 become support cases consuming 12 minutes each. Keep those exact physical
+observations before assigning money to them. The example does not establish
+that every repair or support case eventually passes; record their final
+acceptance instead of inferring it from arrival in a queue. A capable baseline
+may avoid support work, but that is a counterfactual to test, not a result
+established by the illustration.
+
+Vary the loaded labor or opportunity cost per repair minute across an explicit
+range. If the candidate wins only when attention is valued implausibly low,
+the saving is fragile. Salaried attention can be an opportunity cost rather
+than an invoice; if excluded from provider-cost reporting, show total service
+effort separately. Count cases, active minutes, queue delay, reviewer role,
+escalation, and final acceptance. Keep the repair admission rule, eligible
+reviewers, and time budget fixed across baselines or label the difference.
+
+False cheap omits work caused after the first call. False expensive can charge
+a route for work it did not cause or call a capable attempt wasteful when it
+prevented repair. Separate direct marginal work, allocated shared capacity,
+and consequence scenarios. Observed correction minutes belong in the direct
+ledger; possible incident costs belong in sensitivity or risk analysis unless
+a consistent incident-allocation method exists. This avoids both omission
+and double counting. Let a reader change the repair-minute assumption or
+remove a shared allocation and see whether the recommendation survives.
 
 ## Failure drill: the invoice-only dashboard
 
@@ -164,6 +230,23 @@ not an invoice. Mark it as such and give it an uncertainty range. This makes
 the business question honest: how much did this policy change relative to the
 fixed baseline under the same work?
 
+Make that comparison reproducible with the baseline ladder in Chapter 5.
+Freeze request identities or a declared stratified distribution, context and
+redaction, tool contract, evaluator revision, acceptance rubric, deadline,
+route evidence, and price window. Confidential work does not justify sending
+every request to every model: permitted minimized shadow inputs, consented
+redacted replay, rubric-based judging, or explicitly uncertain offline
+estimates are distinct evidence options. A shift in live request mix needs
+new uncertainty and coverage reporting, not credit to the routing policy.
+
+Reconcile at the logical-request level, with accepted, terminal nonaccepted,
+and still-pending populations accounted for. Break out rejection, block,
+cancellation, and indeterminate effects without treating duplicates or repair
+events as additional requests. Accepted-with-rework belongs inside accepted
+outcomes; its attempts and correction cost remain visible. An unexplained
+missing trace is an unknown, not zero cost. A reviewer should be able to move
+from the ratio to one request's attempts and forward to its disposition.
+
 ## Allocation decisions need a reader
 
 The cost ledger is not only a finance export. An engineer should be able to
@@ -183,6 +266,23 @@ Review cost at the route revision boundary. A new validator, context builder,
 cache policy, model pin, or fallback changes the path. Close the old cost
 series, record the new revision, and preserve the counterfactual. That makes a
 price change distinguishable from a quality or operational change.
+
+For local inference, preserve physical accelerator or CPU time, memory
+reservation, energy when available, operator time, and fixed-infrastructure
+allocation separately. Low utilization and peak reservations can widen the
+cost uncertainty even without a per-token invoice. Instrumentation also costs
+work: a bounded workload and sampled traces are a reasonable first study,
+provided sample size, missing traces, confidence or sensitivity ranges, and
+the protected strata actually observed remain visible.
+
+The release comparison needs more than a cheaper ratio: baseline and candidate
+volume and uncertainty, protected acceptance floors, deadline compliance,
+p95 latency, repair capacity, unresolved work, cache isolation, residency,
+evidence age, and rollback ownership. An exact ledger describes observations;
+it does not prove the next workload has the same mix. Require the cost
+advantage to survive the declared uncertainty range and more than one time
+window, with a current price snapshot and a denominator review date. Hold or
+limit release to a named slice when those conditions are unproven.
 
 ## Checkpoint
 

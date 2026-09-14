@@ -50,6 +50,14 @@ an API. Child workers cannot inherit broader authority or reset the parent
 budget. The capsule's [graph-engineering packet](../briefing.md) contains the
 full design contract; this chapter teaches the parts needed for routing.
 
+Capability never widens eligibility. In an illustrative case, even 99%
+confidence that a tool call is safe is not a permission token. An uncertain
+`R2` returns a bounded enum or abstains; `R1` still owns the allowed set.
+A qualified alternative, a blocked state, or a human path may be correct.
+Measure the latency of this separation, and require a human gate only where
+the action's contract calls for one; do not add one to readonly work merely
+to make the graph look safer.
+
 State must be explicit. Use `succeeded`, `partial`, `failed`, `blocked`,
 `cancelled`, `awaiting-human`, `budget-exhausted`, and `indeterminate` where a
 possible external effect has not yet been reconciled. A checkpoint records
@@ -71,6 +79,17 @@ retry/fallback reason, budget, approval, final status, and accepted result.
 Content is redacted under a retention policy. The outcome ledger joins those
 events to cost per request, cost per accepted task, rework, quality slices,
 safety events, tails, capacity, and provider quota.
+
+Approval provenance identifies the approving principal or control, authority
+or delegation basis, normalized-action hash, decision, scope, expiry or
+decision time, and correlation to any committed or indeterminate effect.
+A bare “approved” flag cannot establish who authorized what. Stable run and
+attempt keys connect these fields to validator result, tool state, first
+useful response, fallback reason, and cost allocation. These are proposed
+schema fields; the invariant is reconstruction of decision, work, authority,
+and result. The decision edge must read the same policy and registry identities
+that the evidence reports. A current registry label beside yesterday's cached
+worker configuration is not reproducibility.
 
 ## Worked example: one restricted proposal
 
@@ -96,9 +115,19 @@ ledger. A fallback model cannot run until that uncertainty is resolved. The
 route's economic denominator also waits for reconciliation; otherwise a
 duplicate effect can make a cheap route look falsely efficient.
 
+The corrected scope needs its own normalized-action digest, with approval
+bound to that exact proposal and expiry. If reconciliation is unavailable,
+retain `indeterminate` with run key, attempt key, action digest, and owning
+business system; alert the owner and stop further side effects for that
+workflow. A human escalation or bounded status response can remain available.
+If the effect did not occur, the owner can close the state or authorize a
+bounded retry. If it did occur, record the accepted or rejected business
+result. Missing acknowledgement is never permission for provider fallback.
+
 ## Failure drill: the graph is typed on paper only
 
-An engineer adds a fallback edge from `W` to a provider in another region
+In this **illustrative drill**, an engineer adds a fallback edge from `W` to
+a provider in another region
 without updating `R1`. The fallback is declared only in a prompt. During an
 outage, the worker times out, a retry crosses the boundary, and the gateway
 logs a successful HTTP response. No event contains the route registry pin or
@@ -153,6 +182,11 @@ fact. Store state history append-only with writer, timestamp, version,
 provenance, and retention class. A current-state view can be materialized, but
 the history is what makes an incident or replay possible.
 
+Keep rejection and abstention visible as validation or policy decisions too;
+neither is equivalent to an uncertain external commit. `unknown` describes
+missing evidence, such as stale capacity or unavailable attribution, and must
+not silently become a healthy route or accepted workflow outcome.
+
 For cancellation, stop new work, propagate cancellation to eligible workers,
 and ignore late writes after finalization while retaining their evidence. For
 partial fan-out, declare whether all, any, or a named subset is required.
@@ -187,6 +221,23 @@ to retention, deletion, and legal-hold policy. Do not store secrets or raw
 regulated content just to make a dashboard convenient. Hash or reference
 content under an approved redaction design. The audit trail must support an
 incident and a replay while respecting the data boundary it is meant to prove.
+
+Audit metadata and raw content may have different retention schedules. Where
+applicable, an authorized legal hold can pause an approved deletion schedule;
+access control and redaction still apply. Record deletion itself without
+exposing deleted content. Policy, security, legal, and audit owners must agree
+on this design before an incident makes copying content elsewhere tempting.
+Required approval evidence must be retainable under the organization's
+applicable retention and access rules.
+
+Hashes and references do not make content harmless: a small input space can
+be reversible, a reference can create an access path, and filenames or error
+strings can disclose a tenant. Minimize first, test redaction, log sensitive
+debugging access, and enforce expiry. If permitted evidence cannot support
+required reconstruction, declare an observability gap. OpenTelemetry supplies
+vocabulary, not permission to retain data; NIST and the EU framework provide
+governance context, not route certification or a legal classification for the
+proposed system. The source audit remains 2026-09-12.
 
 ## Checkpoint
 

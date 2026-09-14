@@ -35,6 +35,15 @@ Use the cumulative artifacts from this book as a decision lab:
    scope matrix for Copilot, managed APIs, and local services. Reconcile the
    accepted-cost ledger before claiming a gain.
 
+Begin with inventory and telemetry before changing behavior. Record managed
+server-side calls, local services, coding-assistant surfaces, data classes,
+tools, owners, baselines, and gateway visibility gaps. Bind policy, route,
+registry, capacity, cache, validator, outcome, and cost telemetry to the current
+path first. In shadow, block, stub, simulate, or send side-effecting tools and
+writes to a non-production sink: the candidate must neither change the user
+result nor exercise a production side effect. Shadow tests the control path;
+effect-aware tests and approval remain separate gates.
+
 Treat the result as a rollout ADR. It should state the context and current
 baseline, decision, alternatives rejected, route envelope, evidence, open
 unknowns, owners, SLOs, rollback triggers, and review date. A “successful”
@@ -49,6 +58,13 @@ provider terms; FinOps owns allocation and reconciliation; audit owns evidence;
 and the provider owner owns upstream changes. No single model team should own
 all authority.
 
+This is one workable ownership map, not a universal assignment. The invariant
+is a named accountable owner for every decision. Shared gates prevent product
+completion from hiding blocked or repaired work, FinOps from claiming savings
+without accepted cost and coverage, or SRE from trading residency for p99.
+Required approval evidence must be retainable under applicable retention and
+access rules; an ownership diagram cannot override those rules.
+
 Proposed rollback triggers include a hard safety or residency violation; a
 protected-stratum acceptance regression; two consecutive SLO breaches; an
 expired or drifting registry pin; unexplained cost per accepted outcome;
@@ -56,6 +72,15 @@ capacity exhaustion that threatens the fallback; cache isolation failure; or
 an unreconciled possible side effect. Rollback restores the named fixed
 baseline, stops new candidate decisions, preserves traces, and opens an
 incident. It does not delete evidence or silently retry into another boundary.
+
+Make the rollback object explicit: policy revision, route class, model/runtime
+pin, provider, queue, cache rule, or credential. Name exposure scope, owner,
+deadline, and treatment of in-flight work. Exercise the actual registry and
+deployment controls in a controlled canary, recording when exposure stopped,
+when the baseline resumed, what happened to queued attempts, how late writes
+were rejected or reconciled, and how the owner was paged. A flag that leaves
+already-authorized side effects running is incomplete. A rollback deadline
+remains a proposed SLO until measured in that exercise.
 
 ## Worked example: a ninety-day adoption plan
 
@@ -95,7 +120,8 @@ days.” That is a useful decision because it names boundaries and uncertainty.
 
 ## Failure drill: incentives defeat the gate
 
-The platform team is measured on provider invoice reduction. Product is
+In this **illustrative drill**, platform is measured on provider invoice
+reduction. Product is
 measured on request completion. Reviewers are measured on response time. The
 router lowers token spend by sending difficult cases to a cheap route, which
 raises rework and causes product to hide abstentions. Each dashboard is green
@@ -146,6 +172,31 @@ evidence: which claims are measured, unknown, or vendor-supplied?
 reversibility: can the exact baseline be restored and proved?
 ```
 
+For an illustrative release matrix, use one readonly coding workflow and one
+restricted document workflow. Each row needs the fixed baseline, candidate
+route IDs, policy and registry revisions, data boundary, consequence,
+acceptance floor, protected strata, p95 and p99 budgets, capacity reservation,
+cache scope, cost denominator, telemetry fields, owner, expiry, kill switch,
+rollback baseline, reconciliation owner, and unresolved questions. Link the
+contract tests, replay, shadow, and canary evidence. Carry evaluator identity,
+configuration, independence assessment, rubric, examples, holdout, and
+calibration versions explicitly so a changed judge cannot masquerade as a
+better route. These proposed fields become evidence only after the controls
+have been exercised.
+
+Use four **illustrative table-top failures** to test that matrix:
+
+| Injected condition | Required distinction and response |
+|---|---|
+| Preferred provider is rate-limited | An alternate must be eligible, current, capacity-qualified, and funded for the data and consequence; reserve its budget and record the fallback reason before dispatch. Otherwise block or enter a bounded degraded state and alert the owner. Reachability is insufficient. |
+| Local route responds but capacity evidence is stale | Treat capacity as unknown or block until refreshed, unless policy has an explicitly safe reservation rule. Return to the fixed baseline only if it remains eligible. Record the stale condition. |
+| Cache hit belongs to the wrong policy revision | Treat this as an integrity failure: stop serving that cache class, invalidate or quarantine entries, preserve evidence, and investigate the key and owner. |
+| Tool proposal times out after possible acceptance | Enter indeterminate, stop new side effects, and have the owning business system reconcile by idempotency key before retry or fallback. If reconciliation is down, keep the boundary closed. |
+
+A generic “AI failure” erases the different state and owner each case needs.
+Compare accepted goodput, protected quality, p95 and p99, accepted cost, cache
+isolation, and measured rollback time through the exercises and exposure.
+
 Require a written disposition for each row: adopt, keep in shadow, revise,
 or reject. “Adopt” should include a scope, registry revision, exposure, review
 date, and rollback command or control. “Keep in shadow” is a real outcome when
@@ -159,6 +210,15 @@ that the latency report prefers. Resolve the conflict by returning to the
 route envelope and the stated success predicate. Do not average an authority
 violation into a positive score. A hard gate is a constraint, not a weighted
 preference.
+
+An illustrative promotion record can state: “Under policy revision P and
+registry revision R, for strata S, candidate route set C improved metric M
+against baseline B while hard gates H remained clean; expiry E and rollback K
+are owned by O.” The placeholders require evidence. If a provider refresh
+occurs during canary, pin the model/provider revision where the contract
+permits and version the evaluator separately. If pinning is unavailable,
+record uncertainty and narrow the claim. A refresh may require new replay;
+it does not silently inherit the previous promotion's authority.
 
 Set the next measurement before closing the meeting. If local utilization is
 the dominant unknown, schedule a production-shaped load test. If Copilot
@@ -219,3 +279,6 @@ for governance context, and [OpenTelemetry](https://opentelemetry.io/blog/2026/g
 for evidence signals. The ninety-day plan, SLOs, and rollback triggers are
 illustrative proposals. Adoption is complete only after replay, shadow,
 canary, security, reliability, reconciliation, and rollback evidence passes.
+The source audit remains 2026-09-12. Calendar progress, benchmark rankings,
+vendor accounts, and governance frameworks do not establish local rollout
+success; scoped evidence supports the next exposure decision.

@@ -14,12 +14,30 @@ decisions, service conditions, outcomes, and counterfactual baselines. A
 strong average model can be badly routed; a weaker model can be correct for a
 small low-risk stratum.
 
+Release a versioned policy object, not merely a model alias. Bind its identity
+to the route registry, model/runtime pins, eligible set, data and residency
+rules, tool contract, acceptance rubric, budgets, cache policy, telemetry
+schema, owners, expiry, rollback target, frozen evaluation set, and fixed
+baselines. Record what the policy cannot govern or attribute. A prompt hash
+without a context-builder version, or a gateway claim covering invisible IDE
+traffic, leaves the experiment's scope unresolved.
+
 ## Mechanism: replay, shadow, canary, rollback
 
 Freeze a stratified evaluation set with request IDs, context snapshots,
 expected authority/data class, acceptance rubric, and provenance. Evaluate
 the fixed baseline ladder and the candidate policy on the same set. Version
 the route policy, registry, prompts, validators, judges, and price snapshot.
+
+For paired replay, hold request identity, context snapshot, redaction, data
+boundary, tool contract, validator, acceptance rubric, price snapshot, and
+declared deadline constant. Vary policy and registry revision as the object
+under test. Freeze baselines before reading candidate results: a deterministic
+or direct handler, Always-Mid, Always-Capable, and an existing fixed cascade
+answer different counterfactuals. Always-Capable is a higher-capability
+reference; call it quality or safety headroom only for a dimension the replay
+actually measures. Baselines must obey the same eligible route envelope or be
+labelled unattainable references.
 
 Use four stages:
 
@@ -32,12 +50,33 @@ Use four stages:
 4. **canary:** named low-consequence cohort, fixed exposure, owner, stop
    thresholds, kill switch, and a tested return to the baseline.
 
+These instruments cannot substitute for one another. Contract tests reject
+invalid edges before optimization or execution; replay measures performance
+on fixed inputs. Shadow must neither change the user result nor exercise a
+production side effect: block, stub, simulate, or send side-effecting tools
+and writes to a non-production sink. Separate effect-aware tests and approval
+must establish what happens when an external action is committed. Shadow
+cannot establish side-effect safety or replace a rollback exercise.
+
+Negative contract cases also include unauthorized tools, exhausted budgets,
+stale capacity, validators with no terminal result, and out-of-region
+fallbacks. Test cache lookup and invalidation across tenant, policy revision,
+data class, acceptance rubric, route pin, context source, and authority
+changes. An unknown cache scope is not a demonstrated saving.
+
 The evaluator is a measurement instrument. A semantic judge needs examples,
 human calibration, order and verbosity stress tests, and an independent
 holdout. Use deterministic checks for schema, citations where machine-checkable,
 authorization, and business invariants. Preserve `abstain`, `blocked`, and
 `indeterminate`; a judge cannot turn them into successes merely because the
 answer is fluent.
+
+Version the evaluator prompt, examples, model or route, calibration set,
+holdout, and expiry independently of the producing route. Different evaluators
+can still share failure modes: test independence through human-calibrated
+borderline and disagreement cases. If harmless order or verbosity changes
+move the verdict, narrow the release claim. A semantic score measures evidence;
+deterministic policy and the human or domain gate retain permission authority.
 
 Report by stratum and route:
 
@@ -85,12 +124,42 @@ its frozen context; the policy is not ready for live traffic. Add the context
 shape to the route features or change the route envelope, then rerun the
 replay and shadow. Preserve the failed evidence.
 
+In a separate illustrative live-context case, retrieval doubles context
+length and escalations rise. That does not supply a universal escalation
+percentage: the existing 20% example above is its own proposed scenario.
+Both cases show why production-shaped shadow inputs can invalidate readiness
+without invalidating replay's conclusion about its frozen inputs.
+
+Protected strata can overlap. An illustrative French, long-context,
+restricted, readonly request belongs to all four views. Preserve membership
+predicates and distinguish hard eligibility boundaries from quality floors.
+Pre-register gates before reading results. A slice added after an incident
+is legitimate new evidence, but historical results did not test that gate.
+
+For an explicitly illustrative calculation, one rejected outcome becoming
+accepted in 40 cases moves observed acceptance by `1 / 40 × 100 = 2.5`
+percentage points. In 8 cases, the same change moves it by
+`1 / 8 × 100 = 12.5` percentage points. These are arithmetic movements,
+not confidence intervals or rollout evidence. Report denominator, uncertainty,
+and collection plan. One unauthorized cross-tenant cache hit among those
+8 cases remains a stop signal: uncertainty about quality cannot excuse an
+observed authority violation.
+
+Keep blocked, abstained, and indeterminate requests in coverage and state
+counts even when they have no semantic answer-quality score. Any exclusion
+from that score needs an explicit rule and separate state reporting. A canary
+needs a declared minimum evidence condition as well as a timer; insufficient
+representative cases mean more evidence or continued shadow.
+
 ## Failure drill: a green aggregate and a red protected slice
 
-The canary reports 93% aggregate acceptance, above a 90% target. A restricted
-residency slice has two blocked requests routed to an unqualified fallback
-because the evaluator did not include that policy combination. An average
-quality score and a green latency chart mask a hard boundary violation.
+In this **illustrative scenario**, acceptance rises from 90% to 93%, model
+spend falls, and the canary reports no critical incident. Yet two restricted
+requests pass through an unqualified fallback after a rate limit, and the
+evaluator excludes blocked requests and misses that policy combination.
+The 90% figure is the earlier aggregate, not a release target. An average
+quality score and green latency chart mask a hard boundary violation and a
+changed denominator.
 
 Make protected slices first-class release gates. The policy gate must run before
 the model and fallback. Add cross-tenant, residency, and stale-registry cases
@@ -98,6 +167,11 @@ to the frozen set. A hard-gate violation rolls back even when aggregate
 economics improve. If the exact failure's effect is uncertain, enter the
 indeterminate state, stop new side effects, and reconcile with the owning
 system.
+
+Stop new candidate exposure, preserve traces, repair the denominator, and
+return to the named eligible baseline. Record the cases as newly discovered
+protected evidence and missing contract tests. The release is red even if
+93% is arithmetically correct for the evaluator's narrower set.
 
 The [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
 and [EU AI regulatory framework](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
@@ -141,6 +215,13 @@ row must point to the policy and contract test that checks every classifier,
 worker, fallback, cache, and trace egress. A benchmark score alone cannot
 support either claim.
 
+Apply the same product rule to retries, evaluation, capacity reservation,
+cache work, and human repair across policies. Queue time and batch delay are
+service-time effects; declare a conversion before including them in monetary
+cost per accepted outcome. If retrieval, tests, or feedback change with the
+candidate, freeze the harness revision and count the extra work. That is an
+environment-and-policy experiment, not a pure model comparison.
+
 Drift has several forms. Traffic drift changes strata proportions. Context
 drift changes length, retrieval, language, or tool shape. Provider drift
 changes price, rate limits, or model behavior. Label drift changes the
@@ -148,6 +229,16 @@ acceptance rubric. Operational drift changes queue and capacity. Detect each
 with the signal it can actually observe, and map an alarm to a response:
 recalibrate, reduce exposure, return to the baseline, or block a protected
 class.
+
+Registry drift changes route pins and evidence expiry too. Map each signal
+to an owner and affected stratum: traffic drift may require reweighting or
+sampling; context drift reduced exposure or replay; provider drift route
+expiry; label drift recalibration and a new holdout; operational drift capacity
+reservation, lower concurrency, or a stop. A healthy provider average can hide
+a route's p99 queue-time spike. Revalidation is proportional: price changes
+may need cost replay and registry review, model/runtime pins acceptance and
+capacity gates, rubric changes new semantic comparisons, and new data or tool
+scope contract tests and governance review.
 
 Canary evidence should remain reversible. Keep the old route available until
 the accepted-cost and quality ledger has settled over enough representative
@@ -194,3 +285,7 @@ for evaluation practice; [NIST](https://www.nist.gov/itl/ai-risk-management-fram
 and the [EU framework](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
 for governance context; and [OpenTelemetry](https://opentelemetry.io/blog/2026/genai-observability/)
 for observability vocabulary. The release gates are proposals until executed.
+The source audit remains 2026-09-12. Keep each external comparison's task set,
+harness, metric, date, and method attached to its claim. Benchmark surfaces
+do not establish local residency, queues, tool authority, accepted cost, or
+release readiness.

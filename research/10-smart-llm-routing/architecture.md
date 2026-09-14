@@ -162,11 +162,31 @@ accepted cost. Apply retention, deletion, and legal-hold policy.
 
 ## Owners and status
 
+### Release record and evidence independence
+
+The release record should pin the evaluator identity and configuration,
+calibration evidence, held-out cohort, and independence from the candidate
+policy alongside the model, registry and policy revisions. This is a proposed
+control: a stable aggregate score does not establish that the judge or protected
+strata stayed stable. Contract tests check enforceable boundaries; replay
+compares policies under frozen conditions; shadow exposes current traffic and
+capacity without production side effects; canary introduces explicitly bounded
+real exposure. Passing one does not substitute for the others.
+
+A cross-tenant cache result is a data-isolation incident, not merely an
+acceptance miss to average against good answers. Stop the affected path, preserve
+appropriately scoped evidence and follow the incident process. For a timeout
+after a possible external effect, restore routing separately from reconciling
+business state: rollback cannot undo an unknown commit. Both cases need a named
+owner and terminal-state rule, but their severity and response are not the same.
+
 Platform owns the registry and control plane; SRE owns capacity and latency;
 product owns accepted outcomes; domain owners calibrate quality; security and
 legal own data boundaries; procurement owns terms; FinOps owns allocation;
 audit owns evidence; and business systems reconcile effects. This separation is
-part of the contract.
+part of the proposed contract. It is an illustrative responsibility map, not
+a universal assignment of legal or organizational decision rights; the adopting
+organization must name the actual accountable owners.
 
 Runtime status is **design-only**. No production proof, current provider
 behavior, or enterprise ROI is claimed until the named gates have passed.

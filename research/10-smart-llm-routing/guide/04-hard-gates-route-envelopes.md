@@ -29,6 +29,16 @@ R0 ingress
 idempotency key, tenant binding, sensitivity label, consequence class, and
 schema-validated request. It rejects missing identity or malformed input.
 
+Keep declared intent separate from trusted metadata. The identity provider
+supplies actor and tenant; policy supplies data class, residency, authority,
+and consequence rules; resource services supply ownership. Record context
+freshness, language, retention, and the acceptance test as well as size and
+schema. Consequence is not text difficulty: an illustrative one-line account
+closure can carry more consequence than a thousand-word summary. Missing or
+contradictory authority facts must not default to public, readonly, or low risk.
+The idempotency identity binds a lost-response retry to the same logical
+request, rather than authorizing a second effect.
+
 `R1` owns authorization, data class, residency, provider and region allowlist,
 tool eligibility, retention, budget, queue and capacity reservation, and the
 allowed route set. It must reserve worst-case classifier and worker budget
@@ -53,6 +63,13 @@ latency and quality evidence, effective-dated price, and expiry. A `latest`
 alias may be resolved at registry-ingest time, but route time must use the
 resolved pin. Otherwise the same policy can produce a different model with no
 auditable route change.
+
+For a local route, the pin also needs its weight or artifact identity,
+quantization or build choice, runtime image and configuration, and capacity
+pool. Runtime configuration documentation is not evidence of this workload's
+goodput, tail latency, quality, or total cost. Changes to batching, context
+construction, tools, or the acceptance rubric can invalidate old measurements
+even when the model name stays unchanged.
 
 Current price pages are evidence that a provider publishes a price surface,
 not permission to hard-code a number in the policy. Keep [Amazon Bedrock
@@ -97,14 +114,28 @@ The blocked state is more useful than a guessed route. It tells the registry
 owner what evidence is missing and protects the user from a silent boundary
 change.
 
+A separate illustrative decision distinguishes stale classifier evidence from
+stale worker eligibility. Its eligible routes are `restricted-readonly version two`
+and `capable-restricted-readonly version seven`; the efficient public route is
+excluded because its data boundary is unqualified. With medium consequence,
+restricted data, no tools, and high evidence ambiguity, skip the classifier
+whose registry evidence is stale and choose
+`capable-restricted-readonly version seven` deterministically, provided the
+worker's own required evidence remains current. Stop after one attempt if
+validation abstains. Success requires citation coverage, exception
+preservation, and no unresolved contradiction; the blocked next step is
+registry-owner review. If the worker's required residency evidence is stale
+too, the earlier blocked record applies: skipping a classifier cannot cure it.
+
 ## Failure drill: undeclared route and stale registry
 
-The classifier emits `provider-cheapest` because its prompt was influenced by a
+In this illustrative drill, the classifier emits `provider-cheapest` because
+its prompt was influenced by a
 retrieved article. There is no such enum. The deterministic decoder rejects
 the output, records the input and policy versions, and applies the predeclared
 safe route or fails closed. It does not call a provider based on the string.
 
-In a second incident, a registry entry still says an endpoint is available,
+In a second illustrative incident, a registry entry still says an endpoint is available,
 but its price or capability evidence has expired. `R3` must not make an
 unbounded guess. It can use an explicitly approved stale-data grace policy
 only for a route class whose risk allows it; otherwise it blocks, degrades, or
@@ -147,6 +178,28 @@ restricted route set without a contract and registry evidence. A local model
 may be faster, but it cannot execute a write because a classifier gave it a
 high confidence score.
 
+Authority leaks are not equally severe. A cache that returns another tenant's
+answer because its key omitted identity is a **data-isolation incident**.
+Other illustrative leaks include a classifier selecting a worker with an
+unauthorized tool, a model writing “approved,” and a timeout fallback crossing
+residency. Each requires independent enforcement: compute eligibility from
+trusted facts, enforce permission at the tool boundary, bind approval to the
+exact normalized action digest, preserve tenant and sensitivity in cache
+scope, and admit only predeclared eligible fallbacks. More persuasive model
+instructions do not supply these controls.
+
+Distinguish the transitions. Quality escalation follows an incomplete,
+ambiguous, or below-threshold answer; availability fallback follows an
+unavailable, rate-limited, or timed-out service. Both stay within the eligible
+set and consume the same parent budget. Safety block follows missing or
+invalid authorization, residency, data-boundary, or required evidence; changing
+providers cannot repair it. A semantic miss may allow one bounded
+no-side-effect repair or eligible escalation. A timeout with a possible effect
+is indeterminate, and a second attempt waits for the owning business system
+to reconcile the idempotency identity. Failed means the attempt could not
+complete; blocked should identify the missing fact, repair owner, and whether
+a safe next step exists.
+
 Make the boundary testable with negative cases. Feed `R2` a route name that is
 not in the set. Change the tenant after the classifier returns. Expire the
 residency evidence between policy evaluation and dispatch. Exhaust the parent
@@ -155,6 +208,16 @@ the expected result is a deterministic rejection, safe declared degradation,
 or block. A natural-language explanation is useful for the operator; it is
 not the enforcement mechanism.
 
+Give each negative case a fixture, expected outcome, owner, and release gate.
+Missing tenant blocks before content leaves ingress. An unknown classifier
+enum is rejected and its policy and classifier revisions recorded. Nearly
+exhausted parent budget skips optional classification for a permitted safe
+deterministic route or returns budget-exhausted. Saturated local capacity
+permits an independently eligible fallback only while its quality and latency
+contract holds; otherwise queue within the limit or block. A changed action
+digest blocks even when an approval exists. Run these proposed drills when
+the route contract or registry pin changes and before exposure expands.
+
 The registry needs an owner and expiry policy. Platform may maintain model and
 runtime metadata, but security or legal must approve data-boundary fields, and
 FinOps must own price and allocation assumptions. A route should carry the
@@ -162,6 +225,13 @@ registry revision it used. When a price changes, do not rewrite history; close
 the old effective interval, create a new revision, and rerun the decision
 fixture. When a capability claim cannot be refreshed, the route becomes
 unknown according to its risk class.
+
+Apply the same effective-interval discipline when an immutable pin changes:
+close the old interval, create a new revision, and rerun the relevant fixture.
+New pins need their own quality, capacity, and data-boundary evidence. Keep
+Astra, OASIS, DeepSeek Flash, GPT-5.6 Luna, and Fable unresolved as in the
+2026-09-12 evidence cutoff; do not infer providers, attach prices, or admit
+these labels into route enums.
 
 Prefer fail-closed for authority and fail-soft for user experience only where
 the policy permits it. A missing optional style preference can use a default.

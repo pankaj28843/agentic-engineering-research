@@ -42,11 +42,25 @@ high average quality while a protected multilingual stratum fails. A route
 may be preferred because it is cheap only after hard gates and quality floors
 have been applied.
 
+Receiving a long document is another capability, not proof that the answer
+preserves the paragraph that changes its conclusion. Likewise, a leaderboard
+score is not a probability of passing a protected multilingual policy rubric.
+The operating order is: allowed first, likely to pass second, preferred third.
+Quality evidence cannot grant authority, and preference cannot grant permission.
+
 Create strata that change the decision. Useful dimensions include consequence,
 data class, language, context length, tool use, freshness, and whether a human
 can cheaply review the result. Avoid a taxonomy so fine that no stratum has
 enough observations to calibrate. Record an explicit `abstain` label: the
 system did not have enough evidence to accept or safely escalate.
+
+Model confidence may be one signal after calibration, but it needs a version,
+threshold, calibration set, and declared failure response. Asking a model
+whether a request is easy and using that answer as evidence for selecting the
+same model is circular. Use trusted request facts or a separately evaluated
+signal before dispatch, then check the worker's result independently. Stale
+evidence, unfamiliar language, and an omitted exception can all defeat a
+confident answer; field and evidence-coverage checks may be more useful.
 
 Acceptance can combine deterministic and human signals:
 
@@ -93,13 +107,14 @@ for an authority failure in a higher-consequence stratum.
 
 ## Failure drill: the hidden denominator
 
-The monthly report says acceptance rose from 88% to 91%. Investigation shows
+In this illustrative failure drill, the monthly report says acceptance rose
+from 88% to 91%. Investigation shows
 that the router began abstaining on long multilingual requests and returning
 “please contact support.” Routine summaries improved, so the aggregate looked
 better. The protected stratum lost access and its denominator shrank.
 
 Repair the report by publishing, per stratum: traffic volume, attempted count,
-accepted count, abstained count, failed count, escalations, human rework,
+accepted count, abstained count, blocked count, failed count, escalations, human rework,
 latency tails, and route mix. Set a minimum traffic and acceptance floor for
 each protected stratum. If a stratum is too small for a reliable estimate,
 label it unknown and keep the safer route. Do not let a global score hide a
@@ -135,11 +150,18 @@ cause.
 
 Keep a small calibration set with examples at the boundaries: answers that
 barely pass, answers that are fluent but wrong, incomplete evidence, conflicting
-jurisdictions, and requests that must abstain. Have domain reviewers label the
+jurisdictions, long context, another language, and requests that must abstain.
+Have domain reviewers label the
 set independently, discuss disagreements, and freeze the adjudicated result.
 Use it to check deterministic validators and semantic judges before a route
 policy changes. Do not silently relabel old outcomes because the new route
 would otherwise look worse.
+
+When those observations cannot distinguish two routes, record unknown rather
+than forcing a ranking. Preserve a fixed holdout and sample by stratum,
+including abstentions and escalations. Separate what was known before dispatch
+from what became known after the answer: a validator failure can explain an
+escalation, but cannot retrospectively become a feature of the original choice.
 
 The contract should specify what happens after a miss. A routine summary might
 permit one no-side-effect repair. A restricted policy lookup might require a

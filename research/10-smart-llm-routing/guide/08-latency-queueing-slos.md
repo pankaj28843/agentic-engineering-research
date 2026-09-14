@@ -49,6 +49,15 @@ completion window, accepted-goodput floor, and maximum cost per accepted item.
 Numbers require workload calibration. The same target should not be copied
 from a benchmark with different context and concurrency.
 
+Define timely acceptance before dispatch. An interactive answer can fail its
+contract even if its text is correct after the deadline; nightly enrichment
+can require every necessary record to be complete within its window. A draft
+for human review and an autonomous side effect also need different acceptance
+contracts. Use consistent state vocabulary, then report each service class's
+coverage, acceptance, and deadline compliance before aggregating with visible
+class weights. A large easy class must not hide a protected class's missed
+promise.
+
 ## Worked example: support now, extraction overnight
 
 The following is an **illustrative policy** for a generic enterprise. It has
@@ -124,6 +133,16 @@ capacity. The user experiences their sum. The cost ledger sees the resulting
 timeouts, retries, abandoned sessions, and human escalations. Route-level
 economics must therefore join queue events to accepted outcomes.
 
+The human repair queue is another stage of this same path. In an explicitly
+illustrative case, a request waits in a queue for an hour but consumes ten
+minutes of specialist attention. Elapsed waiting and active work answer
+different questions: the first affects the service clock, while the second
+supports effort attribution. Record case count, queue time, active minutes,
+reviewer role, escalation, and final acceptance. Include the repair admission
+rule and time budget in the comparison contract. A lower provider bill can
+coexist with a crowded specialist queue; a slightly higher bill may avoid it,
+but only measured paths can establish that result.
+
 Protect capacity by class. Interactive requests may reserve headroom that
 batch work cannot consume. High-consequence proposals may have a smaller,
 more reliable pool. Delay-tolerant extraction can use a window and a declared
@@ -170,11 +189,16 @@ data.
 Treat capacity admission as part of the request state machine. A candidate
 route starts as `eligible`, becomes `reserved` only after the worker or
 provider quota acknowledges a bounded reservation, and becomes `dispatched`
-only when the request is accepted. A timeout before acknowledgement is not a
-successful attempt. It is an admission failure that may be retried on a
-different eligible route, returned as a degraded state, or held for a batch
-window. The ledger must distinguish those outcomes so a provider error does
-not look like a model failure.
+only when the request is accepted. A timeout before acknowledgement is not
+proof of either success or nonexecution. If admission is confirmed to have
+failed before any external effect, a bounded eligible fallback, degraded
+response, or permitted batch window may be appropriate. If a worker could
+have caused an external effect, mark the outcome indeterminate until the
+owning business system reconciles it; do not retry on the assumption that
+silence proves nothing happened. A side-effect-free answer may permit one
+bounded availability fallback. Terminal failure is the end of permitted
+recovery without acceptance, not the timeout itself. The ledger must
+distinguish transport observations from semantic and business outcomes.
 
 A reservation should have a lease, an estimated resource shape, and an owner.
 The resource shape can include input tokens, output-token allowance, expected
@@ -226,6 +250,24 @@ cancellation, and what terminal state is returned when no route can admit the
 request. Those answers connect SLOs to the graph's budget and security
 contracts. They also make capacity a reviewable control rather than an
 implicit hope that the endpoint will be healthy.
+
+Carry those controls into a bounded rollout. Start with a frozen evaluation
+slice and fixed-baseline replay, then permitted shadow decisions, then a
+narrow canary with an exposure cap, owner, stop condition, and rollback target.
+Watch protected acceptance, deadline compliance, p95 latency, escalation,
+repair queues, cache isolation, route-version mismatches, price expiry, and
+unresolved population reconciliation. An illustrative seven-day window may
+cover one queue but miss a monthly reporting workload; choose the window and
+minimum volume in advance and include a complete repair cycle where possible.
+
+Expansion needs comparable coverage, protected floors, and an accepted-outcome
+cost advantage across more than one time window without consuming repair
+capacity. Inspect evaluator/human disagreements. New ambiguous outcomes call
+for pausing expansion and reconciling the cause, even if provider spend falls.
+Keep the fixed baseline as a comparison stream or recurring replay, and
+recalibrate or pause when input mix, latency, escalation, or capacity moves
+outside the measured operating region. A completed experiment does not prove
+that the deployed service stayed safe.
 
 ## Checkpoint
 

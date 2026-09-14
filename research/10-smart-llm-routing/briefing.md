@@ -79,6 +79,21 @@ same requests and the same acceptance rubric.
 
 ## Enterprise migration
 
+Keep the economic denominator separate from coverage. Only accepted outcomes
+belong in cost per accepted outcome; blocked, abstained, abandoned and failed
+requests remain visible in the cohort ledger. A blocked request is not a
+rejected answer, and a timeout is not necessarily terminal failure. Where an
+external action may have committed, retain an indeterminate state and reconcile
+with the owning system before retrying. Otherwise an apparently cheaper policy
+can hide both unmet demand and duplicate effects.
+
+The same distinction applies to infrastructure: accelerator utilization is not
+accepted goodput, and an already purchased machine does not make its support,
+reserved headroom or alternative uses free. Compare managed and local routes
+under the same acceptance contract and workload shape. A mandatory data
+boundary can rule out the cheaper route; it does not prove the remaining route
+has a favorable economic return.
+
 The migration starts with inventory, not provider shopping. Map four existing
 lanes: coding-assistant subscriptions and IDE flows; managed cloud calls such
 as Bedrock; in-house open-weight services; and deterministic workflows that

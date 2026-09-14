@@ -25,7 +25,8 @@ boundaries and maintenance when the distribution changes.
 request envelope and redacted content. They are useful when a human-readable
 rule cannot express the boundary. The output must be a fixed enum. Training
 labels inherit the mistakes and selection effects of the policy that collected
-them.
+them. Permit an explicit abstain result when the evidence cannot support a
+choice; the deterministic decoder must reject any enum outside the eligible set.
 
 **Per-route quality/cost predictors** estimate whether a candidate will pass,
 how much work it will consume, or how long it will take. They can support a
@@ -43,6 +44,12 @@ changing route performance, but exploration consumes budget and can expose
 users to lower-quality routes. Exploration must be bounded, logged, and
 restricted to candidates already permitted by `R1`. Offline policy evaluation
 and a holdout reduce, but do not eliminate, counterfactual uncertainty.
+
+In the proposed safe starting scope, exploration belongs only in approved
+readonly lanes. The classification call itself must also be eligible: sending
+restricted features to an unapproved region breaches the boundary before any
+worker is selected. A bandit's desire for information never qualifies an
+undeclared provider.
 
 **Hybrid policies** often work best: deterministic hard rules, a small
 classifier for an uncertain stratum, and a deterministic scorer. The more
@@ -80,9 +87,16 @@ has a different information requirement and risk. A rule may beat a learned
 router when the category is legible and labels are sparse. A learned family
 may be useful only where its extra information changes the Pareto choice.
 
+For this illustrative queue, evidence ambiguity is useful only if it predicts
+whether the efficient route will preserve the policy exception and changes a
+measured choice. Compare the resulting route mix and accepted outcomes against
+the original language-and-context-length rule on held-out requests. A longer
+explanation for an unchanged choice buys no demonstrated routing benefit.
+
 ## Failure drill: learning from its own blind spot
 
-The classifier sends uncertain cases to the cheapest route. Those cases get
+In this illustrative failure drill, the classifier sends uncertain cases to
+the cheapest route. Those cases get
 fewer human labels because the product displays a generic answer and users
 leave. The training set now contains confident cheap-route outcomes, not the
 hard cases that should define the boundary. Offline accuracy rises while real
@@ -100,6 +114,13 @@ and [Martin Fowler's independent discussion](https://martinfowler.com/articles/h
 are useful for a related lesson: the environment, repository context, and
 feedback surface shape agent performance. A router trained around one harness
 or context construction should not be treated as a provider-neutral law.
+
+Treat that environment as part of the qualified route: retrieval corpus,
+context builder, region, cache scope, output schema, tool permission,
+validator, feedback loop, and acceptance rubric. Changing one can make the old
+quality estimate inapplicable even if the model pin is unchanged. Re-evaluate
+the affected contract rather than assuming the predictor learned a permanent
+property of the model.
 
 ## Reader exercises
 
@@ -163,9 +184,11 @@ capacity pattern. Prove that its output changes route mix or accepted cost
 against the rule baseline. If it only produces a more elaborate explanation,
 keep the rule and save the model call.
 
-A learned router needs a retirement rule. If drift, disagreement, or missing
-labels exceed a threshold, freeze exploration and return to a declared fixed
-policy. Keep the model and data artifacts so the cause can be investigated;
+A learned router needs a retirement rule. If drift makes it uncertain,
+disagreement with the fixed baseline grows, protected-stratum acceptance
+falls below its floor, or labels stop arriving, freeze exploration and return
+to a declared fixed policy. Keep the model and data artifacts so the cause can
+be investigated;
 retirement is not deletion. Reintroduce learning only after recalibration and
 another replay.
 
